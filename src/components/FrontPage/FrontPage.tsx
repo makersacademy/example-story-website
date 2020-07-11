@@ -11,7 +11,6 @@ const FrontPage = () => {
         <div id="spine">
 
         </div>
-        Hello
       </div>
     </>
   )
