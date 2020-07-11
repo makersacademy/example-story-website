@@ -1,0 +1,15 @@
+#book {
+  width: 800px;
+  height: 100px;
+  border: 5px solid white; 
+  border-radius: 10px;
+  background-color: #d8d8d8;
+}
+
+#spine {
+  
+}
+
+body{
+  background-color: #222222;
+}
