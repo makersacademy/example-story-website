@@ -8,7 +8,6 @@ const FrontPage = () => {
   return (
     <>
       <div id="book">
-        <div className="row-2">
           <div className="container">
             <div className="row">
               <div className="col">
@@ -16,12 +15,11 @@ const FrontPage = () => {
               </div>
               <div className="col-md p-5">
                 <Image />
+              <div id="title"></div>
               </div>
-              
               <div className="col"></div>
             </div>
           </div>
-        </div>
       </div>
     </>
   )
