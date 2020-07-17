@@ -8,6 +8,7 @@ const FrontPage = () => {
   return (
     <>
       <div  className="container">
+      <div id="spine"></div>
           <div className="row">
             <div className="col-6 offset-3 pt-5"><Image/></div>
           </div> 
