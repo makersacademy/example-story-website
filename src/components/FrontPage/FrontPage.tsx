@@ -9,71 +9,26 @@ const FrontPage = () => {
     <>
       <div  className="container">
           <div className="row">
-            <div className="col-6 offset-3"><Image/></div>
+            <div className="col-6 offset-3 pt-5"><Image/></div>
           </div> 
           {/*Second Row*/}
           <div className="row">
-            <div id="title" className="col-8 offset-2">
-              <p>I'm Joe Blogs</p>
-              <p>I'm a Developer</p>
+            <div id="title" className="col-8 offset-2 text-center">
+              <h3 className="pt-1">
+                I'm Joe Blogs
+              <br></br>
+              I'm a Developer
+              </h3>
             </div>
           </div>
+        {/*Third Row*/}
           <div className="row">
-          <div className="col">1 of 12</div>
-            <div className="col">2 of 12</div>
-            <div className="col">3 of 12</div>
-            <div className="col">4 of 12</div>
-            <div className="col">5 of 12</div>
-            <div className="col">6 of 12</div>
-            <div className="col">7 of 12</div>
-            <div className="col">8 of 12</div>
-            <div className="col">9 of 12</div>
-            <div className="col">10 of 12</div>
-            <div className="col">11 of 12</div>
-            <div className="col">12 of 12</div>
+          <div  className="col-8 offset-2 text-center px-5 pt-4"  >
+            <h2>I’m looking for My first job as a full-stack developer</h2>
+        
           </div>
-          <div className="row">
-          <div className="col">1 of 12</div>
-            <div className="col">2 of 12</div>
-            <div className="col">3 of 12</div>
-            <div className="col">4 of 12</div>
-            <div className="col">5 of 12</div>
-            <div className="col">6 of 12</div>
-            <div className="col">7 of 12</div>
-            <div className="col">8 of 12</div>
-            <div className="col">9 of 12</div>
-            <div className="col">10 of 12</div>
-            <div className="col">11 of 12</div>
-            <div className="col">12 of 12</div>
           </div>
-          <div className="row">
-            <div className="col">1 of 12</div>
-            <div className="col">2 of 12</div>
-            <div className="col">3 of 12</div>
-            <div className="col">4 of 12</div>
-            <div className="col">5 of 12</div>
-            <div className="col">6 of 12</div>
-            <div className="col">7 of 12</div>
-            <div className="col">8 of 12</div>
-            <div className="col">9 of 12</div>
-            <div className="col">10 of 12</div>
-            <div className="col">11 of 12</div>
-            <div className="col">12 of 12</div>
-          </div>
-          <div className="row">
-            <div className="col">1 of 12</div>
-            <div className="col">2 of 12</div>
-            <div className="col">3 of 12</div>
-            <div className="col">4 of 12</div>
-            <div className="col">5 of 12</div>
-            <div className="col">6 of 12</div>
-            <div className="col">7 of 12</div>
-            <div className="col">8 of 12</div>
-            <div className="col">9 of 12</div>
-            <div className="col">10 of 12</div>
-            <div className="col">11 of 12</div>
-            <div className="col">12 of 12</div>
-          </div>
+          
       </div>
     </>
   )
