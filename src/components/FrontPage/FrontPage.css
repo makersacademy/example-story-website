@@ -13,13 +13,38 @@ h3 {
   border-bottom-right-radius: 40px;
 }
 
-#triangle {
-  background-color: #43b0f2;
-  clip-path: polygon(0 0, 0 100%, 50% 50%);
-  color: red;
-  height: 200px;
-  width: 200px;
-  border-color: white 5px;
+.triangle {
+  transform: rotate(90deg);
+  width: 0;
+  height: 0;
+  margin: 200px auto;
+  position: relative;
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+
+  border-bottom: 230px solid white;
+}
+
+.triangle:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-top: 0px solid transparent;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 200px solid #43b0f2;
+  top: 20px;
+  left: -120px;
+}
+
+#inner-triangle {
+  position: absolute;
+  background: #43b0f2;
+  top: 5px; /* equal to border thickness */
+  left: 5px; /* equal to border thickness */
+  width: 190px; /* container height - (border thickness * 2) */
+  height: 190px; /* container height - (border thickness * 2) */
 }
 
 #title {
@@ -27,7 +52,6 @@ h3 {
   background-color: #222222;
   color: white;
   text-align: center;
-  /* font-family: 'Staatliches', cursive; */
 }
 
 #spine {
