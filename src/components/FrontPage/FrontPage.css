@@ -4,7 +4,6 @@ h3 {
 }
 
 #book {
-  /* width: 800px; */
   border: 5px solid white;
   border-radius: 10px;
   background-color: #d8d8d8;
@@ -15,20 +14,17 @@ h3 {
 
 #chapter {
   /* transform: rotate(-90deg); */
-  position: absolute;
-  z-index: 2;
+  /* position: absolute;
+  z-index: 2; */
 }
 
 .triangle {
   z-index: 1;
-  /* transform: rotate(90deg); */
   width: 0;
   height: 0;
-  /* margin: 200px auto; */
   position: relative;
   border-top: 140px solid transparent;
   border-bottom: 140px solid transparent;
-
   border-left: 230px solid white;
 }
 
