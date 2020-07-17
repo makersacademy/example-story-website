@@ -12,14 +12,7 @@ h3 {
   border-bottom-right-radius: 40px;
 }
 
-#chapter {
-  /* transform: rotate(-90deg); */
-  /* position: absolute;
-  z-index: 2; */
-}
-
 .triangle {
-  z-index: 1;
   width: 0;
   height: 0;
   position: relative;
@@ -29,7 +22,6 @@ h3 {
 }
 
 .triangle:before {
-  z-index: 1;
   content: "";
   width: 0;
   height: 0;

@@ -39,7 +39,7 @@ const FrontPage = () => {
           </div>
           <div className="col-1 p-0" style={{ color: "red" }}>
             <div className="triangle">
-              <h4 id="chapter">
+              <h4>
                 Chapter <br></br> 1
               </h4>
             </div>
