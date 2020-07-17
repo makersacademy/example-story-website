@@ -12,6 +12,8 @@
   border: 5px solid white; 
   background-color: #222222;
   color: white;
+  text-align: center;
+  font-family: 'Staatliches', cursive;
 }
 
 #spine {
