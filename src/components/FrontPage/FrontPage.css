@@ -1,3 +1,12 @@
+h2, h3 {
+  font-family: 'Staatliches', cursive
+}
+
+
+
+
+
+
 .container {
   width: 800px;
   border: 5px solid white; 
@@ -26,4 +35,5 @@
 
 body{
   background-color: #222222;
+  font-family: 'Staatliches', cursive;
 }
