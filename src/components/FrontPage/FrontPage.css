@@ -13,25 +13,18 @@ h3 {
 }
 
 .triangle {
-  width: 0;
-  height: 0;
-  position: relative;
-  border-top: 140px solid transparent;
-  border-bottom: 140px solid transparent;
-  border-left: 230px solid white;
+  height: 110px;
+  width: 190px;
 }
 
 .triangle:before {
+  top: 110px;
   content: "";
   width: 0;
   height: 0;
-  position: absolute;
-  border-top: 0px solid transparent;
-  border-top: 120px solid transparent;
-  border-bottom: 120px solid transparent;
-  border-left: 200px solid #43b0f2;
-  right: 20px;
-  top: -120px;
+  border-top: 110px solid transparent;
+  border-bottom: 110px solid transparent;
+  border-left: 190px solid #43b0f2;
 }
 
 #title {
