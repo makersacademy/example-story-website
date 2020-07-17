@@ -1,15 +1,11 @@
-h2, h3 {
-  font-family: 'Staatliches', cursive
+h2,
+h3 {
+  font-family: "Staatliches", cursive;
 }
 
-
-
-
-
-
-.container {
-  width: 800px;
-  border: 5px solid white; 
+#book {
+  /* width: 800px; */
+  border: 5px solid white;
   border-radius: 10px;
   background-color: #d8d8d8;
   height: 900px;
@@ -17,12 +13,21 @@ h2, h3 {
   border-bottom-right-radius: 40px;
 }
 
+#triangle {
+  background-color: #43b0f2;
+  clip-path: polygon(0 0, 0 100%, 50% 50%);
+  color: red;
+  height: 200px;
+  width: 200px;
+  border-color: white 5px;
+}
+
 #title {
-  border: 5px solid white; 
+  border: 5px solid white;
   background-color: #222222;
   color: white;
   text-align: center;
-  font-family: 'Staatliches', cursive;
+  /* font-family: 'Staatliches', cursive; */
 }
 
 #spine {
@@ -35,7 +40,7 @@ h2, h3 {
   position: absolute;
 }
 
-body{
+body {
   background-color: #222222;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
 }
