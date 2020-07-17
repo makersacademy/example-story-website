@@ -13,7 +13,10 @@ const FrontPage = () => {
           </div> 
           {/*Second Row*/}
           <div className="row">
-            <div id="title" className="col-8 offset-2">asdfas</div>
+            <div id="title" className="col-8 offset-2">
+              <p>I'm Joe Blogs</p>
+              <p>I'm a Developer</p>
+            </div>
           </div>
           <div className="row">
           <div className="col">1 of 12</div>
