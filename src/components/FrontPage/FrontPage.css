@@ -13,38 +13,37 @@ h3 {
   border-bottom-right-radius: 40px;
 }
 
+#chapter {
+  /* transform: rotate(-90deg); */
+  position: absolute;
+  z-index: 2;
+}
+
 .triangle {
-  transform: rotate(90deg);
+  z-index: 1;
+  /* transform: rotate(90deg); */
   width: 0;
   height: 0;
-  margin: 200px auto;
+  /* margin: 200px auto; */
   position: relative;
-  border-left: 140px solid transparent;
-  border-right: 140px solid transparent;
+  border-top: 140px solid transparent;
+  border-bottom: 140px solid transparent;
 
-  border-bottom: 230px solid white;
+  border-left: 230px solid white;
 }
 
 .triangle:before {
+  z-index: 1;
   content: "";
   width: 0;
   height: 0;
   position: absolute;
   border-top: 0px solid transparent;
-  border-left: 120px solid transparent;
-  border-right: 120px solid transparent;
-  border-bottom: 200px solid #43b0f2;
-  top: 20px;
-  left: -120px;
-}
-
-#inner-triangle {
-  position: absolute;
-  background: #43b0f2;
-  top: 5px; /* equal to border thickness */
-  left: 5px; /* equal to border thickness */
-  width: 190px; /* container height - (border thickness * 2) */
-  height: 190px; /* container height - (border thickness * 2) */
+  border-top: 120px solid transparent;
+  border-bottom: 120px solid transparent;
+  border-left: 200px solid #43b0f2;
+  right: 20px;
+  top: -120px;
 }
 
 #title {
