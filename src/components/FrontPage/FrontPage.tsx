@@ -36,17 +36,3 @@ const FrontPage = () => {
 }
 
 export { FrontPage }
-
-
- {/* <div className="container">
-<div className="row">
-  <div className="col">
-    <div id="spine"></div>
-  </div>
-  <div className="col-md p-5">
-    <Image />
-  <div id="title"></div>
-  </div>
-  <div className="col"></div>
-</div>
-</div> */}
