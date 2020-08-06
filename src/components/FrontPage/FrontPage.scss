@@ -1,8 +1,50 @@
-$font-stack: monospace, sans-serif;
-// $primary-color: #;
-html {
-  background-color: rebeccapurple;
-  p {
-    color: white;
-  }
+h2,
+h3 {
+  font-family: "Staatliches", cursive;
+}
+
+#book {
+  border: 5px solid white;
+  border-radius: 10px;
+  background-color: #d8d8d8;
+  height: 900px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.triangle {
+  height: 110px;
+  width: 190px;
+}
+
+.triangle:before {
+  top: 110px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 110px solid transparent;
+  border-bottom: 110px solid transparent;
+  border-left: 190px solid #43b0f2;
+}
+
+#title {
+  border: 5px solid white;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+}
+
+#spine {
+  background-color: #868686;
+  width: 10px;
+  height: 850px;
+  margin-top: 20px;
+  margin-left: 20px;
+  z-index: 1;
+  position: absolute;
+}
+
+body {
+  background-color: #222222;
+  font-family: "Staatliches", cursive;
 }
