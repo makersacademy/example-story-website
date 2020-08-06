@@ -1,6 +1,7 @@
 import React from "react"
 import { Image } from "../../components/image"
 import "bootstrap/dist/css/bootstrap.css"
+import { FrontPageLabels } from "../index"
 
 import "./FrontPage.scss"
 
@@ -21,9 +22,9 @@ export const FrontPage = () => {
               <div className="row">
                 <div id="title" className="col-8 offset-2 text-center">
                   <h3 className="pt-1">
-                    I'm Joe Blogs
+                    {FrontPageLabels.intro1}
                     <br></br>
-                    I'm a Developer
+                    {FrontPageLabels.intro2}
                   </h3>
                 </div>
               </div>
@@ -31,7 +32,7 @@ export const FrontPage = () => {
               <div className="row">
                 <div className="col-8 offset-2 text-center px-5 pt-4">
                   <h2>
-                    I’m looking for My first job as a full-stack developer
+                      {FrontPageLabels.intro3}
                   </h2>
                 </div>
               </div>
