@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import "./FrontPage.scss"
 
-const FrontPage = () => {
+export const FrontPage = () => {
   return (
     <>
       <div className="container">
@@ -49,5 +49,3 @@ const FrontPage = () => {
     </>
   )
 }
-
-export { FrontPage }
