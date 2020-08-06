@@ -1,8 +1,8 @@
 import React from "react"
 import { Image } from "../../components/image"
-import "bootstrap/dist/css/bootstrap.css"
+// import "bootstrap/dist/css/bootstrap.css"
 
-import "./FrontPage.css"
+import "./FrontPage.scss"
 
 const FrontPage = () => {
   return (
