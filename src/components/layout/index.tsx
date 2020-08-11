@@ -26,7 +26,9 @@ const Layout = ({ children }) => {
 
   return (
     <div>
-      <NavBar />
+      <div className="d-flex justify-content-center">
+        <NavBar />
+      </div>
       <main>{children}</main>
     </div>
   )
