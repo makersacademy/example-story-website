@@ -17,6 +17,6 @@ export const FrontPage = () => {
           </div>
         </div>
       </div>
-
+    </div>
   )
 }
