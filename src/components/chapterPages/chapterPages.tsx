@@ -7,10 +7,10 @@ export const ChapterPages = () => {
     <div className="container">
       <div className="row">
         <div className="col-sm px-0">
-          <div id="leftPage" className="container"></div>
+          <div id="leftPage"></div>
         </div>
         <div className="col-sm px-0">
-          <div id="rightPage" className="container"></div>
+          <div id="rightPage"></div>
         </div>
       </div>
     </div>
