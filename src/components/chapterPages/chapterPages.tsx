@@ -6,10 +6,10 @@ export const ChapterPages = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-sm">
+        <div className="col-sm px-0">
           <div id="leftPage" className="container"></div>
         </div>
-        <div className="col-sm">
+        <div className="col-sm px-0">
           <div id="rightPage" className="container"></div>
         </div>
       </div>
