@@ -1,0 +1,12 @@
+@import '../styles/variables.scss';
+
+.rectangle {
+  width: full-width;
+  height: 10px;
+  background-color: #111;
+}
+
+.navText {
+  color: $primary-color;
+  font-family: $heading-font;
+}
