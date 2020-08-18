@@ -5,7 +5,7 @@ import { NavBarLabels } from "./index"
 
 export const NavBar = () => {
   const listItems = NavBarLabels.chapters.map((chapter, index) => (
-    <a key={index} className="nav-link" href="#">
+    <a key={index} className="nav-link" href="/chapter1">
       <p className="navText">{chapter}</p>
     </a>
   ))
