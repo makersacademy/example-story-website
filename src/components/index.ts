@@ -1,4 +1,4 @@
-import { ChapterPages } from "./chapterPages/chapterPages"
+export { ChapterPages } from "./chapterPages/chapterPages"
 export { FrontPage } from "./FrontPage/FrontPage"
 export { FrontPageLabels } from "../labels"
 export { Header } from "./header"
