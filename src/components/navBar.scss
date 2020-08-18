@@ -1,5 +1,4 @@
-$primary-color: #111;
-$heading-font: "Quicksand", sans-serif;
+@import '../styles/variables.scss';
 
 .rectangle {
   width: full-width;
