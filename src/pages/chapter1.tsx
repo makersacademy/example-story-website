@@ -1,7 +1,6 @@
-import React from 'react';
+import React from "react"
 
-const Chapter1 = () => (
-    <div>'Hello World'</div>
-)
+import { ChapterPages } from "../components/index"
 
+const Chapter1 = () => <ChapterPages />
 export default Chapter1
