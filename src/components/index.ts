@@ -1,3 +1,6 @@
+export { BookCoverImage } from "./FrontPage/bookCoverImage"
+export { BookCoverSubTitle } from "./FrontPage/bookCoverSubTitle"
+export { BookCoverTitle } from "./FrontPage/bookCoverTitle"
 export { ChapterPages } from "./chapterPages/chapterPages"
 export { FrontPage } from "./FrontPage/FrontPage"
 export { FrontPageLabels } from "../labels"
