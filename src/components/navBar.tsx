@@ -4,8 +4,8 @@ import "./navBar.scss"
 import { NavBarLabels } from "./index"
 
 export const NavBar = () => {
-  const listItems = NavBarLabels.chapters.map(chapter => (
-    <a className="nav-link" href="#">
+  const listItems = NavBarLabels.chapters.map((chapter, index) => (
+    <a key={index} className="nav-link" href="#">
       <p className="navText">{chapter}</p>
     </a>
   ))
