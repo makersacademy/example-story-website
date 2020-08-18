@@ -1,5 +1,5 @@
 import React from "react"
-import { Image } from "../../components/image"
+import { Image } from "../index"
 import "bootstrap/dist/css/bootstrap.css"
 import { FrontPageLabels } from "../index"
 
