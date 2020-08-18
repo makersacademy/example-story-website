@@ -1,10 +1,8 @@
 import React from "react"
-import { Image } from "../../components/image"
 import "bootstrap/dist/css/bootstrap.css"
-import { FrontPageLabels } from "../index"
-import { BookCoverTitle } from "./bookCoverTitle"
-import { BookCoverSubTitle } from "./bookCoverSubTitle"
-import { BookCoverImage } from "./bookCoverImage"
+import { BookCoverTitle } from "../index"
+import { BookCoverSubTitle } from "../index"
+import { BookCoverImage } from "../index"
 
 import "./FrontPage.scss"
 
