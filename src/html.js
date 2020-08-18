@@ -9,7 +9,10 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
           rel="stylesheet"
         />
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+          rel="stylesheet"
+        />
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
