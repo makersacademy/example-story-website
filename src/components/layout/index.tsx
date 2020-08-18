@@ -13,7 +13,7 @@ import { Header } from "../../components"
 import { NavBar } from "../navBar"
 import "./index.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: { children: any }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
