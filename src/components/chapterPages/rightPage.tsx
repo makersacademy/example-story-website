@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import "./chapterPages.scss"
+// import "./chapterPages.scss"
 
 export const RightPage = () => {
   return (

@@ -1,9 +1,9 @@
 import React from "react"
-import { Image } from "../image"
+
 import "bootstrap/dist/css/bootstrap.css"
 import { FrontPageLabels } from "../index"
 
-import "./FrontPage.scss"
+// import "./FrontPage.scss"
 
 export const BookCoverTitle = () => {
   return (

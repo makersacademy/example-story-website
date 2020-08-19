@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import "./navBar.scss"
-import { NavBarLabels } from "./index"
+import { NavBarLabels } from "../index"
 
 export const NavBar = () => {
   const listItems = NavBarLabels.chapters.map((chapter, index) => (

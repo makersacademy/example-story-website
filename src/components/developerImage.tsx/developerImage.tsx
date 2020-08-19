@@ -3,7 +3,7 @@ import { Image } from "../index"
 import "bootstrap/dist/css/bootstrap.css"
 import { FrontPageLabels } from "../index"
 
-import "./FrontPage.scss"
+import "../bookFrontCover/bookFrontCover.scss"
 
 export const BookCoverImage = () => {
   return (
