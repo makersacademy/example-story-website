@@ -6,7 +6,7 @@ import { BookCoverImage } from "../index"
 
 import "./bookFrontCover.scss"
 
-export const FrontPage = () => {
+export const BookFrontCover = () => {
   return (
     <div className="container">
       <div className="row align-items-center">
