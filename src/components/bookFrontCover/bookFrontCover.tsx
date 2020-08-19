@@ -4,7 +4,7 @@ import { BookCoverTitle } from "../index"
 import { BookCoverSubTitle } from "../index"
 import { BookCoverImage } from "../index"
 
-import "./FrontPage.scss"
+import "./bookFrontCover.scss"
 
 export const FrontPage = () => {
   return (
