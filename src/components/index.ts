@@ -1,6 +1,6 @@
 export { BookCoverImage } from "./developerImage.tsx/developerImage"
-export { BookCoverSubTitle } from "./FrontPage/subHeading"
-export { BookCoverTitle } from "./FrontPage/header"
+export { BookCoverSubTitle } from "./subHeading/subHeading"
+export { BookCoverTitle } from "./heading/heading"
 export { ChapterPages } from "./doublePage/chapterPages"
 export { FrontPage } from "./bookFrontCover/bookFrontCover"
 export { FrontPageLabels } from "../labels"
