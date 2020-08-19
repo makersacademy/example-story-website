@@ -1,5 +1,5 @@
 export { DeveloperImage } from "./developerImage/developerImage"
-export { BookCoverSubTitle } from "./subHeading/subHeading"
+export { SubHeading } from "./subHeading/subHeading"
 export { Heading } from "./heading/heading"
 export { ChapterPages } from "./doublePage/chapterPages"
 export { BookFrontCover } from "./bookFrontCover/bookFrontCover"
