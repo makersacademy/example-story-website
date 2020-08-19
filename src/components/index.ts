@@ -1,4 +1,4 @@
-export { BookCoverImage } from "./developerImage.tsx/developerImage"
+export { DeveloperImage } from "./developerImage/developerImage"
 export { BookCoverSubTitle } from "./subHeading/subHeading"
 export { BookCoverTitle } from "./heading/heading"
 export { ChapterPages } from "./doublePage/chapterPages"
