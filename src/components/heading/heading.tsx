@@ -5,7 +5,7 @@ import { BookFrontCoverLabels } from "../index"
 
 // import "./FrontPage.scss"
 
-export const BookCoverTitle = () => {
+export const Heading = () => {
   return (
     <div>
       <div className="row">
