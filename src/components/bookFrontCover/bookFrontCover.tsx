@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import { Heading } from "../index"
-import { BookCoverSubTitle } from "../index"
+import { SubHeading } from "../index"
 import { DeveloperImage } from "../index"
 
 import "./bookFrontCover.scss"
@@ -15,7 +15,7 @@ export const BookFrontCover = () => {
             <div id="spine"></div>
             <DeveloperImage />
             <Heading />
-            <BookCoverSubTitle />
+            <SubHeading />
           </div>
         </div>
       </div>
