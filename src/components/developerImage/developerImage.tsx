@@ -5,7 +5,7 @@ import { FrontPageLabels } from "../index"
 
 import "../bookFrontCover/bookFrontCover.scss"
 
-export const BookCoverImage = () => {
+export const DeveloperImage = () => {
   return (
     <div>
       <div className="row">
