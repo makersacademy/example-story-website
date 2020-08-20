@@ -1,8 +1,7 @@
 import React from "react"
-import { Image } from "../index"
 import "bootstrap/dist/css/bootstrap.css"
-import { FrontPageLabels } from "../index"
 
+import { Image } from "../index"
 import "../bookFrontCover/bookFrontCover.scss"
 
 export const DeveloperImage = () => {

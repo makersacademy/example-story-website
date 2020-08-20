@@ -1,9 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { Heading } from "../index"
-import { SubHeading } from "../index"
-import { DeveloperImage } from "../index"
 
+import { DeveloperImage, Heading, SubHeading } from "../index"
 import "./bookFrontCover.scss"
 
 export const BookFrontCover = () => {
