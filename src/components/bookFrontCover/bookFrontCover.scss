@@ -4,31 +4,29 @@ h3 {
 }
 
 #book {
-  border: 5px solid white;
-  border-radius: 10px;
   background-color: #ffffff;
-  height: 900px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  height: 70vh;
+  border-top-right-radius: 5.43vh;
+  border-bottom-right-radius: 5.43vh;
 }
 
-.triangle {
-  height: 110px;
-  width: 190px;
-}
-
-.triangle:before {
-  top: 110px;
-  content: "";
-  width: 0;
-  height: 0;
-  border-top: 110px solid transparent;
-  border-bottom: 110px solid transparent;
-  border-left: 190px solid #43b0f2;
-}
+// .triangle {
+//   height: 110px;
+//   width: 190px;
+// }
+//
+// .triangle:before {
+//   top: 110px;
+//   content: "";
+//   width: 0;
+//   height: 0;
+//   border-top: 110px solid transparent;
+//   border-bottom: 110px solid transparent;
+//   border-left: 190px solid #43b0f2;
+// }
 
 #title {
-  border: 5px solid white;
+  border: 0.6vw solid white;
   background-color: #222222;
   color: white;
   text-align: center;
@@ -36,10 +34,10 @@ h3 {
 
 #spine {
   background-color: #868686;
-  width: 10px;
-  height: 850px;
-  margin-top: 20px;
-  margin-left: 20px;
+  width: 0.7vw;
+  height: 65.22vh;
+  margin-top: 2.44vh;
+  margin-left: 2.44vh;
   z-index: 1;
   position: absolute;
 }
