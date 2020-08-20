@@ -4,6 +4,9 @@ import "bootstrap/dist/css/bootstrap.css"
 import { DeveloperImage, Heading, SubHeading } from "../index"
 import "./bookFrontCover.scss"
 
+//TODO Send the BookFrontCoverLabels to heading + subheading
+// Do we want to send styling down as a prop
+
 export const BookFrontCover = () => {
   return (
     <div className="container">
