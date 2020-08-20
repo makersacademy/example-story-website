@@ -1,6 +1,8 @@
+@import "../../styles/variables.scss";
+
 h2,
 h3 {
-  font-family: "Staatliches", cursive;
+  font-family: $heading-font;
 }
 
 #doublePage {
