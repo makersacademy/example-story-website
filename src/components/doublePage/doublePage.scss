@@ -3,21 +3,14 @@ h3 {
   font-family: "Staatliches", cursive;
 }
 
-#leftPage {
+#doublePage {
   border: 5px solid white;
   border-radius: 10px;
   background-color: #ffffff;
   height: 736px;
+  width: 100%;
   border-top-left-radius: 40px;
   border-bottom-left-radius: 40px;
-}
-
-#rightPage {
-  border: 5px solid white;
-  border-radius: 10px;
-  background-color: #ffffff;
-  height: 736px;
-  width: 519px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
 }
