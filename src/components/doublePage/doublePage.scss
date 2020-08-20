@@ -4,46 +4,33 @@ h3 {
 }
 
 #doublePage {
-  border: 5px solid white;
-  border-radius: 10px;
   background-color: #ffffff;
-  height: 736px;
+  height: 70vh;
   width: 100%;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-left-radius: 5.43vh;
+  border-bottom-left-radius: 5.43vh;
+  border-top-right-radius: 5.43vh;
+  border-bottom-right-radius: 5.43vh;
 }
 
 #centerLine {
   background-color: #9c9998;
-  height: 725px;
+  height: 70vh;
   width: 0.125%;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
-#title {
-  border: 5px solid white;
-  background-color: #222222;
-  color: white;
-  text-align: center;
-}
-
-#whiteBox {
-  background-color: white;
-  border: 2px solid #222222;
-  height: 268px;
-  width: 230px;
-}
-#greyBox {
-  background-color: #d8d8d8;
-  border: 1px solid #979797;
-  height: 268px;
-  width: 230px;
-}
+// #whiteBox {
+//   background-color: white;
+//   border: 2px solid #222222;
+//   height: 268px;
+//   width: 230px;
+// }
+// #greyBox {
+//   background-color: #d8d8d8;
+//   border: 1px solid #979797;
+//   height: 268px;
+//   width: 230px;
+// }
 
 body {
   background-color: #bcc2c9;
