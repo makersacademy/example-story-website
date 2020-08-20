@@ -1,8 +1,7 @@
 import React from "react"
-import { Image } from "../image"
 import "bootstrap/dist/css/bootstrap.css"
-import { BookFrontCoverLabels } from "../index"
 
+import { BookFrontCoverLabels } from "../index"
 import "./subHeading.scss"
 
 export const SubHeading = () => {
