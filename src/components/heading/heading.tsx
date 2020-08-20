@@ -3,7 +3,6 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import { BookFrontCoverLabels } from "../index"
 import "../bookFrontCover/bookFrontCover.scss"
-// import "./FrontPage.scss"
 
 export const Heading = () => {
   return (
