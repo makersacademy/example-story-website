@@ -7,8 +7,9 @@ export const DoublePage = () => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-xl-12"></div>
-        <ChapterPages />
+        <div className="col-xl-12">
+          <ChapterPages />
+        </div>
       </div>
     </div>
   )
