@@ -4,15 +4,15 @@ import "bootstrap/dist/css/bootstrap.css"
 import { BookFrontCoverLabels } from "../index"
 import "./heading.scss"
 
-export const Heading = () => {
+export const Heading = props => {
   return (
     <div>
       <div className="row">
         <div id="title" className="col-8 offset-2 text-center">
           <h3 id="heading" className="pt-1 heading">
-            {BookFrontCoverLabels.intro1}
+            {props.greeting}
             <br></br>
-            {BookFrontCoverLabels.intro2}
+            {props.role}
           </h3>
         </div>
       </div>
