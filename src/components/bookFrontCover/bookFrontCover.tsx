@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-
+import { BookFrontCoverLabels } from "../index"
 import { DeveloperImage, Heading, SubHeading } from "../index"
 import "./bookFrontCover.scss"
 
@@ -15,8 +15,11 @@ export const BookFrontCover = () => {
           <div id="book" className="container">
             <div id="spine"></div>
             <DeveloperImage />
-            <Heading />
-            <SubHeading />
+            <Heading
+              greeting={BookFrontCoverLabels.greeting}
+              role={BookFrontCoverLabels.role}
+            />
+            <SubHeading aim={BookFrontCoverLabels.aim} />
           </div>
         </div>
       </div>
