@@ -5,7 +5,6 @@ import { BookFrontCoverLabels } from "../index"
 import "./subHeading.scss"
 
 interface Props {
-  children: ReactNode
   aim: string
 }
 
