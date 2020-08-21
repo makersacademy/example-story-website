@@ -1,15 +1,22 @@
-import React from "react"
+import React, { ReactNode } from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
 import { BookFrontCoverLabels } from "../index"
 import "./subHeading.scss"
 
-export const SubHeading = props => {
+interface Props {
+  children: ReactNode
+  aim: string
+}
+
+export const SubHeading = (props: Props) => {
+  const { aim } = props
+
   return (
     <div>
       <div className="row">
         <div className="col-8 offset-2 text-center px-5 pt-4">
-          <h2 className="subHeading">{props.aim}</h2>
+          <h2 className="subHeading">{aim}</h2>
         </div>
       </div>
     </div>
