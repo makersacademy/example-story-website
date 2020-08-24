@@ -6,21 +6,21 @@ h3 {
 }
 
 #book {
-  background-color: #ffffff;
+  background-color: $book-cover-color;
   height: 70vh;
   border-top-right-radius: 5.43vh;
   border-bottom-right-radius: 5.43vh;
 }
 
 #title {
-  border: 0.6vw solid white;
-  background-color: #222222;
-  color: white;
+  border: 0.6vw solid $book-cover-color;
+  background-color: $text-color__primary;
+  color: $text-color__secondary;
   text-align: center;
 }
 
 #spine {
-  background-color: #868686;
+  background-color: $spine-color;
   width: 0.7vw;
   height: 65.22vh;
   margin-top: 2.44vh;
