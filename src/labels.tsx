@@ -1,10 +1,10 @@
-export const BookFrontCoverLabels = {
+export const bookFrontCover = {
   greeting: "Hi I'm Joe Bloggs",
   role: "I'm a Developer",
-  aim: "I'm looking for my first job as a Full-Stack Developer",
+  careerAim: "I'm looking for my first job as a Full-Stack Developer",
 }
 
-export const NavBarLabels = {
+export const navBar = {
   chapters: [
     "Home",
     "Now",
