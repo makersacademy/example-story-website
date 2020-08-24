@@ -14,9 +14,9 @@ export const BookFrontCover = () => {
             <DeveloperImage />
             <Heading
               greeting={bookFrontCover.greeting}
-              role={bookFrontCover.role}
+              role={bookFrontCover.jobTitle}
             />
-            <SubHeading aim={bookFrontCover.careerAim} />
+            <SubHeading careerAim={bookFrontCover.careerAim} />
           </div>
         </div>
       </div>
