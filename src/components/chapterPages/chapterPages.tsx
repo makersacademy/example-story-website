@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 export const ChapterPages = () => {
   return (
-    <div className="d-flex justify-content-center" id="doublePage">
+    <div className="d-flex justify-content-center" id="double-page">
       <div id="centerLine"> </div>
     </div>
   )
