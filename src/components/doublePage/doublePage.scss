@@ -9,10 +9,7 @@ h3 {
   background-color: #ffffff;
   height: 70vh;
   width: 100%;
-  border-top-left-radius: 5.43vh;
-  border-bottom-left-radius: 5.43vh;
-  border-top-right-radius: 5.43vh;
-  border-bottom-right-radius: 5.43vh;
+  border-radius: $border-radius;
 }
 
 #centerLine {
