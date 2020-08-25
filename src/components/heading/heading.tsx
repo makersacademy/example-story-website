@@ -5,11 +5,11 @@ import "./heading.scss"
 
 interface Props {
   greeting: string
-  role: string
+  jobTitle: string
 }
 
 export const Heading = (props: Props) => {
-  const { role, greeting } = props
+  const { jobTitle, greeting } = props
 
   return (
     <div>
@@ -18,7 +18,7 @@ export const Heading = (props: Props) => {
           <h3 id="heading" className="pt-1 heading">
             {greeting}
             <br></br>
-            {role}
+            {jobTitle}
           </h3>
         </div>
       </div>
