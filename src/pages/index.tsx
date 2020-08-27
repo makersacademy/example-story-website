@@ -1,14 +1,16 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { BookFrontCover } from "../components/index"
 
+import { BookFrontCover } from "../components/index"
 import { Layout, SEO } from "../components"
 
 interface Props {
   data: any
 }
-const IndexPage = (props: Props) => {
-  const { data } = props
+const IndexPage = ({ data }) => {
+  //const { data } = props
+  console.log(data)
+
   const frontmatter = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <Layout>
