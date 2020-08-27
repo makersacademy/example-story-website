@@ -26,7 +26,11 @@ const IndexPage = (props: Props) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <BookFrontCover data={frontmatter} />
+      <BookFrontCover
+        jobTitle={frontmatter.jobTitle}
+        greeting={frontmatter.greeting}
+        careerAim={frontmatter.greeting}
+      />
     </Layout>
   )
 }
