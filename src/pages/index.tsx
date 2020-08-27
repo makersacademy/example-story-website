@@ -4,7 +4,7 @@ import { BookFrontCover } from "../components/index"
 
 import { Layout, SEO } from "../components"
 
-const md = data => {
+const IndexPageTemplate = data => {
   const { frontmatter, html } = data.data.allMarkdownRemark.edges[0].node
   return (
     <div>
