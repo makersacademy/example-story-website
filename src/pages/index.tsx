@@ -22,10 +22,11 @@ interface Props {
 }
 const IndexPage = (props: Props) => {
   const { data } = props
+  const frontmatter = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <Layout>
       <SEO title="Home" />
-      <BookFrontCover data={data.allMarkdownRemark.edges[0].node.frontmatter} />
+      <BookFrontCover data={frontmatter} />
     </Layout>
   )
 }
