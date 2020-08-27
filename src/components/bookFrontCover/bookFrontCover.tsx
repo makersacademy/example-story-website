@@ -16,7 +16,7 @@ export const BookFrontCover = props => {
               greeting={props.data.greeting}
               jobTitle={props.data.jobTitle}
             />
-            <SubHeading careerAim={bookFrontCover.careerAim} />
+            <SubHeading careerAim={props.data.careerAim} />
           </div>
         </div>
       </div>
