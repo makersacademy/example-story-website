@@ -13,8 +13,8 @@ export const BookFrontCover = props => {
             <div id="spine"></div>
             <DeveloperImage />
             <Heading
-              greeting={bookFrontCover.greeting}
-              jobTitle={props.data.title}
+              greeting={props.data.greeting}
+              jobTitle={props.data.jobTitle}
             />
             <SubHeading careerAim={bookFrontCover.careerAim} />
           </div>
