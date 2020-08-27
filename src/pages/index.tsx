@@ -8,8 +8,9 @@ const md = data => {
   const { frontmatter, html } = data.data.allMarkdownRemark.edges[0].node
   return (
     <div>
-      <h1>{frontmatter.title}</h1>
+      <h1>{frontmatter.jobTitle}</h1>
       <p>{frontmatter.date}</p>
+      <p>{frontmatter.greeting}</p>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   )
@@ -27,7 +28,8 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            title
+            jobTitle
+            greeting
             date(formatString: "DD MMMM YYYY")
           }
           html
