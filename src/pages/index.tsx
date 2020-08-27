@@ -4,19 +4,6 @@ import { BookFrontCover } from "../components/index"
 
 import { Layout, SEO } from "../components"
 
-const IndexPageTemplate = data => {
-  const { frontmatter, html } = data.data.allMarkdownRemark.edges[0].node
-  return (
-    <div>
-      <h1>{frontmatter.jobTitle}</h1>
-      <p>{frontmatter.date}</p>
-      <p>{frontmatter.greeting}</p>
-      <p>{frontmatter.careerAim} </p>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
-  )
-}
-
 interface Props {
   data: any
 }
