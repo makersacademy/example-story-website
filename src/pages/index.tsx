@@ -29,7 +29,7 @@ const IndexPage = (props: Props) => {
       <BookFrontCover
         jobTitle={frontmatter.jobTitle}
         greeting={frontmatter.greeting}
-        careerAim={frontmatter.greeting}
+        careerAim={frontmatter.careerAim}
       />
     </Layout>
   )
