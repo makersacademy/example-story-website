@@ -1,4 +1,5 @@
 ---
 date: "2019-05-04"
-title: "I am a Junior Developer"
+jobTitle: "I am a Junior Developer"
+greeting: "Hi I'm Joe Bloggs"
 ---
