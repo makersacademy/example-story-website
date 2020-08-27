@@ -17,12 +17,18 @@ const md = data => {
   )
 }
 
-const IndexPage = ({ data }) => (
-  <Layout>
-    <SEO title="Home" />
-    <BookFrontCover data={data.allMarkdownRemark.edges[0].node.frontmatter} />
-  </Layout>
-)
+interface Props {
+  data: any
+}
+const IndexPage = (props: Props) => {
+  const { data } = props
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <BookFrontCover data={data.allMarkdownRemark.edges[0].node.frontmatter} />
+    </Layout>
+  )
+}
 export const query = graphql`
   query {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index/" } }) {
