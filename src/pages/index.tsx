@@ -11,6 +11,7 @@ const md = data => {
       <h1>{frontmatter.jobTitle}</h1>
       <p>{frontmatter.date}</p>
       <p>{frontmatter.greeting}</p>
+      <p>{frontmatter.careerAim} </p>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   )
@@ -30,6 +31,7 @@ export const query = graphql`
           frontmatter {
             jobTitle
             greeting
+            careerAim
             date(formatString: "DD MMMM YYYY")
           }
           html
