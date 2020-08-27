@@ -4,7 +4,7 @@ import { bookFrontCover } from "../../labels"
 import { DeveloperImage, Heading, SubHeading } from "../index"
 import "./bookFrontCover.scss"
 
-export const BookFrontCover = () => {
+export const BookFrontCover = props => {
   return (
     <div className="container">
       <div className="row align-items-center">
@@ -14,7 +14,7 @@ export const BookFrontCover = () => {
             <DeveloperImage />
             <Heading
               greeting={bookFrontCover.greeting}
-              jobTitle={bookFrontCover.jobTitle}
+              jobTitle={props.data.title}
             />
             <SubHeading careerAim={bookFrontCover.careerAim} />
           </div>
