@@ -12,7 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             frontmatter {
-        
+
             }
           }
         }
@@ -20,7 +20,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
-  // Handle errors
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
@@ -31,17 +30,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.slug,
       component: blogPostTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.frontmatter.slug,
       },
     })
   })
 }
-
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
-
-// You can delete this file if you're not using it
