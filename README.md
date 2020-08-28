@@ -1,3 +1,37 @@
+This project was bootstrapped with [Gatsby](https://www.gatsbyjs.com/)
+
+## :arrow_up: How to Setup
+
+Step 1: git clone this repo:
+
+Step 2: cd to the cloned repo:
+
+Step 3: Install the Application with yarn or npm i
+
+## Dependencies installed
+
+| Dependency                    | Description |
+| ----------------------------- | ----------- |
+| bootstrap                     |             |
+| gatsby                        |             |
+| gatsby-plugin-sass            |             |
+| gatsby-plugin-web-font-loader |             |
+| gatsby-transformer-remark     |             |
+
+Testing and development dependencies
+
+| Dependency              | Description |
+| ----------------------- | ----------- |
+| @types/jest             |             |
+| babel-jest"             |             |
+| babel-preset-gatsby     |             |
+| enzyme                  |             |
+| enzyme-adapter-react-16 |             |
+| jest                    |             |
+| prettier                |             |
+| ts-jest                 |             |
+| typescript              |             |
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
