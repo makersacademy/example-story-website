@@ -8,9 +8,6 @@ interface Props {
   data: any
 }
 const IndexPage = ({ data }) => {
-  //const { data } = props
-  console.log(data)
-
   const frontmatter = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <Layout>
