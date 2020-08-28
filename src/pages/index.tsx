@@ -8,14 +8,18 @@ interface Props {
   data: any
 }
 const IndexPage = ({ data }) => {
-  const frontmatter = data.allMarkdownRemark.edges[0].node.frontmatter
+  const {
+    jobTitle,
+    greeting,
+    careerAim,
+  } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <Layout>
       <SEO title="Home" />
       <BookFrontCover
-        jobTitle={frontmatter.jobTitle}
-        greeting={frontmatter.greeting}
-        careerAim={frontmatter.careerAim}
+        jobTitle={jobTitle}
+        greeting={greeting}
+        careerAim={careerAim}
       />
     </Layout>
   )
