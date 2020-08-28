@@ -2,11 +2,13 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
 import { navBar } from "../../labels"
+import { NavBarItem } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
   const listItems = navBar.chapters.map((chapter, index) => (
     <a key={index} className="nav-link" href="/chapter1">
+      <NavBarItem></NavBarItem>
       <p className="navText">{chapter}</p>
     </a>
   ))
