@@ -7,10 +7,9 @@ import "./navBar.scss"
 
 export const NavBar = () => {
   const listItems = navBar.chapters.map((chapter, index) => (
-    <a key={index} className="nav-link" href="/chapter1">
-      <NavBarItem></NavBarItem>
-      <p className="navText">{chapter}</p>
-    </a>
+    <NavBarItem key={index} chapter={chapter}>
+
+    </NavBarItem>
   ))
   return (
     <div>
