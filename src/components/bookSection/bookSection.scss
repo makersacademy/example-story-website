@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+.box {
+  background-color: blue;
+  border-color: red;
+  width: 50%;
+  height: 35vh;
+  border: 2px;
+}
+
+.line {
+  background-color: #9c9998;
+  color: black;
+  width: 0.125%;
+  height: 100%;
+}

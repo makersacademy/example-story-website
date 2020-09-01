@@ -1,7 +1,7 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
-import { ChapterPages } from "../index"
+import { ChapterPages, BookSection, Line } from "../index"
 import "./doublePage.scss"
 
 export const DoublePage = () => {
