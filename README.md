@@ -33,3 +33,11 @@ Testing and development dependencies
 | prettier                | An opinionated code formatter                                                                      |
 | ts-jest                 | TypeScript preprocessor enables the use of Jest to test projects written in TypeScript             |
 | typescript              | Adds static type definitions to JavaScript                                                         |
+
+## Design
+
+**Front cover**
+![](readme-images/frontCover.png)
+
+**Double Page Spread**
+![](readme-images/doublePageSpread.png)
