@@ -1,7 +1,6 @@
 @import "../../styles/variables.scss";
 
-h2,
-h3 {
+#heading {
   font-family: $heading-font;
 }
 
@@ -11,13 +10,17 @@ h3 {
   border-radius: $border-radius;
 }
 
-#centerLine {
-  background-color: #9c9998;
-  width: 0.125%;
-  height: 100%;
+.book-mid-line {
+  border-right: 1px solid black;
 }
 
+// #centerLine {
+//   background-color: #9c9998;
+//   width: 0.125%;
+//   height: 100%;
+// }
+
+// TODO: move to layout sass
 body {
   background-color: #bcc2c9;
-  font-family: "Staatliches", cursive;
 }
