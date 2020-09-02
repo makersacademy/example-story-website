@@ -9,7 +9,9 @@ export const BookSection = props => {
   }
   return (
     <div style={customStyleRule}>
-      <div className=" box "></div>
+      <div className=" col-md-12 px-3 py-2">
+        <div className="box"></div>
+      </div>
     </div>
   )
 }
