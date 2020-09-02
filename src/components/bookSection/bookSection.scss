@@ -1,11 +1,13 @@
 @import "../../styles/variables.scss";
 
 .box {
-  background-color: blue;
-  border-color: red;
-  width: 50%;
-  height: 35vh;
-  border: 2px;
+  background-color: yellow;
+
+  border: 3px solid blue;
+
+  height: 25vh;
+
+  display: block;
 }
 
 .line {
