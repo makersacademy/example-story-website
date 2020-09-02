@@ -8,8 +8,8 @@ export const BookSection = props => {
     customStyleRule = { "border-right": "1px solid black" }
   }
   return (
-    <div className=" col-md-6 px-4 py-4 x " style={customStyleRule}>
-      <div className="box py-3"></div>
+    <div style={customStyleRule}>
+      <div className=" box "></div>
     </div>
   )
 }
