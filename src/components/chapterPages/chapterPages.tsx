@@ -6,10 +6,22 @@ import { BookSection } from "../index"
 
 export const ChapterPages = () => {
   return (
-    <div>
-      <div className="d-flex justify-content-center" id="double-page">
-        <BookSection line={true} />
-        <BookSection />
+    <div className="container" id="double-page">
+      <div className="row">
+        <div className=" col-md-6 px-3 py-2">
+          <BookSection line={true} />
+        </div>
+        <div className=" col-md-6 px-3 py-2">
+          <BookSection />
+        </div>
+      </div>
+      <div className="row">
+        <div className=" col-md-6 px-3 py-2">
+          <BookSection />
+        </div>
+        <div className=" col-md-6 px-3 py-2">
+          <BookSection />
+        </div>
       </div>
     </div>
   )
