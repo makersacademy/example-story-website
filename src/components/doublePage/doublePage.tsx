@@ -5,6 +5,7 @@ import { ChapterPages, BookSection } from "../index"
 import "./doublePage.scss"
 
 export const DoublePage = () => {
+  let customStyleRule = { "border-right": "1px solid black" }
   return (
     <div className="container " id="double-page">
       {/* row 1 */}
@@ -16,8 +17,8 @@ export const DoublePage = () => {
 
       {/* row 2 */}
       <div className="row">
-        <div className=" col-md-6 col-lg-6">
-          <BookSection line={true} />
+        <div className=" col-md-6 col-lg-6 book-mid-line  ">
+          <BookSection />
         </div>
         <div className=" col-md-6 col-lg-6">
           <BookSection />
@@ -26,8 +27,8 @@ export const DoublePage = () => {
 
       {/* row 3 */}
       <div className="row">
-        <div className=" col-md-6 col-lg-6 ">
-          <BookSection line={true} />
+        <div className=" col-md-6 col-lg-6 book-mid-line ">
+          <BookSection />
         </div>
         <div className=" col-md-6 col-lg-6">
           <BookSection />
