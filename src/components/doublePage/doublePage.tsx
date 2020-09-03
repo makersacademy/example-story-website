@@ -16,19 +16,20 @@ export const DoublePage = () => {
 
       {/* row 2 */}
       <div className="row">
-        <div className=" col-md-6 ">
+        <div className=" col-md-6 col-lg-6">
           <BookSection line={true} />
         </div>
-        <div className=" col-md-6 ">
+        <div className=" col-md-6 col-lg-6">
           <BookSection />
         </div>
       </div>
+
       {/* row 3 */}
       <div className="row">
-        <div className=" col-md-6 ">
+        <div className=" col-md-6 col-lg-6 ">
           <BookSection line={true} />
         </div>
-        <div className=" col-md-6 ">
+        <div className=" col-md-6 col-lg-6">
           <BookSection />
         </div>
       </div>
