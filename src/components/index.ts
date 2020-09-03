@@ -1,6 +1,6 @@
 export { BookFrontCover } from "./bookFrontCover/bookFrontCover"
 export { BookSection } from "./bookSection/bookSection"
-export { ChapterPages } from "./chapterPages/chapterPages"
+
 export { DeveloperImage } from "./developerImage/developerImage"
 export { DoublePage } from "./doublePage/doublePage"
 export { Heading } from "./heading/heading"
