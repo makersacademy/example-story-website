@@ -3,19 +3,20 @@ import { graphql } from "gatsby"
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
-interface Props {
-  data: object
+interface Data {
+  title: string
 }
 
-export default function NewChapter({ data }) {
-  const post = data.markdownRemark
+export default function NewChapter(data: Data) {
+  const { frontmatter, html } = data.data.markdownRemark
+  const { title } = frontmatter
   return (
     <div>
       <Layout>
         <DoublePage />
         <div>
-          <h1>{post.frontmatter.title}</h1>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <h1>{title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </Layout>
     </div>
