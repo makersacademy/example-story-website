@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const field = node.fields.slug
     createPage({
       path: field,
-      component: path.resolve(`./src/templates/chapter.js`),
+      component: path.resolve(`./src/templates/chapter.tsx`),
       context: {
         slug: field,
       },
