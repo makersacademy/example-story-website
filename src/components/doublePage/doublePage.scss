@@ -5,11 +5,11 @@
 }
 
 #double-page {
-  background-color: #ffffff;
+  background-color: $color-primary-light;
   height: 70vh;
   border-radius: $border-radius;
 }
 
 .book-mid-line {
-  border-right: 1px solid black;
+  border-right: 1px solid $color-primary-dark;
 }

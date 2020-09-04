@@ -1,8 +1,8 @@
 @import "../../styles/variables.scss";
 
 .box {
-  background-color: $book-page-color;
-  border: 3px solid $box-border-colour;
+  background-color: $color-primary-light;
+  border: 3px solid $color-primary-dark;
   height: 25vh;
   display: block;
 }
