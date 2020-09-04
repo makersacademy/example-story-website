@@ -31,11 +31,12 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const field = node.fields.slug
     createPage({
-      path: node.fields.slug,
+      path: field,
       component: path.resolve(`./src/templates/chapter.js`),
       context: {
-        slug: node.fields.slug,
+        slug: field,
       },
     })
   })
