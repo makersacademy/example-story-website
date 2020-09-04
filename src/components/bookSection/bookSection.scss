@@ -3,6 +3,10 @@
 .box {
   background-color: $color-primary-light;
   border: 3px solid $color-primary-dark;
-  height: 25vh;
+  height: 28vh;
   display: block;
+}
+
+.book-mid-line {
+  border-right: 1px solid $color-primary-dark;
 }
