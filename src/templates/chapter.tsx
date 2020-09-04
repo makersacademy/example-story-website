@@ -3,6 +3,10 @@ import { graphql } from "gatsby"
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
+interface Props {
+  data: object
+}
+
 export default function NewChapter({ data }) {
   const post = data.markdownRemark
   return (
