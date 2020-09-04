@@ -1,11 +1,10 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
-import { ChapterPages, BookSection } from "../index"
+import { BookSection } from "../index"
 import "./doublePage.scss"
 
 export const DoublePage = () => {
-  let customStyleRule = { "border-right": "1px solid black" }
   return (
     <div className="container " id="double-page">
       {/* row 1 */}
@@ -30,7 +29,7 @@ export const DoublePage = () => {
         <div className=" col-md-6 col-lg-6 book-mid-line ">
           <BookSection />
         </div>
-        <div className=" col-md-6 col-lg-6">
+        <div className="col-md-6 col-lg-6">
           <BookSection />
         </div>
       </div>
