@@ -3,10 +3,10 @@
 .rectangle {
   width: full-width;
   height: 10px;
-  background-color: #111;
+  background-color: $color-primary-dark;
 }
 
 .navText {
-  color: $text-color__primary;
-  font-family: $nav-font;
+  color: $color-primary-dark;
+  font-family: $body-font;
 }
