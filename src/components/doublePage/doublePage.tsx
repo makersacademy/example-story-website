@@ -14,24 +14,14 @@ export const DoublePage = () => {
         </div>
       </div>
 
-      {/* row 2 */}
       <div className="row">
-        <div className=" col-md-6 col-lg-6 book-mid-line  ">
-          <BookSection />
-        </div>
-        <div className=" col-md-6 col-lg-6">
-          <BookSection />
-        </div>
+        <BookSection midLine={true} />
+        <BookSection />
       </div>
 
-      {/* row 3 */}
       <div className="row">
-        <div className=" col-md-6 col-lg-6 book-mid-line ">
-          <BookSection />
-        </div>
-        <div className="col-md-6 col-lg-6">
-          <BookSection />
-        </div>
+        <BookSection midLine={true}></BookSection>
+        <BookSection />
       </div>
     </div>
   )
