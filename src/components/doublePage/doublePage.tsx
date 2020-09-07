@@ -10,7 +10,7 @@ interface Props {
 }
 
 export const DoublePage = (props: Props) => {
-  const { title, section1 } = props
+  const { title, section1, section2, section3, section4 } = props
   return (
     <div className="container " id="double-page">
       <div className="row">
@@ -20,13 +20,13 @@ export const DoublePage = (props: Props) => {
       </div>
 
       <div className="row">
-        <BookSection midLine={true} section1={section1} />
-        <BookSection />
+        <BookSection midLine={true} section={section1} />
+        <BookSection section={section3} />
       </div>
 
       <div className="row">
-        <BookSection midLine={true}></BookSection>
-        <BookSection />
+        <BookSection midLine={true} section={section2}></BookSection>
+        <BookSection section={section4} />
       </div>
     </div>
   )

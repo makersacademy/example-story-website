@@ -4,11 +4,11 @@ import "./bookSection.scss"
 
 interface Props {
   midLine: boolean
-  section1: string
+  section: string
 }
 
 export const BookSection = (props: Props) => {
-  const { midLine, section1 } = props
+  const { midLine, section } = props
   let style
   if (midLine) {
     style = "book-mid-line"
@@ -16,7 +16,7 @@ export const BookSection = (props: Props) => {
   return (
     <div className={`col-md-6 col-lg-6 ${style}`}>
       <div className="px-3 py-2">
-        <div className="box">{section1}</div>
+        <div className="box">{section}</div>
       </div>
     </div>
   )
