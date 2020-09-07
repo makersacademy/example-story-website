@@ -32,10 +32,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const field = node.fields.slug
-    const filePath = `./src/templates/chapter.tsx`
+    const component = path.resolve(`./src/templates/chapter.tsx`)
     createPage({
       path: field,
-      component: path.resolve(filePath),
+      component: component,
       context: {
         slug: field,
       },
