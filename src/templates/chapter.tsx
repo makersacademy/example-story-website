@@ -15,9 +15,8 @@ export default function NewChapter(data: Data) {
   return (
     <div>
       <Layout>
-        <DoublePage />
+        <DoublePage title={title} />
         <div>
-          <h1>{title}</h1>
           <div dangerouslySetInnerHTML={{ __html: sanitizer(html) }} />
         </div>
       </Layout>
