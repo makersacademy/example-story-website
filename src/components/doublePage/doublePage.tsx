@@ -6,10 +6,11 @@ import "./doublePage.scss"
 
 interface Props {
   title: string
+  section1: string
 }
 
 export const DoublePage = (props: Props) => {
-  const { title } = props
+  const { title, section1 } = props
   return (
     <div className="container " id="double-page">
       <div className="row">
@@ -19,7 +20,7 @@ export const DoublePage = (props: Props) => {
       </div>
 
       <div className="row">
-        <BookSection midLine={true} />
+        <BookSection midLine={true} section1={section1} />
         <BookSection />
       </div>
 

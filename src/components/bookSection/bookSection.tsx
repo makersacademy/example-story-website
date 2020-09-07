@@ -11,7 +11,7 @@ export const BookSection = props => {
   return (
     <div className={`col-md-6 col-lg-6 ${style}`}>
       <div className="px-3 py-2">
-        <div className="box"></div>
+        <div className="box">{props.section1}</div>
       </div>
     </div>
   )
