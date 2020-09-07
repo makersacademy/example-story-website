@@ -4,7 +4,7 @@ import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
 interface Data {
-  title: string
+  data: object
 }
 
 export default function NewChapter(data: Data) {
