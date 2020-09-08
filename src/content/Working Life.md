@@ -1,8 +1,7 @@
 ---
 title: "Working Life"
-section1: "Pret - Store Manager"
-section2: "Pizza Express - Head Chef"
-section3: "Top Shop - Merchandiser"
-section4: "Pizza Hut - Pizza Artist"
-date: "2019-05-04"
+chapter: 2
+body:
+  - title: At Makers I learnt how to make full-stack websites.
+  - title: I learnt the languages of Ruby and Javascript
 ---
