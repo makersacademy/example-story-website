@@ -5,15 +5,9 @@ import { navBar } from "../../labels"
 import { NavBarItem } from "../index"
 import "./navBar.scss"
 
-interface Props {
-  listItems: string
-}
-
 export const NavBar = () => {
   const listItems = navBar.chapters.map((chapter, index) => (
-    <NavBarItem key={index} chapter={chapter}>
-
-    </NavBarItem>
+    <NavBarItem key={index} chapter={chapter}></NavBarItem>
   ))
   return (
     <div>
