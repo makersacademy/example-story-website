@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
-export const NavBarItem = (props: any) => {
-    return (
-        <a className="nav-link" href="/chapter1">
-        <p className="navText">{props.chapter}</p>
-      </a>
-    )
+interface Props {
+  chapter: string
+}
+
+export const NavBarItem = (props: Props) => {
+  const { chapter } = props
+  return (
+    <a className="nav-link" href="/chapter1">
+      <p className="navText">{chapter}</p>
+    </a>
+  )
 }
