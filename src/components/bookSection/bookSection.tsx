@@ -2,9 +2,13 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
 
-export const BookSection = props => {
+interface Props {
+  midLine?: boolean
+}
+export const BookSection = (props: Props) => {
+  const { midLine } = props
   let style
-  if (props.midLine) {
+  if (midLine) {
     console.log("true")
     style = "book-mid-line"
   }
