@@ -1,8 +1,7 @@
 ---
-title: "Learing"
-section1: "Learning section 1"
-section2: "Learning section 2"
-section3: "Learning section 3"
-section4: "Learning section 4"
-date: "2019-05-04"
+title: "Learning"
+chapter: 2
+body:
+  - At Makers I learnt how to make full-stack websites.
+  - I learnt the languages of Ruby and Javascript
 ---
