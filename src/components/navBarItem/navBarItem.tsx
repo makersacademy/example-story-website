@@ -8,7 +8,7 @@ interface Props {
 export const NavBarItem = (props: Props) => {
   const { chapter } = props
   return (
-    <a className="nav-link" href="/chapter1">
+    <a className="nav-link" href={chapter}>
       <p className="navText">{chapter}</p>
     </a>
   )
