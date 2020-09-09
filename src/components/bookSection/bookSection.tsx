@@ -4,9 +4,10 @@ import "./bookSection.scss"
 
 interface Props {
   midLine?: boolean
+  section: string
 }
 export const BookSection = (props: Props) => {
-  const { midLine } = props
+  const { midLine, section } = props
   let style
   if (midLine) {
     console.log("true")
