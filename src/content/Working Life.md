@@ -1,4 +1,7 @@
 ---
 title: "Working Life"
-date: "2019-05-04"
+chapter: 2
+body:
+  - title: At Makers I learnt how to make full-stack websites.
+  - title: I learnt the languages of Ruby and Javascript
 ---

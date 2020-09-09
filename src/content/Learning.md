@@ -1,4 +1,7 @@
 ---
-title: "Learing"
-date: "2019-05-04"
+title: "Learning"
+chapter: 2
+body:
+  - At Makers I learnt how to make full-stack websites.
+  - I learnt the languages of Ruby and Javascript
 ---
