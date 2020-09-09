@@ -3,14 +3,13 @@ import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
 
 interface Props {
-  midLine: boolean
-  section: string
+  midLine?: boolean
 }
-
 export const BookSection = (props: Props) => {
-  const { midLine, section } = props
+  const { midLine } = props
   let style
   if (midLine) {
+    console.log("true")
     style = "book-mid-line"
   }
   return (

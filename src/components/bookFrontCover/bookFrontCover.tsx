@@ -1,6 +1,5 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { bookFrontCover } from "../../labels"
 import { DeveloperImage, Heading, SubHeading } from "../index"
 import "./bookFrontCover.scss"
 
