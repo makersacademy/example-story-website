@@ -7,6 +7,9 @@ import "./doublePage.scss"
 interface Props {
   title: string
   section1: string
+  section2: string
+  section3: string
+  section4: string
 }
 
 export const DoublePage = (props: Props) => {
