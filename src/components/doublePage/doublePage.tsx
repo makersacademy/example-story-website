@@ -6,12 +6,12 @@ import "./doublePage.scss"
 
 interface Props {
   title: string
-  body: any
+  body: string[]
 }
 
 export const DoublePage = (props: Props) => {
   const { title, body } = props
-  const listBody = body.map((section, index) => {
+  const listBody = body.map((section: any, index: number) => {
     return (
       <BookSection key={index} index={index} section={section}></BookSection>
     )
