@@ -21,7 +21,7 @@ export const DoublePage = (props: Props) => {
     <div className="container " id="double-page">
       <div className="row">
         <div className=" col-md-6 book-mid-line">
-          <h2 className="heading ">{title}</h2>
+          <h2 className="heading px-3 py-3 "> {title}</h2>
         </div>
       </div>
       <div className="row">{listBody}</div>
