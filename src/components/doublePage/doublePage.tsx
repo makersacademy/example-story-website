@@ -15,6 +15,7 @@ interface Props {
 
 export const DoublePage = (props: Props) => {
   const { title, body, section1, section2, section3, section4 } = props
+
   return (
     <div className="container " id="double-page">
       <div className="row">
@@ -24,13 +25,13 @@ export const DoublePage = (props: Props) => {
       </div>
 
       <div className="row">
-        <BookSection midLine={true} section={body} />
-        <BookSection section={section3} />
+        <BookSection midLine={true} section={body[0]} />
+        <BookSection section={body[2]} />
       </div>
 
       <div className="row">
-        <BookSection midLine={true} section={section2}></BookSection>
-        <BookSection section={section4} />
+        <BookSection midLine={true} section={body[1]}></BookSection>
+        <BookSection section={body[3]} />
       </div>
     </div>
   )
