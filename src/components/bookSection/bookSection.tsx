@@ -5,6 +5,7 @@ import "./bookSection.scss"
 interface Props {
   midLine?: boolean
   section: string
+  index: number
 }
 export const BookSection = (props: Props) => {
   const { section, index } = props
