@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
 
 interface Props {
-  midLine?: boolean
   section: string
   index: number
 }
