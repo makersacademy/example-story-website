@@ -1,8 +1,9 @@
 ---
 title: "Contact Me"
-section1: "Contact Me section 1"
-section2: "Contact Me section 2"
-section3: "Contact Me section 3"
-section4: "Contact Me section 4"
+body:
+  - 1 Contact Me
+  - 2 Contact Me
+  - 3 Contact Me
+  - 4 Contact Me Please!
 date: "2019-05-04"
 ---

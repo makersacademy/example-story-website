@@ -2,8 +2,8 @@
 title: "Learning"
 chapter: 2
 body:
-  - At Makers I learnt how to make full-stack websites.
-  - I learnt the languages of Ruby and Javascript
-  - I am currently trying to work out how to use graphql
-  - Arrays yeah!
+  - 1 At Makers I learnt how to make full-stack websites.
+  - 2 I learnt the languages of Ruby and Javascript
+  - 3 I am currently trying to work out how to use graphql
+  - 4 Arrays yeah!
 ---

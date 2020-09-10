@@ -1,8 +1,9 @@
 ---
 title: "Projects"
-section1: "Projects section1"
-section2: "Projects section2"
-section3: "Projects section3"
-section4: "Projects section4"
+body:
+  - 1 Projects
+  - 2 Projects
+  - 3 Projects
+  - 4 Projects
 date: "2019-05-04"
 ---
