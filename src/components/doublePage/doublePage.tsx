@@ -15,7 +15,9 @@ interface Props {
 
 export const DoublePage = (props: Props) => {
   const { title, body, section1, section2, section3, section4 } = props
-
+  const listBody = body.map((section, index) => {
+    console.log(section)
+  })
   return (
     <div className="container " id="double-page">
       <div className="row">
