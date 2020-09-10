@@ -6,18 +6,17 @@ import "./doublePage.scss"
 
 interface Props {
   title: string
-  section1: string
-  section2: string
-  section3: string
-  section4: string
   body: any
 }
 
 export const DoublePage = (props: Props) => {
-  const { title, body, section1, section2, section3, section4 } = props
+  const { title, body } = props
   const listBody = body.map((section, index) => {
-    console.log(section)
+    return (
+      <BookSection key={index} index={index} section={section}></BookSection>
+    )
   })
+
   return (
     <div className="container " id="double-page">
       <div className="row">
@@ -25,16 +24,7 @@ export const DoublePage = (props: Props) => {
           <h2 className="heading ">{title}</h2>
         </div>
       </div>
-
-      <div className="row">
-        <BookSection midLine={true} section={body[0]} />
-        <BookSection section={body[2]} />
-      </div>
-
-      <div className="row">
-        <BookSection midLine={true} section={body[1]}></BookSection>
-        <BookSection section={body[3]} />
-      </div>
+      <div className="row">{listBody}</div>
     </div>
   )
 }

@@ -7,10 +7,9 @@ interface Props {
   section: string
 }
 export const BookSection = (props: Props) => {
-  const { midLine, section } = props
+  const { section, index } = props
   let style
-  if (midLine) {
-    console.log("true")
+  if (index % 2 === 0) {
     style = "book-mid-line"
   }
   return (
