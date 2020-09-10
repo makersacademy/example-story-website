@@ -1,8 +1,11 @@
+[![CircleCI](https://circleci.com/gh/makersacademy/example-story-website.svg?style=svg)](https://circleci.com/gh/makersacademy/example-story-website)
+
 # Story CV
 
 This project provides a customisable template for developers to demonstrate their potential.
 
-This project was bootstrapped with [Gatsby](https://www.gatsbyjs.com/)
+This project was bootstrapped with [Gatsby](https://www.gatsbyjs.com/)<br><br>
+CI: Circle-CI
 
 ## :arrow_up: How to Setup
 
