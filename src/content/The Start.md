@@ -1,8 +1,9 @@
 ---
 title: "The Start"
-section1: "The Start section 1"
-section2: "The Start section 2"
-section3: "The Start section 3"
-section4: "The Start section 4"
+body:
+  - 1 The Start
+  - 2 The Start
+  - 3 The Start
+  - 4 The Start
 date: "2019-05-04"
 ---

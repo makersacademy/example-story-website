@@ -1,8 +1,9 @@
 ---
 title: "Eureka"
-section1: "Eureka section 1"
-section2: "Eureka section 2"
-section3: "Eureka section 3"
-section4: "Eureka section 4"
+body:
+  - 1 Eureka
+  - 2 Eureka
+  - 3 Eureka
+  - 4 Eureka
 date: "2019-05-04"
 ---
