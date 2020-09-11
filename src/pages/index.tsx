@@ -34,6 +34,7 @@ export const query = graphql`
             greeting
             careerAim
             date(formatString: "DD MMMM YYYY")
+            body
           }
           html
         }
