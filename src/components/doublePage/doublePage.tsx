@@ -16,12 +16,9 @@ interface Props {
 export const DoublePage = (props: Props) => {
   const { title, body } = props
 
-  const listBody = body.map((element: BodyItem, index: number) => {
-    const { title } = element
-    console.dir(element)
-
+  const listBody = body.map((bodyItem: BodyItem, index: number) => {
     return (
-      <BookSection key={index} index={index} section={element}></BookSection>
+      <BookSection key={index} index={index} bodyItem={bodyItem}></BookSection>
     )
   })
 
