@@ -1,9 +1,9 @@
 ---
 title: "Projects"
 body:
-  - 1 Projects
-  - 2 Projects
-  - 3 Projects
-  - 4 Projects
+  - title: 1 Projects
+  - title: 2 Projects
+  - title: 3 Projects
+  - title: 4 Projects
 date: "2019-05-04"
 ---
