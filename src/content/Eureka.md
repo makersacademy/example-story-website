@@ -5,5 +5,5 @@ body:
   - title: 2 Eureka
   - title: 3 Eureka
   - title: 4 Eureka
-  date: "2019-05-04"
+date: "2019-05-04"
 ---
