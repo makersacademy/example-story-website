@@ -7,8 +7,13 @@ interface Props {
 
 export const NavBarItem = (props: Props) => {
   const { chapter } = props
+  let link = chapter
+  if (link === "Home") {
+    link = "/"
+  }
+
   return (
-    <a className="nav-link" href={chapter}>
+    <a className="nav-link" href={link}>
       <p className="navText">{chapter}</p>
     </a>
   )
