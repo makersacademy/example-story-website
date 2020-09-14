@@ -7,8 +7,8 @@ interface Props {
 
 export const NavBarItem = (props: Props) => {
   const { chapter } = props
-  let link = chapter
-  if (link === "Home") {
+  let link = `/${chapter}`
+  if (link === "/Home") {
     link = "/"
   }
 
