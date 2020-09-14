@@ -4,16 +4,21 @@ import "bootstrap/dist/css/bootstrap.css"
 import { BookSection } from "../index"
 import "./doublePage.scss"
 
+interface BodyItem {
+  title: string
+}
+
 interface Props {
   title: string
-  body: string[]
+  body: Array<BodyItem>
 }
 
 export const DoublePage = (props: Props) => {
   const { title, body } = props
-  const listBody = body.map((section: any, index: number) => {
+
+  const listBody = body.map((bodyItem: BodyItem, index: number) => {
     return (
-      <BookSection key={index} index={index} section={section}></BookSection>
+      <BookSection key={index} index={index} bodyItem={bodyItem}></BookSection>
     )
   })
 

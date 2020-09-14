@@ -2,8 +2,8 @@
 title: "Working Life"
 chapter: 2
 body:
-  - 1 Working Life
-  - 2 Working Life
-  - 3 Working Life
-  - 4 Working Life
+  - title: 1 Working Life
+  - title: 2 Working Life
+  - title: 3 Working Life
+  - title: 4 Working Life
 ---
