@@ -1,9 +1,9 @@
 ---
 title: "Eureka"
 body:
-  - 1 Eureka
-  - 2 Eureka
-  - 3 Eureka
-  - 4 Eureka
+  - title: 1 Eureka
+  - title: 2 Eureka
+  - title: 3 Eureka
+  - title: 4 Eureka
 date: "2019-05-04"
 ---
