@@ -33,10 +33,11 @@ exports.createPages = async ({ graphql, actions }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const field = node.fields.slug
     const component = path.resolve(`./src/templates/chapter.tsx`)
+    const indexPage = require.resolve(`./src/templates/index.tsx`)
     if (field === "/") {
       createPage({
         path: field,
-        component: require.resolve("./src/templates/index.tsx"),
+        component: indexPage,
         context: {
           slug: field,
         },
