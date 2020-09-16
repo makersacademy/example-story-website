@@ -7,6 +7,7 @@ import "./doublePage.scss"
 interface BodyItem {
   title: string
   subTitle: string
+  content: string
 }
 
 interface Props {
