@@ -5,6 +5,7 @@ import "./bookSection.scss"
 interface BodyItem {
   title: string
   subTitle: string
+  content: string
 }
 
 interface Props {
@@ -14,7 +15,7 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { bodyItem, index } = props
-  const { title, subTitle } = bodyItem
+  const { title, subTitle, content } = bodyItem
   let style
   if (index % 2 === 0) {
     style = "book-mid-line"
@@ -30,6 +31,7 @@ export const BookSection = (props: Props) => {
           <div className="boxBody px-2">
             {subTitle}
           </div>
+            {content}
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ interface Data {
 
 export default function NewChapter(data: Data) {
   const { frontmatter, html } = data.data.markdownRemark
-  const { title, body, subTitle } = frontmatter
+  const { title, body } = frontmatter
 
   const sanitizer = dompurify.sanitize
   return (
@@ -34,6 +34,7 @@ export const query = graphql`
         body {
           title
           subTitle
+          content
         }
       }
     }
