@@ -18,14 +18,7 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        google: {
-          families: ["Droid Sans", "Droid Serif", "Staatliches", "Quicksand"],
-        },
-      },
-    },
+
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
