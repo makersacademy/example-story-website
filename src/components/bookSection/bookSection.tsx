@@ -4,6 +4,7 @@ import "./bookSection.scss"
 
 interface BodyItem {
   title: string
+  subTitle: string
 }
 
 interface Props {
