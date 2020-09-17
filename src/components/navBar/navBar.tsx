@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { useStaticQuery, gatsby } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { NavBarItem } from "../index"
 import "./navBar.scss"
 
