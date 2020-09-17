@@ -25,10 +25,10 @@ export const BookSection = (props: Props) => {
     <div className={`col-md-6 col-lg-6 ${style}`}>
       <div className="px-3 py-2">
         <div className="box">
-          <div className="boxTitle px-2 py-2"> 
+          <div className="box-title px-2 py-2"> 
             {title}
           </div>
-          <div className="boxBody px-2">
+          <div className="box-body px-2">
             {subTitle}
           </div>
             {content}
