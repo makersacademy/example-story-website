@@ -1,5 +1,6 @@
 ---
 title: "Projects"
+chapter: "6"
 body:
   - title: 1 Projects
   - title: 2 Projects

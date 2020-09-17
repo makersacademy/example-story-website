@@ -1,5 +1,6 @@
 ---
 title: "The Future"
+chapter: "7"
 body:
   - title: 1 The Future
   - title: 2 The Future

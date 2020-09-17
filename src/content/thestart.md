@@ -1,5 +1,6 @@
 ---
 title: "The Start"
+chapter: "2"
 body:
   - title: 1 The Start
   - title: 2 The Start
