@@ -14,17 +14,20 @@ export const NavBar = () => {
             fields {
               slug
             }
+            frontmatter {
+              title
+            }
           }
         }
       }
     }
   `)
-  const slugs = listLinks.allMarkdownRemark.edges.forEach(({ node }) => {
-    console.log(node.fields.slug)
-  })
-
-  const listItems = navBar.chapters.map((chapter, index) => (
-    <NavBarItem key={index} chapter={chapter}></NavBarItem>
+  const listItems = listLinks.allMarkdownRemark.edges.map(({ node }, index) => (
+    <NavBarItem
+      key={index}
+      chapterTitle={node.frontmatter.title}
+      chapterLink={node.fields.slug}
+    ></NavBarItem>
   ))
   return (
     <div>
