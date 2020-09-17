@@ -2,20 +2,20 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
 interface Props {
-  chapter: string
+  chapterLink: string
+  chapterTitle: string
 }
 
 export const NavBarItem = (props: Props) => {
-  const { chapter } = props
+  let { chapterLink, chapterTitle } = props
 
-  let link = `/${chapter}`
-  if (link === "/Home") {
-    link = "/"
+  if (chapterTitle === "") {
+    chapterTitle = "Home"
   }
 
   return (
-    <a className="nav-link" href={link.toLowerCase().replace(/ /g, "")}>
-      <p className="navText">{chapter}</p>
+    <a className="nav-link" href={chapterLink}>
+      <p className="navText">{chapterTitle}</p>
     </a>
   )
 }
