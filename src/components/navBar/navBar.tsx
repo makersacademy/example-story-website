@@ -1,11 +1,28 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-
+import { useStaticQuery, gatsby } from "gatsby"
 import { navBar } from "../../labels"
 import { NavBarItem } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
+  const listLinks = useStaticQuery(graphql`
+    {
+      allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  const slugs = listLinks.allMarkdownRemark.edges.forEach(({ node }) => {
+    console.log(node.fields.slug)
+  })
+
   const listItems = navBar.chapters.map((chapter, index) => (
     <NavBarItem key={index} chapter={chapter}></NavBarItem>
   ))
