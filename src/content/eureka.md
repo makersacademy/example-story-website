@@ -1,5 +1,6 @@
 ---
 title: "Eureka"
+chapter: "4"
 body:
   - title: 1 Eureka
   - title: 2 Eureka
