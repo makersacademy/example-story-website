@@ -21,13 +21,15 @@ export const NavBar = () => {
       }
     }
   `)
-  const listItems = listLinks.allMarkdownRemark.edges.map(({ node }, index) => (
-    <NavBarItem
-      key={index}
-      chapterTitle={node.frontmatter.title}
-      chapterLink={node.fields.slug}
-    ></NavBarItem>
-  ))
+  var listItems = listLinks.allMarkdownRemark.edges.map(
+    ({ node }: { node: any }, index) => (
+      <NavBarItem
+        key={index}
+        chapterTitle={node.frontmatter.title}
+        chapterLink={node.fields.slug}
+      ></NavBarItem>
+    )
+  )
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark container py-5 ">
