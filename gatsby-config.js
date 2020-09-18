@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-testing`,
     {
       resolve: `gatsby-source-filesystem`,
       options: { name: `images`, path: `${__dirname}/src/images` },
