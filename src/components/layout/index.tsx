@@ -4,7 +4,7 @@ import { NavBar } from "../index"
 import "./index.scss"
 
 interface Props {
-  children: ReactNode
+  children: any
 }
 
 const Layout = (props: Props) => {
