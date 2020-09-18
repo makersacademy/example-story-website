@@ -7199,6 +7199,13 @@ gatsby-plugin-sharp@^2.6.14:
     svgo "1.3.2"
     uuid "3.4.0"
 
+gatsby-plugin-testing@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-testing/-/gatsby-plugin-testing-0.3.1.tgz#c24968ca7e4d52d13e43905f7fd8d8180b8f7835"
+  integrity sha512-o/BWVxbpSPkg4GhJ7qrXcJ2kB78fiirQYXwRh2k+XeP7gQwT5xR/l07j5K/+u13m8A9cCzeDpl2EM45xjuwSJQ==
+  dependencies:
+    chalk "^4.1.0"
+
 gatsby-plugin-typescript@^2.4.20:
   version "2.4.20"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-2.4.20.tgz#460c819b9a1d3da3d0626ca2dc9f131ad9859e6c"
