@@ -3,12 +3,8 @@ import React, { ReactNode } from "react"
 import { NavBar } from "../index"
 import "./index.scss"
 
-interface Props {
-  children: ReactNode
-}
-
-const Layout = (props: Props) => {
-  const { children } = props
+const Layout = (props: any) => {
+  const { children }: { children: ReactNode } = props
 
   return (
     <div>
