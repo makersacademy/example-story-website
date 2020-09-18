@@ -22,7 +22,7 @@ export const NavBar = () => {
     }
   `)
   var listItems = listLinks.allMarkdownRemark.edges.map(
-    ({ node }: { node: any }, index) => (
+    ({ node }: { node: any }, index: { index: any }) => (
       <NavBarItem
         key={index}
         chapterTitle={node.frontmatter.title}
