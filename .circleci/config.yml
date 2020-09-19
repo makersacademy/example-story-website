@@ -2,7 +2,23 @@ version: 2.1
 orbs:
   node: circleci/node@4.0.0
 
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/gatsby-site
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - save_cache:
+          key: v1-npm-deps-{{ checksum "package-lock.json" }}
+          paths:
+            - ./node_modules
+      - run:
+          name: Gatsby Build
+          command: yarn gatsby build
+      - run:
+          name: Test Build
+          command: yarn test
