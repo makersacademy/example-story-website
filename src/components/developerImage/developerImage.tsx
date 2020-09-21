@@ -1,11 +1,10 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-
-// import { Image } from "../index"
+import Img from "gatsby-image"
 import "../bookFrontCover/bookFrontCover.scss"
 
 interface Props {
-  image: any
+  image: object
 }
 
 export const DeveloperImage = (props: Props) => {
@@ -14,7 +13,7 @@ export const DeveloperImage = (props: Props) => {
     <div>
       <div className="row">
         <div className="col-6 offset-3 pt-5">
-          <img alt="myPicture" src={image.childImageSharp.fluid.src} />
+          <Img fluid={image.childImageSharp.fluid} />
         </div>
       </div>
     </div>
