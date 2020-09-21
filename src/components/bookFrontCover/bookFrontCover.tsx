@@ -12,7 +12,6 @@ interface Props {
 
 export const BookFrontCover = (props: Props) => {
   const { greeting, jobTitle, careerAim, image } = props
-  console.log({ image })
   return (
     <div className="container">
       <div className="row align-items-center">
