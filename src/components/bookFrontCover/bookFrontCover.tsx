@@ -15,11 +15,12 @@ export const BookFrontCover = (props: Props) => {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-6 offset-3 p-0">
-          <div id="book" className="container">
-            <div id="spine"></div>
-            <DeveloperImage />
-            <Heading greeting={greeting} jobTitle={jobTitle} />
-            <SubHeading careerAim={careerAim} />
+          <div id="book" className="container py-3">
+            <div className="spine ">
+              <DeveloperImage />
+              <Heading greeting={greeting} jobTitle={jobTitle} />
+              <SubHeading careerAim={careerAim} />
+            </div>
           </div>
         </div>
       </div>
