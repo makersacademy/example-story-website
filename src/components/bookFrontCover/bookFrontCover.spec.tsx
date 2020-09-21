@@ -9,6 +9,7 @@ describe("BookFronCover", () => {
         greeting="hello"
         jobTitle="developer"
         careerAim="data ops engineer"
+        image
       />
     )
     expect(wrapper).toHaveLength(1)
