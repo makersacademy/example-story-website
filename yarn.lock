@@ -11290,10 +11290,10 @@ node-sass@^4.14.1:
     stdout-stream "^1.4.0"
     "true-case-path" "^1.0.2"
 
-node@^14.7.0:
-  version "14.11.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-14.11.0.tgz#0a7c6206fa8ce655a7d8251fd6ef07d7c58ffc82"
-  integrity sha512-XEBMn+z0ZsioaypZ283hUd0WzzOpBg7tl77wWxuVzAop+Sf6KsWIo46NTlVAd+GLeXg0JYdpiacQ5PXwqyWGbg==
+node@12:
+  version "12.18.4"
+  resolved "https://registry.yarnpkg.com/node/-/node-12.18.4.tgz#11d8cf6b810a03460bf3234241eddb774579504d"
+  integrity sha512-OVPcgkPrBHdXcb5JqV3tOv5rj7Zckx3p5IhhuxlZsLUfUw5+sRYl6iKkOWJpi9J3AR9jZMvhSHeaNyDJVEUBFg==
   dependencies:
     node-bin-setup "^1.0.0"
 
@@ -12595,13 +12595,14 @@ postcss-selector-parser@^3.0.0:
     uniq "^1.0.1"
 
 postcss-selector-parser@^6.0.2:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.2.tgz#934cf799d016c83411859e09dcecade01286ec5c"
-  integrity sha512-36P2QR59jDTOAiIkqEprfJDsoNrvwFei3eCqKd1Y0tUsBimsq39BLp7RD+JWny3WgB1zGhJX8XVePwm9k4wdBg==
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-selector-parser/-/postcss-selector-parser-6.0.3.tgz#766d77728728817cc140fa1ac6da5e77f9fada98"
+  integrity sha512-0ClFaY4X1ra21LRqbW6y3rUbWcxnSVkDFG57R7Nxus9J9myPFlv+jYDMohzpkBx0RrjjiqjtycpchQ+PLGmZ9w==
   dependencies:
     cssesc "^3.0.0"
     indexes-of "^1.0.1"
     uniq "^1.0.1"
+    util-deprecate "^1.0.2"
 
 postcss-svgo@^4.0.2:
   version "4.0.2"
