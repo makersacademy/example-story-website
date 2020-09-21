@@ -33,6 +33,13 @@ export const query = graphql`
           title
           subTitle
           content
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
