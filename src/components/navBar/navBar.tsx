@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import { useStaticQuery, graphql } from "gatsby"
-import { NavBarItem } from "../index"
+import { NavBarItem, NavBar } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
