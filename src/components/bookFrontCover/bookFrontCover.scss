@@ -5,13 +5,29 @@ h3 {
   font-family: $font-heading;
 }
 
+#book::before {
+  background-color: yellowgreen;
+  content: "";
+  width: 1;
+  margin-left: -1px;
+  float: left;
+  //height: 0;
+  padding-top: 60%;
+}
+
 #book {
   background-color: $color-primary-light;
-  height: 70vh;
+  // height: 70vh;
   border-top-right-radius: 5.43vh;
   border-bottom-right-radius: 5.43vh;
 }
 
+#double-page::after {
+  /* to clear float */
+  content: "";
+  display: table;
+  clear: both;
+}
 #title {
   border: 0.6vw solid $color-primary-light;
   background-color: $color-primary-dark;
@@ -19,12 +35,15 @@ h3 {
   text-align: center;
 }
 
-#spine {
-  background-color: $color-secondary-light;
-  width: 0.7vw;
-  height: 65.22vh;
-  margin-top: 2.44vh;
-  margin-left: 2.44vh;
-  z-index: 1;
-  position: absolute;
+.spine {
+  border-left: 5px solid $color-secondary-light;
 }
+
+// #spine {
+//   background-color: $color-secondary-light;
+//   width: 0.7vw;
+//   height: 65.22vh;
+//   margin-top: 2.44vh;
+//   margin-left: 2.44vh;
+//   z-index: 1;
+// }
