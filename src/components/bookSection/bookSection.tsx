@@ -6,6 +6,7 @@ interface BodyItem {
   title: string
   subTitle: string
   content: string
+  image: object
 }
 
 interface Props {
@@ -15,10 +16,14 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { bodyItem, index } = props
-  const { title, subTitle, content } = bodyItem
-  let style
+  const { title, subTitle, content, image } = bodyItem
+  let style, picture
   if (index % 2 === 0) {
     style = "book-mid-line"
+  }
+
+  if (image != null) {
+    picture = <img src={image.childImageSharp.fluid.src} />
   }
 
   return (
@@ -28,6 +33,7 @@ export const BookSection = (props: Props) => {
           <h2 className="box-title px-2 my-0 py-2 ">{title}</h2>
           <h3 className="box-subtitle px-2">{subTitle}</h3>
           <p className="px-2 box-content">{content}</p>
+          <p>{picture}</p>
         </div>
       </div>
     </div>
