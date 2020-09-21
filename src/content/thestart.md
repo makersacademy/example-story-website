@@ -2,9 +2,11 @@
 title: "The Start"
 chapter: "2"
 body:
-  - title: 1 The Start
-  - title: 2 The Start
-  - title: 3 The Start
-  - title: 4 The Start
-date: "2019-05-04"
+  - title: The very start
+    content: I was born in Whitstable on the Kent coast. I spent my childhood
+  - title: Interests
+    content: I have always been creative. As a child I spent hours designing and creating many things, from a giant pom pom to a collection of toy dogs. I loved painting and drawing.  This love of creativity lead me to study graphic design.
+  - title: Ba (Hons) of Graphic Design
+    subTitle: "2010 - 2013"
+    content: University of the Arts, London. Graduated with 2:1
 ---

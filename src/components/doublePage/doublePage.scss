@@ -3,11 +3,24 @@
 #heading {
   font-family: $font-heading;
 }
+#double-page::before {
+  content: "";
+  margin-left: -1px;
+  float: left;
+
+  padding-top: 60%;
+}
 
 #double-page {
   background-color: $color-primary-light;
-  height: 70vh;
   border-radius: $border-radius;
+}
+
+#double-page::after {
+  /* to clear float */
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .book-mid-line {

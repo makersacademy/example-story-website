@@ -14,14 +14,12 @@ export default function NewChapter(data: Data) {
 
   const sanitizer = dompurify.sanitize
   return (
-    <div>
-      <Layout>
-        <DoublePage title={title} body={body} />
-        <div>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
-        </div>
-      </Layout>
-    </div>
+    <Layout>
+      <DoublePage title={title} body={body} />
+      <div>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    </Layout>
   )
 }
 
@@ -33,6 +31,8 @@ export const query = graphql`
         title
         body {
           title
+          subTitle
+          content
         }
       }
     }

@@ -3,8 +3,22 @@
 .box {
   background-color: $color-primary-light;
   border: 3px solid $color-primary-dark;
-  height: 28vh;
   display: block;
+}
+
+.box-title {
+  font-family: $font-heading;
+  font-size: medium;
+}
+
+.box-subtitle {
+  font-family: $font-body;
+  font-size: small;
+}
+
+.box-content {
+  font-family: $font-body;
+  font-size: medium;
 }
 
 .book-mid-line {
