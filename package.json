@@ -65,5 +65,7 @@
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "types": { "field": "./node_modules.d.ts"}
+  "types": {
+    "field": "./node_modules.d.ts"
+  }
 }
