@@ -2,13 +2,6 @@
 title: "Working Life"
 chapter: "3"
 body:
-<<<<<<< HEAD:src/content/workinglife.md
-  - title: 1 Working Life
-  - title: 2 Working Life
-  - title: 3 Working Life
-  - title: 4 Working Life
-date: "2019-05-04"
-=======
   - title: Saffron brand consultants
     subTitle: 01/2019-05/2020
     content: Saffron brand consultants is an award-winning branding & creative agency that helps clients to communicate through graphic design & art direction.
@@ -19,5 +12,4 @@ date: "2019-05-04"
     content: Creative Events plan, promote and delivers events for global brand. I worked in the graphic design department to promote the events.
   - title: Achievements
     content: Promoted client events by designing posters, newspaper ads and other promotional materials with a 100% record of meeting deadlines. Improved clients’ brand identity by applying design principles, typography, colour theory, and composition to their promotional materials. Helped with marketing strategies and research.
->>>>>>> fix-responsiveness:src/content/Working Life.md
 ---

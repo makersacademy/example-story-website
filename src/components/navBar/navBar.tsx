@@ -1,17 +1,10 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
-<<<<<<< HEAD
 import { useStaticQuery, graphql } from "gatsby"
-=======
-import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
-
-import { navBar } from "../../labels"
->>>>>>> fix-responsiveness
 import { NavBarItem } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
-<<<<<<< HEAD
   const listLinks = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
@@ -37,15 +30,6 @@ export const NavBar = () => {
       ></NavBarItem>
     )
   )
-=======
-  const navBarItems = navBar.chapters.map((chapter, index) => (
-    <NavBarItem key={index} chapter={chapter}></NavBarItem>
-  ))
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggle = () => setIsOpen(!isOpen)
-
->>>>>>> fix-responsiveness
   return (
     <div>
       <Navbar light expand="md">
