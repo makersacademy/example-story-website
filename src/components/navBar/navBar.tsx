@@ -7,7 +7,7 @@ import { NavBarItem } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
-  const listItems = navBar.chapters.map((chapter, index) => (
+  const navBarItems = navBar.chapters.map((chapter, index) => (
     <NavBarItem key={index} chapter={chapter}></NavBarItem>
   ))
   const [isOpen, setIsOpen] = useState(false)
@@ -20,7 +20,7 @@ export const NavBar = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <div className=" navbar-nav">{listItems}</div>
+            <div className=" navbar-nav">{navBarItems}</div>
           </Nav>
         </Collapse>
       </Navbar>
