@@ -3,11 +3,28 @@
 #heading {
   font-family: $font-heading;
 }
+#double-page::before {
+  background-color: yellowgreen;
+  content: "";
+  width: 1;
+  margin-left: -1px;
+  float: left;
+  //height: 0;
+  padding-top: 60%;
+}
 
 #double-page {
   background-color: $color-primary-light;
-  height: 70vh;
+  // width: 100%;
+  // padding-top: 40%;
   border-radius: $border-radius;
+}
+
+#double-page::after {
+  /* to clear float */
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .book-mid-line {

@@ -2,9 +2,13 @@
 title: "Learning"
 chapter: "5"
 body:
-  - title: 1 At Makers I learnt how to make full-stack websites.
-  - title: 2 I learnt the languages of Ruby and Javascript
-  - title: 3 I am currently trying to work out how to use graphql
-  - title: 4 Arrays yeah!
-date: "2019-05-04"
+  - title: Makers
+    subTitle: June 2020 Cohort
+    content: Europe’s leading bootcamp, focused on creating job-ready developers with an agile and pragmatic approach to development
+  - title: Languages
+    content: Ruby, Javascript
+  - title: Technolgies
+    content: Ruby On Rails, Sinatra, SQL, React, MongoDB
+  - title: Processes
+    content: Test Driven Development + Behaviour Driven Development, Agile, Object Oriented Programming
 ---

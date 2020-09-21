@@ -2,9 +2,14 @@
 title: "Contact Me"
 chapter: "8"
 body:
-  - title: 1 Contact Me
-  - title: 2 Contact Me
-  - title: 3 Contact Me
-  - title: 4 Contact Me Please!
-date: "2019-05-04"
+  - title: Portfolio
+    content: www.name.com
+  - title: Github
+    content: Joseph-Jones
+  - title: LinkedIn
+    content: Joseph-Jones
+  - title: Email
+    content: JosephJones@makers.com
+  - title: Blog
+    content: JosephJones
 ---

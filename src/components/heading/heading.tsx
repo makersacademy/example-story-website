@@ -8,7 +8,7 @@ interface Props {
   jobTitle: string
 }
 
-export const Heading = (props: Props) => {
+export const Heading = (props:Props) => {
   const { jobTitle, greeting } = props
 
   return (

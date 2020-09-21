@@ -2,9 +2,14 @@
 title: "Projects"
 chapter: "6"
 body:
-  - title: 1 Projects
-  - title: 2 Projects
-  - title: 3 Projects
-  - title: 4 Projects
-date: "2019-05-04"
+  - title: Mission Ctrl
+  - title: About
+    content: GitHub link, Deployment link,  An arcade-style game that helps developers become more efficient coders by teaching VS code short cuts. Built in 10 days using agile processes as part of Makers final group project.
+  - title: Technologies
+    content: "* Mongo DB * React * Express * Node * Travis * Heroku"
+  - title: My Secret garden
+  - title: About
+    content: GitHub link, Deployment link,  A website built to help people locate gardens in and around London.
+  - title: Technologies
+    content: "* Mongo DB * React * Express * Node * Google Maps API * CircleCI * Netlify"
 ---
