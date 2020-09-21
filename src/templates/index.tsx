@@ -12,6 +12,7 @@ const IndexPage = ({ data }) => {
     jobTitle,
     greeting,
     careerAim,
+    image,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
     <Layout>
@@ -20,6 +21,7 @@ const IndexPage = ({ data }) => {
         jobTitle={jobTitle}
         greeting={greeting}
         careerAim={careerAim}
+        image={image}
       />
     </Layout>
   )
@@ -34,6 +36,13 @@ export const query = graphql`
             greeting
             careerAim
             date(formatString: "DD MMMM YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           html
         }
