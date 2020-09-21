@@ -6,7 +6,6 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@types/enzyme": "^3.10.5",
-  
     "@types/reactstrap": "^8.5.1",
     "bootstrap": "^4.5.0",
     "dompurify": "^2.0.15",
@@ -29,7 +28,10 @@
     "react-bootstrap": "^1.2.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "reactstrap": "^8.6.0"
+    "reactstrap": "^8.6.0",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "webpack": "^4.44.2"
   },
   "devDependencies": {
     "@types/jest": "^26.0.9",
