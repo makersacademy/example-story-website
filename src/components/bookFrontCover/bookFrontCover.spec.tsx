@@ -3,7 +3,7 @@ import { shallow } from "enzyme"
 import { BookFrontCover } from "../index"
 import { getPageQueryData, withQuerySnapshot } from "gatsby-plugin-testing"
 
-describe("BookFronCover", () => {
+describe("BookFrontCover", () => {
   it(
     "renders a page correctly",
     withQuerySnapshot(async () => {
