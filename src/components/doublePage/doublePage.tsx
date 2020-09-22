@@ -36,21 +36,22 @@ export const DoublePage = (props: Props) => {
   //   )
   // })
 
-  const listRightPage = rightPage.map((rightPageItem: any, index: number) => {
-    return (
-      <RightPage
-        key={index}
-        index={index}
-        rightPageItem={rightPageItem}
-      ></RightPage>
-    )
-  })
+  // const listRightPage = rightPage.map((rightPageItem: any, index: number) => {
+  //   return (
+  //     <RightPage
+  //       key={index}
+  //       index={index}
+  //       rightPageItem={rightPageItem}
+  //     ></RightPage>
+  //   )
+  // })
 
   return (
     <div className="container  " id="double-page">
       <div className="row  ">
         <LeftPage leftPage={leftPage}></LeftPage>
-        <div className="col-lg-6 col-md-6 ">{listRightPage}</div>
+
+        <RightPage rightPage={rightPage}> </RightPage>
       </div>
     </div>
   )
