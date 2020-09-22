@@ -5,7 +5,7 @@ import "./leftPage.scss"
 import { BookSection } from "../index"
 
 export const LeftPage = props => {
-  const { leftPage } = props
+  const { leftPage, title } = props
 
   const listLeftPage = leftPage.map((bodyItem: any, index: number) => {
     {
@@ -15,7 +15,7 @@ export const LeftPage = props => {
 
   return (
     <div className=" col-lg-6 col-md-6  ">
-      <h2 className="heading px-3 py-3 ">test</h2>
+      <h2 className="heading px-3 py-3 ">{title}</h2>
       <div>{listLeftPage}</div>
     </div>
   )
