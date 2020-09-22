@@ -2,7 +2,7 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
 import { LeftPage, RightPage } from "../index"
-import { BookSection } from "../index"
+// import { BookSection } from "../index"
 import "./doublePage.scss"
 
 interface BodyItem {
@@ -26,15 +26,15 @@ export const DoublePage = (props: Props) => {
   //   )
   // })
 
-  const listLeftPage = leftPage.map((leftPageItem: any, index: number) => {
-    return (
-      <LeftPage
-        key={index}
-        index={index}
-        leftPageItem={leftPageItem}
-      ></LeftPage>
-    )
-  })
+  // const listLeftPage = leftPage.map((leftPageItem: any, index: number) => {
+  //   return (
+  //     <LeftPage
+  //       key={index}
+  //       index={index}
+  //       leftPageItem={leftPageItem}
+  //     ></LeftPage>
+  //   )
+  // })
 
   const listRightPage = rightPage.map((rightPageItem: any, index: number) => {
     return (
@@ -47,19 +47,10 @@ export const DoublePage = (props: Props) => {
   })
 
   return (
-    <div className="container " id="double-page">
-      <div className="row">
-        <div className=" col-md-6 book-mid-line ">
-          <h2 className="heading px-3 py-3 ">{title}</h2>
-        </div>
-        <div className="row">
-          <div className="left-page col-lg-6 col-md-6">
-            {/* <div>{listBody}</div> */}
-            {listLeftPage}
-          </div>
-
-          <div className="right-page col-lg-6 col-md-6 ">{listRightPage}</div>
-        </div>
+    <div className="container  " id="double-page">
+      <div className="row  ">
+        <LeftPage leftPage={leftPage}></LeftPage>
+        <div className="col-lg-6 col-md-6 ">{listRightPage}</div>
       </div>
     </div>
   )

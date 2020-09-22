@@ -1,16 +1,22 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
+import "./leftPage.scss"
+import { BookSection } from "../index"
+
 export const LeftPage = props => {
-  const { leftPageItem } = props
-  const { title, subTitle, content } = leftPageItem
+  const { leftPage } = props
+
+  const listLeftPage = leftPage.map((bodyItem: any, index: number) => {
+    {
+      return <BookSection key={index} bodyItem={bodyItem}></BookSection>
+    }
+  })
+
   return (
-    <div className="px-3 py-2">
-      <div className="box">
-        <h2 className="box-title px-2 my-0 py-2 "> {title}</h2>
-        <h3 className="box-subtitle px-2">{subTitle}</h3>
-        <p className="px-2 box-content">{content}</p>
-      </div>
+    <div className=" col-lg-6 col-md-6  ">
+      <h2 className="heading px-3 py-3 ">test</h2>
+      <div>{listLeftPage}</div>
     </div>
   )
 }
