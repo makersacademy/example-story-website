@@ -7,7 +7,7 @@ interface BodyItem {
   title: string
   subTitle: string
   content: string
-  image: object
+  image: any
 }
 
 interface Props {
