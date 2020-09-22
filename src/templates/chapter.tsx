@@ -10,12 +10,17 @@ interface Data {
 
 export default function NewChapter(data: Data) {
   const { frontmatter, html } = data.data.markdownRemark
-  const { title, body, leftPage } = frontmatter
+  const { title, body, leftPage, rightPage } = frontmatter
 
   const sanitizer = dompurify.sanitize
   return (
     <Layout>
-      <DoublePage title={title} body={body} leftPage={leftPage} />
+      <DoublePage
+        title={title}
+        body={body}
+        leftPage={leftPage}
+        rightPage={rightPage}
+      />
       <div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
@@ -29,12 +34,13 @@ export const query = graphql`
       html
       frontmatter {
         title
-        body {
+
+        leftPage {
           title
           subTitle
           content
         }
-        leftPage {
+        rightPage {
           title
           subTitle
           content

@@ -5,7 +5,7 @@ leftPage:
   - title: Makers
     subTitle: June 2020 Cohort
     content: Europe’s leading bootcamp, focused on creating job-ready developers with an agile and pragmatic approach to development
-body:
+rightPage:
   - title: Languages
     content: Ruby, Javascript
   - title: Technolgies

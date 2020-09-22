@@ -6,7 +6,7 @@ leftPage:
     content: www.name.com
   - title: Github
     content: Joseph-Jones
-body:
+rightPage:
   - title: LinkedIn
     content: Joseph-Jones
   - title: Email
