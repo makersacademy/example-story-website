@@ -25,7 +25,7 @@ export const BookSection = (props: Props) => {
     style = "book-mid-line"
   }
 
-  if (image != null) {
+  if (image) {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
