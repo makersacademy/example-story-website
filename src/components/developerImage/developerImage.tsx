@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 import "../bookFrontCover/bookFrontCover.scss"
 
 interface Props {
-  image: object
+  image: any
 }
 
 export const DeveloperImage = (props: Props) => {
