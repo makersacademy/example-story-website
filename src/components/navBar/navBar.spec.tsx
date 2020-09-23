@@ -12,7 +12,7 @@ describe("NavBar", () => {
     })
   )
 
-  xit("renders the NavBarItem correctly", () => {
+  it("renders the NavBarItem correctly", () => {
     let navBarItem = <NavBarItem chapterTitle="Home" chapterLink="" />
     let wrapper = shallow(<NavBar></NavBar>)
     expect(wrapper.containsMatchingElement(navBarItem)).toEqual(true)
