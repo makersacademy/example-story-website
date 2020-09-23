@@ -10,15 +10,19 @@ interface BodyItem {
 }
 
 interface Props {
-  rightPage: Array<BodyItem>
+  rightPage?: Array<BodyItem>
 }
 
 export const RightPage = (props: Props) => {
   const { rightPage } = props
 
-  const listRightPage = rightPage.map((bodyItem: any, index: number) => {
-    return <BookSection key={index} bodyItem={bodyItem} />
-  })
+  if (rightPage) {
+    var listRightPage = rightPage.map((bodyItem: any, index: number) => {
+      return <BookSection key={index} bodyItem={bodyItem} />
+    })
+  } else {
+    listRightPage = []
+  }
 
   return (
     <div className="col-lg-6 col-md-6">
