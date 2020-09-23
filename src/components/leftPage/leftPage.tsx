@@ -14,7 +14,7 @@ export const LeftPage = props => {
   })
 
   return (
-    <div className=" col-lg-6 col-md-6  ">
+    <div className=" col-lg-6 col-md-6 mid-line  ">
       <h2 className="heading px-3 py-3 ">{title}</h2>
       <div>{listLeftPage}</div>
     </div>
