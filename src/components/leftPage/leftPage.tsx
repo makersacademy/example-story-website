@@ -1,7 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
-import "./leftPage.scss"
 import { BookSection } from "../index"
 
 export const LeftPage = props => {
