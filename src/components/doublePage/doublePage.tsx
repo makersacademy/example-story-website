@@ -20,10 +20,9 @@ export const DoublePage = (props: Props) => {
   const { title, leftPage, rightPage } = props
 
   return (
-    <div className="container  " id="double-page">
-      <div className="row  ">
+    <div className="container d-flex justify-content-around" id="double-page">
+      <div className="row ">
         <LeftPage leftPage={leftPage} title={title}></LeftPage>
-
         <RightPage rightPage={rightPage}> </RightPage>
       </div>
     </div>
