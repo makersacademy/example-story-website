@@ -13,7 +13,6 @@ describe("Layout", () => {
   it("renders the NavBar correctly", () => {
     let wrapper = shallow(<Layout></Layout>)
     let navBar = <NavBar></NavBar>
-    console.log(wrapper.debug())
     expect(wrapper.containsMatchingElement(navBar)).toEqual(true)
   })
 })
