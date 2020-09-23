@@ -7,7 +7,7 @@ interface Props {
   greeting: string
   jobTitle: string
   careerAim: string
-  image: object
+  image: any
 }
 
 export const BookFrontCover = (props: Props) => {
