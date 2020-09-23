@@ -2,7 +2,6 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
 import { LeftPage, RightPage } from "../index"
-// import { BookSection } from "../index"
 import "./doublePage.scss"
 
 interface BodyItem {
@@ -13,7 +12,8 @@ interface BodyItem {
 
 interface Props {
   title: string
-  body: Array<BodyItem>
+  leftPage: Array<BodyItem>
+  rightPage: Array<BodyItem>
 }
 
 export const DoublePage = (props: Props) => {
@@ -23,7 +23,7 @@ export const DoublePage = (props: Props) => {
     <div className="container d-flex justify-content-around" id="double-page">
       <div className="row ">
         <LeftPage leftPage={leftPage} title={title}></LeftPage>
-        <RightPage rightPage={rightPage}> </RightPage>
+        <RightPage rightPage={rightPage} />
       </div>
     </div>
   )

@@ -3,11 +3,21 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { BookSection } from "../index"
 
-export const RightPage = props => {
+interface BodyItem {
+  title?: string
+  subTitle?: string
+  content?: string
+}
+
+interface Props {
+  rightPage: Array<BodyItem>
+}
+
+export const RightPage = (props: Props) => {
   const { rightPage } = props
 
   const listRightPage = rightPage.map((bodyItem: any, index: number) => {
-    return <BookSection key={index} bodyItem={bodyItem}></BookSection>
+    return <BookSection key={index} bodyItem={bodyItem} />
   })
 
   return (
