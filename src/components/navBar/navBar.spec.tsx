@@ -9,12 +9,8 @@ describe("NavBar", () => {
     withQuerySnapshot(() => {
       let wrapper = shallow(<NavBar></NavBar>)
       expect(wrapper).toHaveLength(1)
+      // it renders the NavBarItem
+      expect(wrapper.find(NavBarItem)).toBeTruthy
     })
   )
-
-  it("renders the NavBarItem correctly", () => {
-    let navBarItem = <NavBarItem chapterTitle="Home" chapterLink="" />
-    let wrapper = shallow(<NavBar></NavBar>)
-    expect(wrapper.containsMatchingElement(navBarItem)).toEqual(true)
-  })
 })
