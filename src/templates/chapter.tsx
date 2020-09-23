@@ -15,12 +15,7 @@ export default function NewChapter(data: Data) {
   const sanitizer = dompurify.sanitize
   return (
     <Layout>
-      <DoublePage
-        title={title}
-        body={body}
-        leftPage={leftPage}
-        rightPage={rightPage}
-      />
+      <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
       <div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
