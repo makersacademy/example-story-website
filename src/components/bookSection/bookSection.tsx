@@ -3,9 +3,9 @@ import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
 
 interface BodyItem {
-  title: string
-  subTitle: string
-  content: string
+  title?: string
+  subTitle?: string
+  content?: string
 }
 
 interface Props {

@@ -17,7 +17,7 @@ export const RightPage = (props: Props) => {
   const { rightPage } = props
 
   if (rightPage) {
-    var listRightPage = rightPage.map((bodyItem: any, index: number) => {
+    var listRightPage = rightPage.map((bodyItem: BodyItem, index: number) => {
       return <BookSection key={index} bodyItem={bodyItem} />
     })
   } else {

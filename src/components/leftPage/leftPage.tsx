@@ -17,7 +17,7 @@ interface Props {
 export const LeftPage = (props: Props) => {
   const { leftPage, title } = props
 
-  const listLeftPage = leftPage.map((bodyItem: any, index: number) => {
+  const listLeftPage = leftPage.map((bodyItem: BodyItem, index: number) => {
     {
       return <BookSection key={index} bodyItem={bodyItem} />
     }
