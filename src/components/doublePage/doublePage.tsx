@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import { LeftPage, RightPage } from "../index"
 import "./doublePage.scss"
 
-interface BodyItem {
+interface PageItem {
   title: string
   subTitle: string
   content: string
@@ -12,8 +12,8 @@ interface BodyItem {
 
 interface Props {
   title: string
-  leftPage: Array<BodyItem>
-  rightPage: Array<BodyItem>
+  leftPage: Array<PageItem>
+  rightPage: Array<PageItem>
 }
 
 export const DoublePage = (props: Props) => {

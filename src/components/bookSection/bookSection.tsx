@@ -2,19 +2,19 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
 
-interface BodyItem {
+interface PageItem {
   title?: string
   subTitle?: string
   content?: string
 }
 
 interface Props {
-  bodyItem: BodyItem
+  pageItem: PageItem
 }
 
 export const BookSection = (props: Props) => {
-  const { bodyItem } = props
-  const { title, subTitle, content } = bodyItem
+  const { pageItem } = props
+  const { title, subTitle, content } = pageItem
 
   return (
     <div className="px-3 py-2">

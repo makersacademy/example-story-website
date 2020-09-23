@@ -3,22 +3,22 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { BookSection } from "../index"
 
-interface BodyItem {
+interface PageItem {
   title?: string
   subTitle?: string
   content?: string
 }
 
 interface Props {
-  rightPage?: Array<BodyItem>
+  rightPage?: Array<PageItem>
 }
 
 export const RightPage = (props: Props) => {
   const { rightPage } = props
 
   if (rightPage) {
-    var listRightPage = rightPage.map((bodyItem: BodyItem, index: number) => {
-      return <BookSection key={index} bodyItem={bodyItem} />
+    var listRightPage = rightPage.map((pageItem: PageItem, index: number) => {
+      return <BookSection key={index} pageItem={pageItem} />
     })
   } else {
     listRightPage = []

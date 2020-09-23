@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { BookSection } from "../index"
 
-interface BodyItem {
+interface PageItem {
   title?: string
   subTitle?: string
   content?: string
@@ -11,15 +11,15 @@ interface BodyItem {
 
 interface Props {
   title: string
-  leftPage: Array<BodyItem>
+  leftPage: Array<PageItem>
 }
 
 export const LeftPage = (props: Props) => {
   const { leftPage, title } = props
 
-  const listLeftPage = leftPage.map((bodyItem: BodyItem, index: number) => {
+  const listLeftPage = leftPage.map((pageItem: PageItem, index: number) => {
     {
-      return <BookSection key={index} bodyItem={bodyItem} />
+      return <BookSection key={index} pageItem={pageItem} />
     }
   })
 
