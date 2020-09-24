@@ -4,8 +4,12 @@ import { graphql } from "gatsby"
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
+interface dataItem {
+  title: string
+  body: object
+}
 interface Data {
-  data: any
+  data: dataItem
 }
 
 export default function NewChapter(data: Data) {
