@@ -9,7 +9,6 @@ describe("NavBar", () => {
     withQuerySnapshot(() => {
       let wrapper = shallow(<NavBar></NavBar>)
       expect(wrapper).toHaveLength(1)
-      // it renders the NavBarItem
       expect(wrapper.find(NavBarItem)).toBeTruthy
     })
   )
