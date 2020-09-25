@@ -9,8 +9,12 @@
 }
 
 .box-title {
+  border: 5px solid $color-primary-dark;
+  display: block;
+  border-radius: 15px;
+  padding: 20px;
   font-family: $font-heading;
-  font-size: medium;
+  font-size: larger;
 }
 
 .box-subtitle {
