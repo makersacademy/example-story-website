@@ -1,17 +1,19 @@
 @import "../../styles/variables.scss";
 
-#heading {
+.heading {
   font-family: $font-heading;
+  font-size: 40px;
 }
+
 #double-page::before {
   content: "";
   margin-left: -1px;
   float: left;
-
   padding-top: 60%;
 }
 
 #double-page {
+  padding-top: 20px;
   background-color: $color-primary-light;
   border-radius: $border-radius;
 }
