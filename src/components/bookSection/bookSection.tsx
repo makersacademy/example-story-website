@@ -25,7 +25,7 @@ export const BookSection = (props: Props) => {
   }
 
   return (
-    <div className="px-3 py-2">
+    <div className="px-3 pb-5">
       <div className="box">
         <h2 className="box-title px-2 my-0 py-2 ">{title}</h2>
         <h3 className="box-subtitle px-2">{subTitle}</h3>
