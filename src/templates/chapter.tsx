@@ -1,6 +1,6 @@
 import React from "react"
-import dompurify from "dompurify"
 import { graphql } from "gatsby"
+
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
@@ -12,7 +12,6 @@ export default function NewChapter(data: Data) {
   const { frontmatter, html } = data.data.markdownRemark
   const { title, body, leftPage, rightPage } = frontmatter
 
-  const sanitizer = dompurify.sanitize
   return (
     <Layout>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
