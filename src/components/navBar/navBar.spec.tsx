@@ -1,6 +1,6 @@
 import React from "react"
 import { shallow } from "enzyme"
-import { NavBar } from "../index"
+import { NavBar, NavBarItem } from "../index"
 import { withQuerySnapshot } from "gatsby-plugin-testing"
 
 describe("NavBar", () => {
@@ -9,6 +9,7 @@ describe("NavBar", () => {
     withQuerySnapshot(() => {
       let wrapper = shallow(<NavBar></NavBar>)
       expect(wrapper).toHaveLength(1)
+      expect(wrapper.find(NavBarItem)).toBeTruthy
     })
   )
 })

@@ -8,6 +8,7 @@ interface PageItem {
   title: string
   subTitle: string
   content: string
+  image: any
 }
 
 interface Props {
