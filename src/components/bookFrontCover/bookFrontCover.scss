@@ -14,8 +14,8 @@ h3 {
 
 #book {
   background-color: $color-primary-light;
-  border-top-right-radius: 5.43vh;
-  border-bottom-right-radius: 5.43vh;
+  border-top-right-radius: $border-radius-book;
+  border-bottom-right-radius: $border-radius-book;
 }
 
 #double-page::after {
