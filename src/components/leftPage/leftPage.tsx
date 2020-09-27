@@ -10,18 +10,20 @@ interface PageItem {
 }
 
 interface Props {
-  title: string
-  leftPage: Array<PageItem>
+  title?: string
+  leftPage?: Array<PageItem>
 }
 
 export const LeftPage = (props: Props) => {
   const { leftPage, title } = props
 
-  const listLeftPage = leftPage.map((pageItem: PageItem, index: number) => {
-    {
+  if (leftPage) {
+    var listLeftPage = leftPage.map((pageItem: PageItem, index: number) => {
       return <BookSection key={index} pageItem={pageItem} />
-    }
-  })
+    })
+  } else {
+    listLeftPage = []
+  }
 
   return (
     <div className=" col-lg-6 col-md-6 mid-line  ">
