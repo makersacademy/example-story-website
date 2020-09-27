@@ -1,21 +1,24 @@
 import React from "react"
-import dompurify from "dompurify"
 import { graphql } from "gatsby"
+
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
+interface dataItem {
+  title: string
+  body: object
+}
 interface Data {
-  data: object
+  data: dataItem
 }
 
 export default function NewChapter(data: Data) {
   const { frontmatter, html } = data.data.markdownRemark
-  const { title, body } = frontmatter
+  const { title, leftPage, rightPage } = frontmatter
 
-  const sanitizer = dompurify.sanitize
   return (
     <Layout>
-      <DoublePage title={title} body={body} />
+      <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
       <div>
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
@@ -29,15 +32,21 @@ export const query = graphql`
       html
       frontmatter {
         title
-        body {
+
+        leftPage {
           title
           subTitle
           content
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
+        }
+        rightPage {
+          title
+          subTitle
+          content
+        }
+        image {
+          childImageSharp {
+            fluid(maxWidth: 300, quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
