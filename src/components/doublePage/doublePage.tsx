@@ -1,10 +1,10 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 
-import { BookSection } from "../index"
+import { LeftPage, RightPage } from "../index"
 import "./doublePage.scss"
 
-interface BodyItem {
+interface PageItem {
   title: string
   subTitle: string
   content: string
@@ -12,26 +12,19 @@ interface BodyItem {
 
 interface Props {
   title: string
-  body: Array<BodyItem>
+  leftPage: Array<PageItem>
+  rightPage: Array<PageItem>
 }
 
 export const DoublePage = (props: Props) => {
-  const { title, body } = props
-
-  const listBody = body.map((bodyItem: BodyItem, index: number) => {
-    return (
-      <BookSection key={index} index={index} bodyItem={bodyItem}></BookSection>
-    )
-  })
+  const { title, leftPage, rightPage } = props
 
   return (
-    <div className="container " id="double-page">
-      <div className="row">
-        <div className=" col-md-6 book-mid-line ">
-          <h2 className="heading px-3 py-3 ">{title}</h2>
-        </div>
+    <div className="container d-flex justify-content-around" id="double-page">
+      <div className="row ">
+        <LeftPage leftPage={leftPage} title={title}></LeftPage>
+        <RightPage rightPage={rightPage} />
       </div>
-      <div className="row ">{listBody}</div>
     </div>
   )
 }
