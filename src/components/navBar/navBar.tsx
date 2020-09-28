@@ -44,6 +44,7 @@ export const NavBar = () => {
           </Nav>
         </Collapse>
       </Navbar>
+    <div className="rectangle"></div>
     </div>
   )
 }
