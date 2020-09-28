@@ -35,12 +35,12 @@ export const NavBar = () => {
   const toggle = () => setIsOpen(!isOpen)
 
   return (
-    <div className="bottom-border">
+    <div>
       <Navbar light expand="md" className="py-0">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <div className="navbar-nav">{listItems}</div>
+            <div className="navbar-nav bottom-border">{listItems}</div>
           </Nav>
         </Collapse>
       </Navbar>
