@@ -1,19 +1,25 @@
 // import "jsdom-global/register"
 import React, { Component } from "react"
 import { shallow, mount, render } from "enzyme"
-import { DoublePage, BookSection, SubHeading } from "../index"
+import { DoublePage, LeftPage, SubHeading } from "../index"
 
 describe("DoublePage", () => {
-  it("renders a double page correctly", () => {
+  it("is rendered with a title", () => {
     let wrapper = shallow(
       <DoublePage
         title={"Learning"}
-        body={[
+        leftPage={[
           {
             title: "Makers Academy",
             subTitle: "string",
             content: "string",
-            image: "any",
+          },
+        ]}
+        rightPage={[
+          {
+            title: "Makers Academy",
+            subTitle: "string",
+            content: "string",
           },
         ]}
       />
@@ -21,49 +27,34 @@ describe("DoublePage", () => {
     expect(wrapper).toHaveLength(1)
   })
 
-  it("is rendered with a title", () => {
+  it("renders the LeftPage Component", () => {
+    let leftPage = (
+      <LeftPage
+        leftPage={[
+          { title: "Makers Academy", subTitle: "string", content: "string" },
+        ]}
+      />
+    )
+
     let wrapper = shallow(
       <DoublePage
         title={"Learning"}
-        body={[
+        leftPage={[
           {
             title: "Makers Academy",
             subTitle: "string",
             content: "string",
-            image: "any",
           },
         ]}
-      />
-    )
-    expect(wrapper.text()).toContain("Learning")
-  })
-
-  it("renders the BookSection Component and passes down title from body", () => {
-    let bookSection = (
-      <BookSection
-        index={0}
-        bodyItem={{
-          title: "Makers Academy",
-          subTitle: "string",
-          content: "string",
-          image: "any",
-        }}
-      />
-    )
-
-    let wrapper = shallow(
-      <DoublePage
-        title={"Title of Chapter"}
-        body={[
+        rightPage={[
           {
             title: "Makers Academy",
             subTitle: "string",
             content: "string",
-            image: "any",
           },
         ]}
       />
     )
-    expect(wrapper.containsMatchingElement(bookSection)).toEqual(true)
+    expect(wrapper.containsMatchingElement(leftPage)).toEqual(true)
   })
 })
