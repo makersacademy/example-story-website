@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import { useStaticQuery, graphql } from "gatsby"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
+
 import { NavBarItem } from "../index"
 import "./navBar.scss"
 
