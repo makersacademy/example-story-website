@@ -1,11 +1,5 @@
 @import "../../styles/variables.scss";
 
-// .rectangle {
-//   width: full-width;
-//   height: 10px;
-//   background-color: $color-primary-dark;
-// }
-
 .navText {
   color: $color-primary-dark;
   font-family: $font-body;
@@ -14,4 +8,8 @@
 .bottom-border {
   border-bottom: 5px solid black;
   padding-bottom: 5px;
+}
+
+.active {
+  border-bottom: 10px solid #43b0f2;
 }
