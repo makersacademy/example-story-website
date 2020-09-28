@@ -5,10 +5,10 @@ import { LeftPage, RightPage } from "../index"
 import "./doublePage.scss"
 
 interface PageItem {
-  title: string
-  subTitle: string
-  content: string
-  image: any
+  title?: string
+  subTitle?: string
+  content?: string
+  image?: any
 }
 
 interface Props {

@@ -7,8 +7,7 @@ describe("BookSection", () => {
     const index = 1
     const wrapper = shallow(
       <BookSection
-        index={index}
-        bodyItem={{ title: "Learning", subTitle: "", content: "", image: "" }}
+        pageItem={{ title: "Learning", subTitle: "", content: "", image: "" }}
       />
     )
     expect(wrapper).toHaveLength(1)
@@ -17,8 +16,7 @@ describe("BookSection", () => {
   it("renders a title correctly", () => {
     const wrapper = shallow(
       <BookSection
-        index={1}
-        bodyItem={{ title: "Learning", subTitle: "", content: "", image: "" }}
+        pageItem={{ title: "Learning", subTitle: "", content: "", image: "" }}
       />
     )
     expect(wrapper.text()).toContain("Learning")
