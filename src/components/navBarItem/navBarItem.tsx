@@ -15,7 +15,7 @@ export const NavBarItem = (props: Props) => {
 
   return (
     <a className="nav-link" href={chapterLink}>
-      <p className="navText">{chapterTitle}</p>
+      <span className="navText">{chapterTitle}</span>
     </a>
   )
 }
