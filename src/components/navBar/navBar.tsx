@@ -41,7 +41,7 @@ export const NavBar = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <div className="navbar-nav bottom-border">{listItems}</div>
+            <ul className="navbar-nav">{listItems}</ul>
           </Nav>
         </Collapse>
       </Navbar>

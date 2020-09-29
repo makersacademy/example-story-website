@@ -1,5 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
+import { NavItem } from "reactstrap"
+
 import "bootstrap/dist/css/bootstrap.css"
 
 interface Props {
@@ -15,8 +17,10 @@ export const NavBarItem = (props: Props) => {
   }
 
   return (
-    <Link className="nav-link" activeClassName="active" to={chapterLink}>
-      <span className="navText">{chapterTitle}</span>
-    </Link>
+    <NavItem className="nav-bar-item">
+      <Link to={chapterLink}>
+        {chapterTitle}
+      </Link>
+    </NavItem>
   )
 }
