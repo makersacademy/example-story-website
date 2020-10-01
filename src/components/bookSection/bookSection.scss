@@ -17,7 +17,7 @@
   border-radius: 8px;
   padding: 20px;
   font-family: $font-heading;
-  font-size: larger;
+
   position: absolute;
   z-index: 1;
   top: -20px;
@@ -25,12 +25,10 @@
 
 .box-subtitle {
   font-family: $font-body;
-  font-size: small;
 }
 
 .box-content {
   font-family: $font-body;
-  font-size: medium;
 }
 
 .book-mid-line {
