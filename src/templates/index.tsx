@@ -15,15 +15,17 @@ const IndexPage = ({ data }) => {
     image,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
-    <Layout>
-      <SEO title="Home" />
-      <BookFrontCover
-        jobTitle={jobTitle}
-        greeting={greeting}
-        careerAim={careerAim}
-        image={image}
-      />
-    </Layout>
+    <html>
+      <Layout>
+        <SEO title="Home" />
+        <BookFrontCover
+          jobTitle={jobTitle}
+          greeting={greeting}
+          careerAim={careerAim}
+          image={image}
+        />
+      </Layout>
+    </html>
   )
 }
 export const query = graphql`
