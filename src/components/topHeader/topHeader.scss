@@ -1,7 +1,14 @@
 @import "../../styles/variables.scss";
 
-h1, h2 {
+h1 {
   font-family: $font-heading;
-  text-align: center
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+}
+
+h2 {
+  font-family: $font-heading;
+  text-align: center;
 }
 
