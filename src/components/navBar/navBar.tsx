@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import { useStaticQuery, graphql } from "gatsby"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
-import { NavBarItem } from "../index"
+import { NavBarItem, TopHeader } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
@@ -17,6 +17,8 @@ export const NavBar = () => {
             }
             frontmatter {
               title
+              jobTitle
+              greeting
             }
           }
         }
