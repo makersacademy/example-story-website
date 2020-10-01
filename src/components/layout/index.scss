@@ -619,16 +619,47 @@ pre tt:after {
   content: "";
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 2400px) {
   html {
-    font-size: 75%;
-    background-color: blue;
+    font-size: 105%;
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 480px) {
   html {
     font-size: 50%;
-    background-color: lavender;
+  }
+}
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 40%;
   }
 }
