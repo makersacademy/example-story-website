@@ -38,9 +38,12 @@ export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
 
+  const topHeaderItems = listLinks.allMarkdownRemark.edges[0].node.frontmatter
+  const { jobTitle, greeting } = topHeaderItems
+
   return (
     <div>
-      <TopHeader greeting={listLinks.allMarkdownRemark.edges[0].node.frontmatter.greeting} jobTitle={listLinks.allMarkdownRemark.edges[0].node.frontmatter.jobTitle}></TopHeader>
+      <TopHeader greeting={greeting} jobTitle={jobTitle}></TopHeader>
       <Navbar light expand="md" className="py-0">
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
