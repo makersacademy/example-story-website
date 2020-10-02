@@ -14,7 +14,7 @@ interface Data {
 
 export default function NewChapter(data: Data) {
   const { frontmatter, html } = data.data.markdownRemark
-  const { title, leftPage, rightPage } = frontmatter
+  const { title, leftPage, rightPage, image } = frontmatter
 
   return (
     <Layout>
@@ -32,21 +32,27 @@ export const query = graphql`
       html
       frontmatter {
         title
-
         leftPage {
           title
           subTitle
           content
+          image {
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         rightPage {
           title
           subTitle
           content
-        }
-        image {
-          childImageSharp {
-            fluid(maxWidth: 300, quality: 100) {
-              ...GatsbyImageSharpFluid
+          image {
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }
