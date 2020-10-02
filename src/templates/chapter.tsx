@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import dompurify from "dompurify"
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
@@ -13,15 +12,11 @@ interface Data {
 }
 
 export default function NewChapter(data: Data) {
-  const { frontmatter, html } = data.data.markdownRemark
+  const { frontmatter } = data.data.markdownRemark
   const { title, leftPage, rightPage } = frontmatter
-  const sanitizer = dompurify.sanitize
   return (
     <Layout>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
-      <div>
-        <div dangerouslySetInnerHTML={{ __html: sanitizer }} />
-      </div>
     </Layout>
   )
 }
