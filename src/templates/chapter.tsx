@@ -15,7 +15,7 @@ interface Data {
 export default function NewChapter(data: Data) {
   const { frontmatter, html } = data.data.markdownRemark
   const { title, leftPage, rightPage } = frontmatter
-  const sanitizer = dompurify.sanitize
+  const sanitizer = dompurify.sanitize(html)
   return (
     <Layout>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
