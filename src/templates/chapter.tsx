@@ -13,7 +13,7 @@ interface Data {
 }
 
 export default function NewChapter(data: Data) {
-  const { frontmatter, html } = data.data.markdownRemark
+  const { frontmatter } = data.data.markdownRemark
   const { title, leftPage, rightPage } = frontmatter
 
   return (
