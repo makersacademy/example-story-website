@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
 
@@ -15,7 +14,6 @@ interface Data {
 export default function NewChapter(data: Data) {
   const { frontmatter } = data.data.markdownRemark
   const { title, leftPage, rightPage } = frontmatter
-
   return (
     <Layout>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
