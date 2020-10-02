@@ -19,9 +19,6 @@ export default function NewChapter(data: Data) {
   return (
     <Layout>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
-      <div>
-        <div dangerouslySetInnerHTML={{ __html: sanitizer }} />
-      </div>
     </Layout>
   )
 }
