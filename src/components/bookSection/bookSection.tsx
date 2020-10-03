@@ -1,7 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
-import Img from "gatsby-image"
 
 interface PageItem {
   title?: string
@@ -18,12 +17,8 @@ export const BookSection = (props: Props) => {
   const { pageItem } = props
   const { title, subTitle, content, image } = pageItem
 
-  let picture
-
   if (image) {
-    console.log(image.childImageSharp.fluid.src)
     var src = image.childImageSharp.fluid.src
-    picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
   function addTextBox() {
