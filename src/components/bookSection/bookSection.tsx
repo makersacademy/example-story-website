@@ -38,16 +38,19 @@ export const BookSection = (props: Props) => {
     }
   }
 
+  function addBackgroundImage() {
+    if (image) {
+      return {
+        backgroundImage: `url(${src})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }
+    }
+  }
+
   return (
     <div className="px-3 pb-5">
-      <div
-        className="box"
-        style={{
-          backgroundImage: `url(${src})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      >
+      <div className="box" style={addBackgroundImage()}>
         <div className={`${addTextBox()} `}>
           <h2 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h2>
           <h3 className="subtitle-box px-2">{subTitle}</h3>
