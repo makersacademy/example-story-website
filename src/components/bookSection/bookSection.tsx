@@ -1,12 +1,14 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
+import Img from "gatsby-image"
 
 interface PageItem {
   title?: string
   subTitle?: string
   content?: string
   image?: any
+  imageWithoutText?: any
 }
 
 interface Props {
@@ -15,7 +17,7 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { pageItem } = props
-  const { title, subTitle, content, image } = pageItem
+  const { title, subTitle, content, image, imageWithoutText } = pageItem
 
   function isImagePresent() {
     return image
@@ -28,7 +30,7 @@ export const BookSection = (props: Props) => {
   }
 
   function addTitleBox() {
-    if (!isImagePresent()) {
+    if (!isImagePresent() && !imageWithoutText) {
       return "title-box"
     }
   }
@@ -44,9 +46,21 @@ export const BookSection = (props: Props) => {
     }
   }
 
+  function addTitle() {
+    if (title) {
+      return "title"
+    }
+  }
+
+  let picture
+  if (imageWithoutText) {
+    picture = <Img fluid={imageWithoutText.childImageSharp.fluid} />
+  }
+
   return (
     <div className="px-3 pb-5">
       <div className="box" style={addBackgroundImage()}>
+        {picture}
         <div className={`${addTextBox()} `}>
           <h2 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h2>
           <h3 className="subtitle-box px-2">{subTitle}</h3>

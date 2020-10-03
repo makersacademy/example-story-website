@@ -9,6 +9,7 @@ interface PageItem {
   subTitle?: string
   content?: string
   image?: any
+  imageWithoutText?: any
 }
 
 interface Props {

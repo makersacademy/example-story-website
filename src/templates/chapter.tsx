@@ -55,6 +55,13 @@ export const query = graphql`
               }
             }
           }
+          imageWithoutText {
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }
