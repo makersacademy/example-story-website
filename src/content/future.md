@@ -1,5 +1,5 @@
 ---
-title: "The Future"
+title: "Future"
 chapter: "7"
 leftPage:
   - title: 1 The Future
