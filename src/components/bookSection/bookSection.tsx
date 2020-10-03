@@ -8,7 +8,7 @@ interface PageItem {
   subTitle?: string
   content?: string
   image?: any
-  imageWithoutText?: any
+  backgroundImage?: any
 }
 
 interface Props {
@@ -19,7 +19,6 @@ export const BookSection = (props: Props) => {
   const { pageItem } = props
   const { title, subTitle, content, image, backgroundImage } = pageItem
 
-  //console.log(backgroundImage)
   function isBackgroundImagePresent() {
     return backgroundImage
   }
