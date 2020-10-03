@@ -4,7 +4,7 @@ chapter: "4"
 leftPage:
   - title: Eureka moment
     content: The more I learned about design, the more I wanted to engage in critical issues with design. I realised that the best way to do this was through combining design with software technology.
-    image: "../images/lightbulb.jpg"
+    backgroundImage: "../images/lightbulb.jpg"
   - title: Journey
     content: I started self-learning in my spare time. I started learning Python, and doing online courses. I quickly became obsessed with coding and even found myself dreaming in code. After 6 months I decided to make the big change….
 rightPage:

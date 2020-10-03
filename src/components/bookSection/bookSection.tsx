@@ -17,10 +17,11 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { pageItem } = props
-  const { title, subTitle, content, image, imageWithoutText } = pageItem
+  const { title, subTitle, content, image, backgroundImage } = pageItem
 
+  console.log(backgroundImage)
   function isImagePresent() {
-    return image
+    return backgroundImage
   }
 
   function addTextBox() {
@@ -30,14 +31,14 @@ export const BookSection = (props: Props) => {
   }
 
   function addTitleBox() {
-    if (!isImagePresent() && !imageWithoutText) {
+    if (!isImagePresent() && !image) {
       return "title-box"
     }
   }
 
   function addBackgroundImage() {
     if (isImagePresent()) {
-      const src = image.childImageSharp.fluid.src
+      const src = backgroundImage.childImageSharp.fluid.src
       return {
         backgroundImage: `url(${src})`,
         backgroundRepeat: "no-repeat",
@@ -53,8 +54,8 @@ export const BookSection = (props: Props) => {
   }
 
   let picture
-  if (imageWithoutText) {
-    picture = <Img fluid={imageWithoutText.childImageSharp.fluid} />
+  if (image) {
+    picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
   return (

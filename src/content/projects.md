@@ -3,7 +3,7 @@ title: "Projects"
 chapter: "6"
 leftPage:
   - title: Mission Ctrl
-    image: "../images/project-mission-ctrl.jpg"
+    backgroundImage: "../images/project-mission-ctrl.jpg"
   - title: About
     content: An arcade-style game that helps developers become more efficient coders by teaching VS code short cuts. Built in 10 days using agile processes as part of Makers final group project.
   - title: Technologies
