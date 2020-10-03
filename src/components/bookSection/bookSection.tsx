@@ -19,37 +19,37 @@ export const BookSection = (props: Props) => {
   const { pageItem } = props
   const { title, subTitle, content, image, backgroundImage } = pageItem
 
-  console.log(backgroundImage)
-  function isImagePresent() {
+  //console.log(backgroundImage)
+  function isBackgroundImagePresent() {
     return backgroundImage
   }
 
+  function isAnyImagePresent() {
+    if (image || backgroundImage) {
+      return true
+    }
+  }
+
   function addTextBox() {
-    if (isImagePresent()) {
+    if (isBackgroundImagePresent()) {
       return "text-box col-lg-6 col-md-6"
     }
   }
 
   function addTitleBox() {
-    if (!isImagePresent() && !image) {
+    if (!isAnyImagePresent()) {
       return "title-box"
     }
   }
 
   function addBackgroundImage() {
-    if (isImagePresent()) {
+    if (isBackgroundImagePresent()) {
       const src = backgroundImage.childImageSharp.fluid.src
       return {
         backgroundImage: `url(${src})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }
-    }
-  }
-
-  function addTitle() {
-    if (title) {
-      return "title"
     }
   }
 
