@@ -1,12 +1,22 @@
 @import "../../styles/variables.scss";
 
-.rectangle {
-  width: full-width;
-  height: 10px;
-  background-color: $color-primary-dark;
+.active {
+  border-bottom: 10px solid #43b0f2;
 }
 
-.navText {
+.nav-bar-item {
   color: $color-primary-dark;
   font-family: $font-body;
+
+  a {
+    border-bottom: 5px solid black;
+    padding: 15px 22px;
+  }
+
+  a:hover {
+    border-bottom: 10px solid #43b0f2;
+    text-decoration: none;
+    padding-bottom: 10px;
+  }
 }
+
