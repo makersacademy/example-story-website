@@ -26,15 +26,15 @@ export const BookSection = (props: Props) => {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
-  function addStyle() {
+  function addTextBox() {
     if (image) {
-      return "small-box col-lg-6 col-md-6"
+      return "text-box col-lg-6 col-md-6"
     }
   }
 
-  function isBoxTitle() {
+  function addTitleBox() {
     if (!image) {
-      return "box-title"
+      return "title-box"
     }
   }
 
@@ -48,10 +48,10 @@ export const BookSection = (props: Props) => {
           backgroundSize: "cover",
         }}
       >
-        <div className={`${addStyle()} `}>
-          <h2 className={`title px-2 my-0 py-2 ${isBoxTitle()} `}>{title}</h2>
-          <h3 className="box-subtitle px-2">{subTitle}</h3>
-          <p className="px-2 box-content">{content}</p>
+        <div className={`${addTextBox()} `}>
+          <h2 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h2>
+          <h3 className="subtitle-box px-2">{subTitle}</h3>
+          <p className="px-2 content-box">{content}</p>
         </div>
       </div>
     </div>

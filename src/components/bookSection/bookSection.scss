@@ -10,7 +10,7 @@
   z-index: 0;
 }
 
-.box-title {
+.title-box {
   background-color: $color-primary-light;
   border: 5px solid $color-primary-dark;
   display: block;
@@ -28,12 +28,12 @@
   font-size: larger;
 }
 
-.box-subtitle {
+.subtitle-box {
   font-family: $font-body;
   font-size: small;
 }
 
-.box-content {
+.content-box {
   font-family: $font-body;
   font-size: medium;
 }
@@ -42,7 +42,7 @@
   border-right: 1px solid $color-primary-dark;
 }
 
-.small-box {
+.text-box {
   background-color: $color-primary-light;
   border: 5px solid $color-primary-dark;
   border-radius: 8px;
