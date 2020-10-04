@@ -27,21 +27,34 @@ export const query = graphql`
       html
       frontmatter {
         title
-
         leftPage {
           title
           subTitle
           content
+          backgroundImage {
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         rightPage {
           title
           subTitle
           content
-        }
-        image {
-          childImageSharp {
-            fluid(maxWidth: 300, quality: 100) {
-              ...GatsbyImageSharpFluid
+          backgroundImage {
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          image {
+            childImageSharp {
+              fluid(maxWidth: 300, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
         }

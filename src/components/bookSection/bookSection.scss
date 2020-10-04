@@ -10,7 +10,7 @@
   z-index: 0;
 }
 
-.box-title {
+.title-box {
   background-color: $color-primary-light;
   border: 5px solid $color-primary-dark;
   display: block;
@@ -22,17 +22,30 @@
   top: -20px;
 }
 
-.box-subtitle {
+.title {
+  font-family: $font-heading;
+  font-size: larger;
+  text-align: left;
+}
+
+.subtitle-box {
   font-family: $font-body;
   top: 20px;
   padding: 10px;
   position: relative;
 }
 
-.box-content {
+.content-box {
   font-family: $font-body;
 }
 
 .book-mid-line {
   border-right: 1px solid $color-primary-dark;
+}
+
+.text-box {
+  background-color: $color-primary-light;
+  border: 5px solid $color-primary-dark;
+  border-radius: 8px;
+  padding: 20px;
 }
