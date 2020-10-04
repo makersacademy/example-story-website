@@ -42,16 +42,24 @@ export const NavBar = () => {
   const { jobTitle, greeting } = topHeaderItems
 
   return (
-    <div>
-      <TopHeader greeting={greeting} jobTitle={jobTitle}></TopHeader>
-      <Navbar light expand="md" className="py-0">
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-            <ul className="navbar-nav">{listItems}</ul>
-          </Nav>
-        </Collapse>
-      </Navbar>
+    <div className="container">
+      <div className="row justify-content-center">
+        <TopHeader
+          greeting={greeting}
+          jobTitle={jobTitle}
+          //
+        ></TopHeader>
+      </div>
+      <div className="row justify-content-center ">
+        <Navbar light expand="md" className=" py-0">
+          <NavbarToggler onClick={toggle} />
+          <Collapse isOpen={isOpen} navbar>
+            <Nav className="mr-auto ml-0 " navbar>
+              <ul className="navbar-nav ml-0 ">{listItems}</ul>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     </div>
   )
 }
