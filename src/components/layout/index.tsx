@@ -8,9 +8,7 @@ const Layout = (props: any) => {
 
   return (
     <div>
-      <div className="d-flex justify-content-center">
-        <NavBar />
-      </div>
+      <NavBar />
       <main>{children}</main>
     </div>
   )

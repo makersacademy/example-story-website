@@ -7,6 +7,6 @@ describe("NavBarItem", () => {
     let wrapper = shallow(
       <NavBarItem chapterTitle="Learning" chapterLink="/learning/" />
     )
-    expect(wrapper.text()).toContain("Learning")
-  })
-})
+    expect(wrapper.containsMatchingElement(<>Learning</>))
+  });
+});

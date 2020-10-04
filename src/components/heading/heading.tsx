@@ -8,18 +8,18 @@ interface Props {
   jobTitle: string
 }
 
-export const Heading = (props:Props) => {
+export const Heading = (props: Props) => {
   const { jobTitle, greeting } = props
 
   return (
     <div>
       <div className="row">
         <div id="title" className="col-8 offset-2 text-center">
-          <h3 id="heading" className="pt-1 heading">
+          <h1 id="heading" className="pt-4 subHeading">
             {greeting}
             <br></br>
             {jobTitle}
-          </h3>
+          </h1>
         </div>
       </div>
     </div>
