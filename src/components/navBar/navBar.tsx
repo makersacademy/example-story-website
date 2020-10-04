@@ -53,8 +53,8 @@ export const NavBar = () => {
         <Navbar light expand="md" className=" py-0">
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className="mr-auto" navbar>
-              <ul className="navbar-nav">{listItems}</ul>
+            <Nav className="mr-auto ml-0 " navbar>
+              <ul className="navbar-nav ml-0 ">{listItems}</ul>
             </Nav>
           </Collapse>
         </Navbar>
