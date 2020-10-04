@@ -1,12 +1,19 @@
 @import "../../styles/variables.scss";
 
 .active {
-  border-bottom: 10px solid $color-accent;
+  border-bottom: 10px solid $color-accent-light;
 }
 
 .nav-bar-item {
-  color: $color-primary-dark;
   font-family: $font-body;
+}
+
+a {
+  color: $color-accent-dark;
+}
+a:hover {
+  color: $color-accent-dark;
+  text-decoration: none;
 }
 
 @media screen and (min-width: $break-medium) {
@@ -15,7 +22,7 @@
     padding: 15px 22px;
   }
   a:hover {
-    border-bottom: 10px solid $color-accent;
+    border-bottom: 10px solid $color-accent-light;
     text-decoration: none;
     padding-bottom: 10px;
   }
@@ -23,7 +30,7 @@
 
 @media screen and (max-width: $break-medium) {
   a:hover {
-    color: $color-primary-dark;
+    color: $color-primary-light;
     text-decoration: none;
   }
 }
