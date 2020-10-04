@@ -7,12 +7,13 @@
 .nav-bar-item {
   color: $color-primary-dark;
   font-family: $font-body;
+}
 
+@media screen and (min-width: 768px) {
   a {
     border-bottom: 5px solid black;
     padding: 15px 22px;
   }
-
   a:hover {
     border-bottom: 10px solid #43b0f2;
     text-decoration: none;
@@ -20,3 +21,9 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  a:hover {
+    color: $color-primary-dark;
+    text-decoration: none;
+  }
+}
