@@ -49,7 +49,8 @@ export const NavBar = () => {
           jobTitle={jobTitle}
           //
         ></TopHeader>
-
+      </div>
+      <div className="row justify-content-center ">
         <Navbar light expand="md" className=" py-0">
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
