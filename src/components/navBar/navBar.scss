@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .active {
-  border-bottom: 10px solid #43b0f2;
+  border-bottom: 10px solid $color-accent;
 }
 
 .nav-bar-item {
@@ -9,19 +9,19 @@
   font-family: $font-body;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $break-medium) {
   a {
     border-bottom: 5px solid black;
     padding: 15px 22px;
   }
   a:hover {
-    border-bottom: 10px solid #43b0f2;
+    border-bottom: 10px solid $color-accent;
     text-decoration: none;
     padding-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $break-medium) {
   a:hover {
     color: $color-primary-dark;
     text-decoration: none;
