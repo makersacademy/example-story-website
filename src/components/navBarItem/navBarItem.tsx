@@ -18,7 +18,7 @@ export const NavBarItem = (props: Props) => {
 
   return (
     <NavItem className="nav-bar-item">
-      <Link to={chapterLink}>
+      <Link to={chapterLink} activeClassName="active">
         <>{chapterTitle}</>
       </Link>
     </NavItem>
