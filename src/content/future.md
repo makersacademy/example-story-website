@@ -7,6 +7,6 @@ leftPage:
     backgroundImage: "../images/future.jpg"
 rightPage:
   - title: Career Aspirations
-    content: I love building collaborative environments, and  ultimately, I would like to be a lead engineer.  within a project.
+    content: I love building collaborative environments, and  ultimately, I would like to be a lead engineer within a project.
     backgroundImage: "../images/target.jpg"
 ---
