@@ -1,5 +1,5 @@
 ---
-title: "The Start"
+title: "Start"
 chapter: "2"
 leftPage:
   - title: The very start
