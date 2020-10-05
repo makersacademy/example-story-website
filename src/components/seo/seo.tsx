@@ -6,11 +6,10 @@ interface Props {
   description?: string
   lang?: string
   meta?: Array<{ name: string; content: string }>
-  keywords?: Array<string>
   title: string
 }
 
-function SEO({ description, lang, meta, keywords, title }: Props) {
+function SEO({ description, lang, meta, title }: Props) {
   const { site } = useStaticQuery(
     graphql`
       query {
