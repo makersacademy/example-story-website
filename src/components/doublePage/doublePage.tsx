@@ -23,6 +23,7 @@ export const DoublePage = (props: Props) => {
 
   return (
     <div className="container d-flex justify-content-around" id="double-page">
+      <div className="triangle-right"></div>
       <div className="row ">
         <LeftPage leftPage={leftPage} title={title}></LeftPage>
         <RightPage rightPage={rightPage} />
