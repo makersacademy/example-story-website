@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { BookSection } from "../index"
 
+//duplication - typescripty way of hiding interfaces
+// different patterns to defining interfaces + different ways of components having access
+//fancy and dry way
 interface PageItem {
   title?: string
   subTitle?: string

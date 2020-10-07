@@ -25,6 +25,7 @@ export const NavBar = () => {
       }
     }
   `)
+  // try remove any - type defination that you  - look at allmarkdown documentation for way to define
   var listItems = listLinks.allMarkdownRemark.edges.map(
     ({ node }: { node: any }, index: number) => (
       <NavBarItem

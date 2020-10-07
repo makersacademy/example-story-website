@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { BookSection } from "../index"
 
+// duplication
 interface PageItem {
   title?: string
   subTitle?: string
