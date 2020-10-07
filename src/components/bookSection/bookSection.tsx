@@ -58,7 +58,7 @@ export const BookSection = (props: Props) => {
   }
 
   return (
-    <div className="px-3 pb-5">
+    <div className={`px-3 pb-5 col-${boxSize}`}>
       <div className="box" style={addBackgroundImage()}>
         {picture}
         <div className={`${addTextBox()} `}>
