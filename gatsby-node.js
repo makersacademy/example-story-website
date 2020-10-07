@@ -53,3 +53,20 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   })
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+        type MarkdownRemark implements Node {
+            frontmatter: Frontmatter
+        }
+        type Frontmatter  {
+            leftPage: [LeftPage!]!
+        }
+        type LeftPage{
+          boxSize: String
+        }
+
+    `
+  createTypes(typeDefs)
+}
