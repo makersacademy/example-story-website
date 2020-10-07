@@ -9,6 +9,7 @@ interface PageItem {
   content?: string
   image?: any
   backgroundImage?: any
+  boxSize?: string
 }
 
 interface Props {
@@ -17,8 +18,7 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { pageItem } = props
-  const { title, subTitle, content, image, backgroundImage } = pageItem
-
+  const { title, subTitle, content, image, backgroundImage, boxSize } = pageItem
   function isBackgroundImagePresent() {
     return backgroundImage
   }
