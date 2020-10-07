@@ -61,9 +61,13 @@ exports.createSchemaCustomization = ({ actions }) => {
             frontmatter: Frontmatter
         }
         type Frontmatter  {
-            leftPage: [LeftPage!]!
+            leftPage: [LeftPage!]!,
+            rightPage: [RightPage!]!
         }
         type LeftPage{
+          boxSize: String
+        }
+        type RightPage{
           boxSize: String
         }
 
