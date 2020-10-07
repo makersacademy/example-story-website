@@ -14,6 +14,21 @@ interface Props {
   rightPage?: Array<PageItem>
 }
 
+const linkArray = ["/home/", "/now/", "/start/", "/employment/", "/eureka/", "/learning/", "/projects/", "/future/", "/contact/"]
+
+var findNextPage =  () => {
+  linkArray.forEach(function(item, index) {
+    if (item == location.pathname) {
+      console.log("Current Location=" + location.pathname)
+      console.log("item=" + item)
+      console.log("index=" + index)
+      const nextPage = linkArray[index + 1]
+    };
+  });
+};
+
+findNextPage()
+
 export const RightPage = (props: Props) => {
   const { rightPage } = props
 

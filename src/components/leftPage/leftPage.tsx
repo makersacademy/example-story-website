@@ -25,7 +25,6 @@ export const LeftPage = (props: Props) => {
   } else {
     listLeftPage = []
   }
-
   return (
     <div className=" col-lg-6 col-md-6 mid-line  ">
       <h2 className="heading px-3 py-3 ">{title}</h2>
