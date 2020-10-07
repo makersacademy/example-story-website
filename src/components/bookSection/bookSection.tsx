@@ -19,6 +19,8 @@ export const BookSection = (props: Props) => {
   const { pageItem } = props
   const { title, subTitle, content, image, backgroundImage } = pageItem
 
+  // consistency of approach rather than particular pattern
+
   function isBackgroundImagePresent() {
     return backgroundImage
   }
@@ -52,15 +54,12 @@ export const BookSection = (props: Props) => {
     }
   }
 
-  let picture
-  if (image) {
-    picture = <Img fluid={image.childImageSharp.fluid} />
-  }
-
+  // one liner logic ok in react return - checking for presense ok
+  // do same for other functions
   return (
     <div className="px-3 pb-5">
       <div className="box" style={addBackgroundImage()}>
-        {picture}
+        {image && <Img fluid={image.childImageSharp.fluid} />}
         <div className={`${addTextBox()} `}>
           <h2 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h2>
           <h3 className="subtitle-box px-2">{subTitle}</h3>
