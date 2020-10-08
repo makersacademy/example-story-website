@@ -23,6 +23,9 @@ rightPage:
     content: Joseph-Jones
   - title: Email
     content: "JosephJones@makers.com"
+  - title: Fax
+    boxWidth: full
+    content: 0818118181
   - title: Blog
     boxWidth: 8
     content: JosephJones
