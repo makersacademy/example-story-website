@@ -65,14 +65,19 @@ export const BookSection = (props: Props) => {
   }
 
   let width
+  let text
   if (boxWidth == "quarter") {
     width = 3
+    text = "text-center"
   } else if (boxWidth == "half") {
     width = 6
+    text = "text-center"
   } else if (boxWidth == "full") {
     width = 12
+    text = "text-center"
   } else {
     width = boxWidth
+    text = "text-center"
   }
 
   return (
@@ -82,7 +87,7 @@ export const BookSection = (props: Props) => {
         <div className={`${addTextBox()} `}>
           <h2 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h2>
           <h3 className="subtitle-box px-2">{subTitle}</h3>
-          <p className="px-2 content-box">{content}</p>
+          <p className={`px-2 content-box ${text}`}>{content}</p>
         </div>
       </div>
     </div>
