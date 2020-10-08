@@ -7,8 +7,16 @@ leftPage:
     content: www.name.com
 
   - title: Github
-    boxWidth: "8"
+    boxWidth: half
     content: Joseph-Jones-Has-A-Really-Long-Username
+
+  - title: Snapchat
+    boxWidth: 8
+    content: <Snapchat_UserName>
+
+  - title: Instagram
+    boxWidth: 4
+    content: "@insta_joe"
 
 rightPage:
   - title: LinkedIn
@@ -16,6 +24,6 @@ rightPage:
   - title: Email
     content: "JosephJones@makers.com"
   - title: Blog
-    boxWidth: quarter
+    boxWidth: 8
     content: JosephJones
 ---
