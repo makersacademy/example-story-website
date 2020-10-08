@@ -64,7 +64,7 @@ export const BookSection = (props: Props) => {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
-  let width
+  let width = 12
   let text
   if (boxWidth == "quarter" && boxWidth) {
     width = 3
@@ -74,9 +74,6 @@ export const BookSection = (props: Props) => {
     text = "text-center"
   } else if (boxWidth == "full" && boxWidth) {
     width = 12
-    text = "text-center"
-  } else if (boxWidth) {
-    width = boxWidth
     text = "text-center"
   }
 
