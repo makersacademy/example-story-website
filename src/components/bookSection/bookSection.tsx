@@ -64,8 +64,17 @@ export const BookSection = (props: Props) => {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
+  let width
+  if (boxWidth == "quarter") {
+    width = 3
+  } else if (boxWidth == "half") {
+    width = 6
+  } else {
+    width = boxWidth
+  }
+
   return (
-    <div className={`px-3 pb-5 col-${boxWidth}`}>
+    <div className={`px-3 pb-5 col-${width}`}>
       <div className="box" style={addBackgroundImage()}>
         {picture}
         <div className={`${addTextBox()} `}>

@@ -3,11 +3,11 @@ title: "Contact"
 chapter: "8"
 leftPage:
   - title: Portfolio
-    boxWidth: "7"
+    boxWidth: half
     content: www.name.com
 
   - title: Github
-    boxWidth: "12"
+    boxWidth: "8"
     content: Joseph-Jones-Has-A-Really-Long-Username
 
 rightPage:
@@ -16,5 +16,6 @@ rightPage:
   - title: Email
     content: "JosephJones@makers.com"
   - title: Blog
+    boxWidth: quarter
     content: JosephJones
 ---
