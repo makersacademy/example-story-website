@@ -69,6 +69,8 @@ export const BookSection = (props: Props) => {
     width = 3
   } else if (boxWidth == "half") {
     width = 6
+  } else if (boxWidth == "full") {
+    width = 12
   } else {
     width = boxWidth
   }
