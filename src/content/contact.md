@@ -11,11 +11,11 @@ leftPage:
     content: Joseph-Jones-Has-A-Really-Long-Username
 
   - title: Snapchat
-    boxWidth: 8
+    boxWidth: "8"
     content: <Snapchat_UserName>
 
   - title: Instagram
-    boxWidth: 4
+    boxWidth: "4"
     content: "@insta_joe"
 
 rightPage:
@@ -25,8 +25,8 @@ rightPage:
     content: "JosephJones@makers.com"
   - title: Fax
     boxWidth: full
-    content: 0818118181
+    content: "0818118181"
   - title: Blog
-    boxWidth: 8
+    boxWidth: "8"
     content: JosephJones
 ---
