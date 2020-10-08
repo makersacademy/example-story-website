@@ -3,11 +3,11 @@ title: "Contact"
 chapter: "8"
 leftPage:
   - title: Portfolio
-    boxSize: "7"
+    boxWidth: "7"
     content: www.name.com
 
   - title: Github
-    boxSize: "12"
+    boxWidth: "12"
     content: Joseph-Jones-Has-A-Really-Long-Username
 
 rightPage:
