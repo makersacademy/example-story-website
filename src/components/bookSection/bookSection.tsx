@@ -66,16 +66,16 @@ export const BookSection = (props: Props) => {
 
   let width
   let text
-  if (boxWidth == "quarter") {
+  if (boxWidth == "quarter" && boxWidth) {
     width = 3
     text = "text-center"
-  } else if (boxWidth == "half") {
+  } else if (boxWidth == "half" && boxWidth) {
     width = 6
     text = "text-center"
-  } else if (boxWidth == "full") {
+  } else if (boxWidth == "full" && boxWidth) {
     width = 12
     text = "text-center"
-  } else {
+  } else if (boxWidth) {
     width = boxWidth
     text = "text-center"
   }
