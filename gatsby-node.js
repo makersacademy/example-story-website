@@ -65,10 +65,10 @@ exports.createSchemaCustomization = ({ actions }) => {
             rightPage: [RightPage!]!
         }
         type LeftPage{
-          boxSize: String
+          boxWidth: String
         }
         type RightPage{
-          boxSize: String
+          boxWidth: String
         }
 
     `
