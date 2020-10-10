@@ -18,6 +18,7 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { pageItem } = props
+
   const {
     title,
     subTitle,
@@ -26,6 +27,7 @@ export const BookSection = (props: Props) => {
     backgroundImage,
     boxWidth,
   } = pageItem
+
   function isBackgroundImagePresent() {
     return backgroundImage
   }
@@ -64,18 +66,17 @@ export const BookSection = (props: Props) => {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
-  let width
-  let text
-  if (boxWidth == "quarter" && boxWidth) {
-    width = 3
-    text = "text-center"
-  } else if (boxWidth == "half" && boxWidth) {
-    width = 6
-    text = "text-center"
-  } else if (boxWidth == "full" && boxWidth) {
-    width = 12
-    text = "text-center"
-  }
+  const format =
+    {
+      full: { width: 12, text: "text-center" },
+      threeQuarter: { width: 9, text: "text-center" },
+      twoThird: { width: 8, text: "text-center" },
+      half: { width: 6, text: "text-center" },
+      third: { width: 4, text: "text-center" },
+      quarter: { width: 3, text: "text-center" },
+    }[boxWidth] || ""
+
+  const { width, text } = format
 
   return (
     <div className={`px-3 pb-5 col-${width}`}>
