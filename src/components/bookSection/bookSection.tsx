@@ -19,8 +19,6 @@ export const BookSection = (props: Props) => {
   const { pageItem } = props
   const { title, subTitle, content, image, backgroundImage } = pageItem
 
-  // consistency of approach rather than particular pattern
-
   function isBackgroundImagePresent() {
     return backgroundImage
   }
@@ -35,20 +33,7 @@ export const BookSection = (props: Props) => {
       }
     }
   }
-  //  function addTitleBox() {
-  //    if (!isAnyImagePresent()) {
-  //      return "title-box"
-  //    }
-  //  }
 
-  //  function isAnyImagePresent() {
-  //    if (image || backgroundImage) {
-  //      return true
-  //    }
-  //  }
-
-  // one liner logic ok in react return - checking for presense ok
-  // do same for other functions
   return (
     <div className="px-3 pb-5">
       <div className="box" style={addBackgroundImage()}>
