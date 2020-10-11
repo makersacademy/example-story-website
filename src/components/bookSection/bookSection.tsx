@@ -40,6 +40,9 @@ export const BookSection = (props: Props) => {
       }
     }
   }
+  //? Inline style?
+  //Can you access props from SASS files? Or is there a way I can pass the src value to the SASS file?
+  //If the above is possible is it good practice? To me it seems like anything to do with props should be kept to the JS/TS files
 
   const gridConversions = {
     quarter: 3,
@@ -50,6 +53,7 @@ export const BookSection = (props: Props) => {
   let textAlignment
 
   const width = boxWidth && gridConversions[boxWidth]
+  //? This could be moved to the render
 
   return (
     <div className={`px-3 pb-5 col-${width}`}>
