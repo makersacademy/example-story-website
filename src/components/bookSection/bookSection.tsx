@@ -9,6 +9,7 @@ interface PageItem {
   content?: string
   image?: any
   backgroundImage?: any
+  boxWidth?: string
 }
 
 interface Props {
@@ -17,28 +18,16 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { pageItem } = props
-  const { title, subTitle, content, image, backgroundImage } = pageItem
-
+  const {
+    title,
+    subTitle,
+    content,
+    image,
+    backgroundImage,
+    boxWidth,
+  } = pageItem
   function isBackgroundImagePresent() {
     return backgroundImage
-  }
-
-  function isAnyImagePresent() {
-    if (image || backgroundImage) {
-      return true
-    }
-  }
-
-  function addTextBox() {
-    if (isBackgroundImagePresent()) {
-      return "text-box col-lg-6 col-md-6"
-    }
-  }
-
-  function addTitleBox() {
-    if (!isAnyImagePresent()) {
-      return "title-box"
-    }
   }
 
   function addBackgroundImage() {
@@ -51,20 +40,42 @@ export const BookSection = (props: Props) => {
       }
     }
   }
+  //? Inline style?
+  //Can you access props from SASS files? Or is there a way I can pass the src value to the SASS file?
+  //If the above is possible is it good practice? To me it seems like anything to do with props should be kept to the JS/TS files
 
-  let picture
-  if (image) {
-    picture = <Img fluid={image.childImageSharp.fluid} />
+  interface GridConversion {
+    quarter: number
+    half: number
+    full: number
+    [index: string]: number
   }
 
+  const gridConversions: GridConversion = {
+    quarter: 3,
+    half: 6,
+    full: 12,
+  }
+
+  let textAlignment
+
+  const width = boxWidth && gridConversions[boxWidth]
+  //? This could be moved to the render
+
   return (
-    <div className="px-3 pb-5">
+    <div className={`px-3 pb-5 col-${width}`}>
       <div className="box" style={addBackgroundImage()}>
-        {picture}
-        <div className={`${addTextBox()} `}>
-          <h3 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h3>
+        {image && <Img fluid={image.childImageSharp.fluid} />}
+        <div className={`${backgroundImage && "text-box col-lg-6 col-md-6"} `}>
+          <h3
+            className={`title px-2 my-0 py-2 ${
+              !(image || backgroundImage) && "title-box"
+            } `}
+          >
+            {title}
+          </h3>
           <h4 className="subtitle-box px-2">{subTitle}</h4>
-          <p className="px-2 content-box">{content}</p>
+          <p className={`px-2 content-box ${textAlignment}`}>{content}</p>
         </div>
       </div>
     </div>

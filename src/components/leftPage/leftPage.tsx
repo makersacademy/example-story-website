@@ -3,6 +3,9 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { BookSection } from "../index"
 
+//duplication - typescripty way of hiding interfaces
+// different patterns to defining interfaces + different ways of components having access
+//fancy and dry way
 interface PageItem {
   title?: string
   subTitle?: string
@@ -27,9 +30,9 @@ export const LeftPage = (props: Props) => {
   }
 
   return (
-    <div className=" col-lg-6 col-md-6 mid-line  ">
+    <div className=" col-lg-6 col-md-6 mid-line ">
       <h2 className="heading px-3 py-3 ">{title}</h2>
-      <div>{listLeftPage}</div>
+      <div className="row">{listLeftPage}</div>
     </div>
   )
 }

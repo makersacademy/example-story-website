@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import { BookSection } from "../index"
 
+// duplication
 interface PageItem {
   title?: string
   subTitle?: string
@@ -27,7 +28,7 @@ export const RightPage = (props: Props) => {
 
   return (
     <div className="col-lg-6 col-md-6 py-5">
-      <div>{listRightPage}</div>
+      <div className="row">{listRightPage}</div>
     </div>
   )
 }
