@@ -41,19 +41,15 @@ export const BookSection = (props: Props) => {
     }
   }
 
-  let width
+  const gridConversions = {
+    quarter: 3,
+    half: 6,
+    full: 12,
+  }
 
   let textAlignment
-  if (boxWidth == "quarter" && boxWidth) {
-    width = 3
-    textAlignment = "text-center"
-  } else if (boxWidth == "half" && boxWidth) {
-    width = 6
-    textAlignment = "text-center"
-  } else if (boxWidth == "full" && boxWidth) {
-    width = 12
-    textAlignment = "text-center"
-  }
+
+  const width = boxWidth && gridConversions[boxWidth]
 
   return (
     <div className={`px-3 pb-5 col-${width}`}>
