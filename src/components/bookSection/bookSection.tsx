@@ -41,11 +41,6 @@ export const BookSection = (props: Props) => {
     }
   }
 
-  // let picture
-  // if (image) {
-  //   picture = <Img fluid={image.childImageSharp.fluid} />
-  // }
-
   let width
   let text
   if (boxWidth == "quarter" && boxWidth) {
