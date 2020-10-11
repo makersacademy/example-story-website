@@ -42,6 +42,7 @@ export const BookSection = (props: Props) => {
   }
 
   let width
+
   let textAlignment
   if (boxWidth == "quarter" && boxWidth) {
     width = 3
@@ -61,7 +62,7 @@ export const BookSection = (props: Props) => {
         <div className={`${backgroundImage && "text-box col-lg-6 col-md-6"} `}>
           <h3
             className={`title px-2 my-0 py-2 ${
-              (!image || !backgroundImage) && "title-box"
+              !(image || backgroundImage) && "title-box"
             } `}
           >
             {title}
