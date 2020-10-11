@@ -44,7 +44,14 @@ export const BookSection = (props: Props) => {
   //Can you access props from SASS files? Or is there a way I can pass the src value to the SASS file?
   //If the above is possible is it good practice? To me it seems like anything to do with props should be kept to the JS/TS files
 
-  const gridConversions = {
+  interface GridConversion {
+    quarter: number
+    half: number
+    full: number
+    [index: string]: number
+  }
+
+  const gridConversions: GridConversion = {
     quarter: 3,
     half: 6,
     full: 12,
