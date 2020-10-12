@@ -30,15 +30,32 @@
 }
 
 .triangle-right {
-  position: relative;
-  margin-right: -160px;
-  left: 1126px;
-  top: 250px;
-  width: 0; 
-  height: 0; 
-  border-top: 80px solid transparent;
-  border-bottom: 80px solid transparent;
-  border-left: 80px solid $color-accent-light;
+  a {
+    position: relative;
+    padding: none;
+    margin-right: -160px;
+    left: 1126px;
+    top: 250px;
+    width: 0; 
+    height: 0; 
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid $color-accent-light;
+  }
+
+    a {
+      padding: none;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+      padding-bottom: none;
+      border-bottom: 80px solid transparent;
+    }
+    .active {
+      text-decoration: none;
+      padding-bottom: none;
+    }
 }
 
 
@@ -51,4 +68,31 @@
   border-top: 80px solid transparent;
   border-bottom: 80px solid transparent;
   border-right: 80px solid $color-accent-light;
+  a {
+    border-bottom: none;
+    padding: none;
+  }
+  a:hover {
+    border-bottom: none;
+    text-decoration: none;
+    padding-bottom: none;
+  }
+  .active {
+    border-bottom: none;
+    padding-bottom: none;
+  }
+}
+
+a {
+  border-bottom: none;
+  padding: none;
+}
+a:hover {
+  border-bottom: none;
+  text-decoration: none;
+  padding-bottom: none;
+}
+.active {
+  border-bottom: none;
+  padding-bottom: none;
 }
