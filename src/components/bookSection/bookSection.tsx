@@ -91,8 +91,8 @@ export const BookSection = (props: Props) => {
       <div className="box" style={addBackgroundImage()}>
         {picture}
         <div className={`${addTextBox()} `}>
-          <h2 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h2>
-          <h3 className="subtitle-box px-2">{subTitle}</h3>
+          <h3 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h3>
+          <h4 className="subtitle-box px-2">{subTitle}</h4>
           <p className={`px-2 content-box ${alignText}`}>{content}</p>
         </div>
       </div>
