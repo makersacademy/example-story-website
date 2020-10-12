@@ -84,7 +84,7 @@ export const BookSection = (props: Props) => {
 
   const columnWidth = boxWidth && boxWidthLookup[boxWidth]
 
-  const alignText = columnWidth ? "" : "text-center"
+  const alignText = columnWidth ? "text-center" : ""
 
   return (
     <div className={`px-3 pb-5 col-${columnWidth}`}>
