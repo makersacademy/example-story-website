@@ -9,7 +9,7 @@ interface PageItem {
   content?: string
   image?: any
   backgroundImage?: any
-  boxWidth: string
+  boxWidth?: string
 }
 
 interface Props {
@@ -82,7 +82,7 @@ export const BookSection = (props: Props) => {
     quarter: 3,
   }
 
-  const columnWidth = boxWidthLookup[boxWidth]
+  const columnWidth = boxWidth && boxWidthLookup[boxWidth]
 
   const alignText = columnWidth ? "" : "text-center"
 
