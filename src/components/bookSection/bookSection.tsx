@@ -17,9 +17,12 @@ interface Props {
 }
 
 interface BoxWidthLookup {
-  quarter: number
-  half: number
   full: number
+  threeQuarter: number
+  twoThird: number
+  half: number
+  third: number
+  quarter: number
   [index: string]: number
 }
 
