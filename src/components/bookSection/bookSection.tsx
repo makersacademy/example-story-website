@@ -9,11 +9,18 @@ interface PageItem {
   content?: string
   image?: any
   backgroundImage?: any
-  boxWidth?: string
+  boxWidth: string
 }
 
 interface Props {
   pageItem: PageItem
+}
+
+interface BoxWidthLookup {
+  quarter: number
+  half: number
+  full: number
+  [index: string]: number
 }
 
 export const BookSection = (props: Props) => {
@@ -24,8 +31,8 @@ export const BookSection = (props: Props) => {
     subTitle,
     content,
     image,
-    backgroundImage,
     boxWidth,
+    backgroundImage,
   } = pageItem
 
   function isBackgroundImagePresent() {
@@ -66,32 +73,27 @@ export const BookSection = (props: Props) => {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
-  let width, text
-
-  switch (boxWidth) {
-    case "full":
-      width = 12
-      break
-    case "half":
-      width = 6
-      break
-    case "quarter":
-      width = 3
-      break
+  const boxWidthLookup: BoxWidthLookup = {
+    full: 12,
+    threeQuarter: 9,
+    twoThird: 8,
+    half: 6,
+    third: 4,
+    quarter: 3,
   }
 
-  if (width) {
-    text = "text-center"
-  }
+  const columnWidth = boxWidthLookup[boxWidth]
+
+  const alignText = columnWidth ? "" : "text-center"
 
   return (
-    <div className={`px-3 pb-5 col-${width}`}>
+    <div className={`px-3 pb-5 col-${columnWidth}`}>
       <div className="box" style={addBackgroundImage()}>
         {picture}
         <div className={`${addTextBox()} `}>
           <h2 className={`title px-2 my-0 py-2 ${addTitleBox()} `}>{title}</h2>
           <h3 className="subtitle-box px-2">{subTitle}</h3>
-          <p className={`px-2 content-box ${text}`}>{content}</p>
+          <p className={`px-2 content-box ${alignText}`}>{content}</p>
         </div>
       </div>
     </div>
