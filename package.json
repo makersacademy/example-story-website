@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "@apollo/react-hooks": "^4.0.0",
     "@types/enzyme": "^3.10.5",
     "@types/react-helmet": "^6.1.0",
     "@types/reactstrap": "^8.5.1",
