@@ -26,23 +26,15 @@ export const BookSection = (props: Props) => {
     backgroundImage,
     boxWidth,
   } = pageItem
-  function isBackgroundImagePresent() {
-    return backgroundImage
-  }
 
   function addBackgroundImage() {
-    if (isBackgroundImagePresent()) {
+    if (backgroundImage) {
       const src = backgroundImage.childImageSharp.fluid.src
       return {
         backgroundImage: `url(${src})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
       }
     }
   }
-  //? Inline style?
-  //Can you access props from SASS files? Or is there a way I can pass the src value to the SASS file?
-  //If the above is possible is it good practice? To me it seems like anything to do with props should be kept to the JS/TS files
 
   interface GridConversion {
     quarter: number
@@ -60,11 +52,14 @@ export const BookSection = (props: Props) => {
   let textAlignment
 
   const width = boxWidth && gridConversions[boxWidth]
+  // utitlity function
+  //const width = calculateWidth(box_width)
+
   //? This could be moved to the render
 
   return (
     <div className={`px-3 pb-5 col-${width}`}>
-      <div className="box" style={addBackgroundImage()}>
+      <div className="section-box" style={addBackgroundImage()}>
         {image && <Img fluid={image.childImageSharp.fluid} />}
         <div className={`${backgroundImage && "text-box col-lg-6 col-md-6"} `}>
           <h3
@@ -81,3 +76,5 @@ export const BookSection = (props: Props) => {
     </div>
   )
 }
+
+//  background image - with no text
