@@ -29,17 +29,31 @@
   border-right: 1px solid $color-secondary-light;
 }
 
+
 .triangle-right {
   position: relative;
   margin-right: -160px;
   left: 1126px;
-  top: 250px;
+  top: 240px;
+  width: 0; 
+  height: 0; 
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 90px solid white;
+}
+
+.triangle-right-inner {
+  position: relative;
+  margin-right: -160px;
+  left: 1126px;
+  top: 70px;
   width: 0; 
   height: 0; 
   border-top: 80px solid transparent;
   border-bottom: 80px solid transparent;
   border-left: 80px solid $color-accent-light;
 }
+
 
 
 .triangle-left {
