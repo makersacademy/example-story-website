@@ -42,20 +42,19 @@
     border-bottom: 80px solid transparent;
     border-left: 80px solid $color-accent-light;
   }
-
-    a {
-      padding: none;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: none;
-      padding-bottom: none;
-      border-bottom: 80px solid transparent;
-    }
-    .active {
-      text-decoration: none;
-      padding-bottom: none;
-    }
+  a {
+    padding: none;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+    padding: none;
+    border-bottom: 80px solid transparent;
+  }
+  .active {
+    text-decoration: none;
+    padding: none;
+  }
 }
 
 

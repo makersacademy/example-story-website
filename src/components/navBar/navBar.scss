@@ -2,38 +2,31 @@
 
 .nav-bar-item {
   font-family: $font-body;
+  @media screen and (min-width: $break-medium) {
+    a {
+      border-bottom: 5px solid black;
+      padding: 15px 22px;
+    }
+    a:hover {
+      border-bottom: 10px solid $color-accent-light;
+      text-decoration: none;
+      padding-bottom: 10px;
+    }
+    .active {
+      border-bottom: 10px solid $color-accent-light;
+      padding-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: $break-medium) {
+    a:hover {
+      color: $color-primary-light;
+      text-decoration: none;
+    }
+    .active {
+      border-bottom: 2px solid $color-accent-light;
+    }
+  }
 }
 
-a {
-  color: $color-accent-dark;
-}
-a:hover {
-  color: $color-accent-dark;
-  text-decoration: none;
-}
 
-@media screen and (min-width: $break-medium) {
-  a {
-    border-bottom: 5px solid black;
-    padding: 15px 22px;
-  }
-  a:hover {
-    border-bottom: 10px solid $color-accent-light;
-    text-decoration: none;
-    padding-bottom: 10px;
-  }
-  .active {
-    border-bottom: 10px solid $color-accent-light;
-    padding-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: $break-medium) {
-  a:hover {
-    color: $color-primary-light;
-    text-decoration: none;
-  }
-  .active {
-    border-bottom: 2px solid $color-accent-light;
-  }
-}
