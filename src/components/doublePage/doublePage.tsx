@@ -61,7 +61,10 @@ export const DoublePage = (props: Props) => {
           <div className="triangle-right"/>
           <div className="triangle-right-inner"/>
           </Link>
-        <Link to={leftLink}><div className="triangle-left"></div></Link>
+        <Link to={leftLink}>
+          <div className="triangle-left"/>
+          <div className="triangle-left-inner"/>
+        </Link>
       <div className="row ">
         <LeftPage leftPage={leftPage} title={title}></LeftPage>
         <RightPage rightPage={rightPage} />
