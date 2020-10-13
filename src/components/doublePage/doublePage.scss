@@ -52,17 +52,4 @@
   border-top: 80px solid transparent;
   border-bottom: 80px solid transparent;
   border-right: 80px solid $color-accent-light;
-  a {
-    border-bottom: none;
-    padding: none;
-  }
-  a:hover {
-    border-bottom: none;
-    text-decoration: none;
-    padding-bottom: none;
-  }
-  .active {
-    border-bottom: none;
-    padding-bottom: none;
-  }
 }
