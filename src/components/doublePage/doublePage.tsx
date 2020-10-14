@@ -18,12 +18,10 @@ interface Props {
   title: string
   leftPage: Array<PageItem>
   rightPage: Array<PageItem>
-  leftPageLink: string
-  rightPageLink: string
 }
 
 export const DoublePage = (props: Props) => {
-  const { title, leftPage, rightPage} = props
+  const { title, leftPage, rightPage } = props
 
   const listLinks = useStaticQuery(graphql`
     {
@@ -32,11 +30,6 @@ export const DoublePage = (props: Props) => {
           node {
             fields {
               slug
-            }
-            frontmatter {
-              title
-              jobTitle
-              greeting
             }
           }
         }
@@ -52,9 +45,9 @@ export const DoublePage = (props: Props) => {
       )
     )
 
-    var rightLink = linkArray[linkArray.indexOf(location.pathname) + 1]
-    var leftLink = linkArray[linkArray.indexOf(location.pathname) - 1]
-    
+    var rightLink: string = linkArray[linkArray.indexOf(location.pathname) + 1]
+    var leftLink: string = linkArray[linkArray.indexOf(location.pathname) - 1]
+
   return (
     <div className="container d-flex justify-content-around" id="double-page">
         <Link to={rightLink}>
