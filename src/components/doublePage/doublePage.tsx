@@ -45,6 +45,8 @@ export const DoublePage = (props: Props) => {
       )
     )
 
+
+
     var rightLink: string = linkArray[linkArray.indexOf(location.pathname) + 1]
     var leftLink: string = linkArray[linkArray.indexOf(location.pathname) - 1]
 
