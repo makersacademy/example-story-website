@@ -15,11 +15,7 @@ export const NavBar = () => {
             fields {
               slug
             }
-            frontmatter {
-              title
-              jobTitle
-              greeting
-            }
+            ...NavBarFrontmatter
           }
         }
       }

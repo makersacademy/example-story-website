@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Layout } from "../components"
 import { DoublePage } from "../components/index"
+//import { PageContent } from "../queries"
 
 interface dataItem {
   title: string
@@ -25,40 +26,7 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      frontmatter {
-        title
-        leftPage {
-          title
-          subTitle
-          content
-          backgroundImage {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-        rightPage {
-          title
-          subTitle
-          content
-          backgroundImage {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          image {
-            childImageSharp {
-              fluid(maxWidth: 300, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
+      ...ChapterFrontmatter
     }
   }
 `

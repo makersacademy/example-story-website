@@ -26,25 +26,14 @@ const IndexPage = ({ data }) => {
     </Layout>
   )
 }
+
 export const query = graphql`
   query {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index/" } }) {
       edges {
         node {
-          frontmatter {
-            jobTitle
-            greeting
-            careerAim
-            date(formatString: "DD MMMM YYYY")
-            image {
-              childImageSharp {
-                fluid(maxWidth: 300, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
           html
+          ...IndexFrontmatter
         }
       }
     }
