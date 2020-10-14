@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
 import { NavBarItem, TopHeader } from "../index"
@@ -35,6 +35,18 @@ export const NavBar = () => {
     )
   )
 
+  var linkArray: string[] = []
+
+  listLinks.allMarkdownRemark.edges.map(
+    ({ node }: { node: any }, index: number) => (
+      linkArray.push(node.fields.slug)
+    )
+  )
+
+  var rightLink: string = linkArray[linkArray.indexOf(location.pathname) + 1]
+  var leftLink: string = linkArray[linkArray.indexOf(location.pathname) - 1]
+
+
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
 
@@ -59,6 +71,14 @@ export const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
+        <Link to={rightLink}>
+          <div className="triangle-right"/>
+          <div className="triangle-right-inner"/>
+          </Link>
+        <Link to={leftLink}>
+          <div className="triangle-left"/>
+          <div className="triangle-left-inner"/>
+        </Link>
       </div>
     </div>
   )
