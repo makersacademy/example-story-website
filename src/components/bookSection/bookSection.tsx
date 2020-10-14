@@ -16,16 +16,6 @@ interface Props {
   pageItem: PageItem
 }
 
-interface BoxWidthLookup {
-  full: number
-  threeQuarter: number
-  twoThird: number
-  half: number
-  third: number
-  quarter: number
-  [index: string]: number
-}
-
 export const BookSection = (props: Props) => {
   const { pageItem } = props
 
@@ -76,17 +66,7 @@ export const BookSection = (props: Props) => {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
-  const boxWidthLookup: BoxWidthLookup = {
-    full: 12,
-    threeQuarter: 9,
-    twoThird: 8,
-    half: 6,
-    third: 4,
-    quarter: 3,
-  }
-
   const columnWidth = boxWidth && boxWidthLookup[boxWidth]
-
   const alignText = columnWidth ? "text-center" : ""
 
   return (
