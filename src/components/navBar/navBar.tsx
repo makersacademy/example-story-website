@@ -72,12 +72,10 @@ export const NavBar = () => {
           </Collapse>
         </Navbar>
         <Link to={rightLink}>
-          <div className="triangle-right"/>
-          <div className="triangle-right-inner"/>
-          </Link>
+          <div className="triangle-right"><div className="triangle-right-inner"/></div>
+        </Link>
         <Link to={leftLink}>
-          <div className="triangle-left"/>
-          <div className="triangle-left-inner"/>
+          <div className="triangle-left"><div className="triangle-left-inner"/></div>
         </Link>
       </div>
     </div>

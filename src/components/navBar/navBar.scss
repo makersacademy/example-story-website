@@ -6,17 +6,17 @@
     a {
       border-bottom: 5px solid black;
       padding: 15px 22px;
-    }
+    };
     a:hover {
       border-bottom: 10px solid $color-accent-light;
       text-decoration: none;
       padding-bottom: 10px;
-    }
+    };
     .active {
       border-bottom: 10px solid $color-accent-light;
       padding-bottom: 10px;
-    }
-  }
+    };
+  };
 
   @media screen and (max-width: $break-medium) {
     a:hover {
@@ -30,3 +30,27 @@
 }
 
 
+
+.triangle-right {
+  position: absolute;
+  border-top: 90px solid transparent;
+  border-bottom: 90px solid transparent;
+  border-left: 90px solid white;
+  .triangle-right-inner {
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid $color-accent-light;
+  }
+}
+
+
+.triangle-left {
+  position: relative;
+  margin-top:-200px;
+  top: 500px;
+  right: 1081px;
+  position: relative;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid $color-accent-light
+}
