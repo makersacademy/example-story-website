@@ -33,19 +33,16 @@
 
 .triangle-right {
   position: absolute;
-  border-top: 90px solid transparent;
-  border-bottom: 90px solid transparent;
-  border-left: 90px solid white;
-  .triangle-right-inner {
-    border-top: 80px solid transparent;
-    border-bottom: 80px solid transparent;
-    border-left: 80px solid $color-accent-light;
-  }
+  left: 1290px;
+  top:415px;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid $color-accent-light
 }
 
 
 .triangle-left {
-  position: relative;
+  position: absolute;
   margin-top:-200px;
   top: 500px;
   right: 1081px;
