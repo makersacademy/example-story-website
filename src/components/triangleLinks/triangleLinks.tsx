@@ -25,9 +25,11 @@ export const TriangleLinks= () => {
     )
   )
 
-  var rightLink: string = linkArray[linkArray.indexOf(location.pathname) + 1]
-  var leftLink: string = linkArray[linkArray.indexOf(location.pathname) - 1]
-  console.log(location.pathname)
+  var rightLink: string =
+  typeof window !== "undefined" ? linkArray[linkArray.indexOf(location.pathname) + 1] : ""
+
+  var leftLink: string =
+  typeof window !== "undefined" ? linkArray[linkArray.indexOf(location.pathname) + 1] : ""
 
   if (location.pathname == "/") {
     return (
@@ -49,7 +51,7 @@ export const TriangleLinks= () => {
         </Link>
         <Link to={rightLink}>
           <div className="triangle-right"/>
-        </Link>    
+        </Link>    ~
       </>
     )
   }
