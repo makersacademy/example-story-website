@@ -27,15 +27,20 @@ export const TriangleLinks= () => {
 
   var rightLink: string = linkArray[linkArray.indexOf(location.pathname) + 1]
   var leftLink: string = linkArray[linkArray.indexOf(location.pathname) - 1]
+  console.log(location.pathname)
 
-  return (
-    <>
-      <Link to={rightLink}>
-        <div className="triangle-right"/>
-      </Link>
-      <Link to={leftLink}>
-        <div className="triangle-left"/>
-      </Link>
-    </>
-  )
+  if (location.pathname !== "/") {
+    return (
+      <>
+        <Link to={rightLink}>
+          <div className="triangle-right"/>
+        </Link>
+        <Link to={leftLink}>
+          <div className="triangle-left"/>
+        </Link>
+      </>
+    )
+  } else {
+    return null
+  }
 }
