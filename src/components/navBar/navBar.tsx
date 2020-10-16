@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
-import { NavBarItem, TopHeader } from "../index"
+import { NavBarItem, TopHeader, TriangleLinks } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
@@ -34,19 +34,6 @@ export const NavBar = () => {
       ></NavBarItem>
     )
   )
-
-  var linkArray: string[] = []
-
-  listLinks.allMarkdownRemark.edges.map(
-    ({ node }: { node: any }, index: number) => (
-      linkArray.push(node.fields.slug)
-    )
-  )
-
-  var rightLink: string = linkArray[linkArray.indexOf(location.pathname) + 1]
-  var leftLink: string = linkArray[linkArray.indexOf(location.pathname) - 1]
-
-
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
 
@@ -54,7 +41,7 @@ export const NavBar = () => {
   const { jobTitle, greeting } = topHeaderItems
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row justify-content-center">
         <TopHeader
           greeting={greeting}
@@ -71,12 +58,7 @@ export const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
-        <Link to={rightLink}>
-          <div className="triangle-right"><div className="triangle-right-inner"/></div>
-        </Link>
-        <Link to={leftLink}>
-          <div className="triangle-left"><div className="triangle-left-inner"/></div>
-        </Link>
+        <TriangleLinks/>
       </div>
     </div>
   )
