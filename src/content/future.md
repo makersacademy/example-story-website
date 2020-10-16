@@ -8,5 +8,5 @@ leftPage:
 rightPage:
   - title: Career Aspirations
     content: I love building collaborative environments, and ultimately, I would like to be a lead engineer.
-    backgroundImage: "../images/target.jpg"
+    image: "../images/target.jpg"
 ---
