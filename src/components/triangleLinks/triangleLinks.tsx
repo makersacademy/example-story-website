@@ -29,18 +29,28 @@ export const TriangleLinks= () => {
   var leftLink: string = linkArray[linkArray.indexOf(location.pathname) - 1]
   console.log(location.pathname)
 
-  if (location.pathname !== "/") {
+  if (location.pathname == "/") {
+    return (
+      <Link to={rightLink}>
+        <div className="triangle-right" style={{ left: "25px" }}/>
+      </Link>    
+    )
+  } else if (location.pathname == "/contact/") {
+    return (
+      <Link to={leftLink}>
+       <div className="triangle-left"/>
+      </Link>
+    )
+  } else {
     return (
       <>
-        <Link to={rightLink}>
-          <div className="triangle-right"/>
-        </Link>
         <Link to={leftLink}>
           <div className="triangle-left"/>
         </Link>
+        <Link to={rightLink}>
+          <div className="triangle-right"/>
+        </Link>    
       </>
     )
-  } else {
-    return null
   }
 }

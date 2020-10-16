@@ -31,24 +31,43 @@
 
 
 
-.triangle-right {
-  position: relative;
-  top: 500px;
-  left: 309px;
-  margin: -200px;
-  border-top: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-left: 100px solid $color-accent-light
+// .triangle-right {
+//   position: relative;
+//   top: 500px;
+//   left: 309px;
+//   margin: -200px;
+//   border-top: 100px solid transparent;
+//   border-bottom: 100px solid transparent;
+//   border-left: 100px solid $color-accent-light;
+
+//   @media screen and (min-width: $break-medium) {
+//     .triangle-right {
+//       border-top: 0px solid transparent;
+//       border-bottom: 0px solid transparent;
+//       border-left: 0px solid $color-accent-light;
+//     }
+//   }
+
+// }
+
+@media screen and (min-width: 1200px) {
+  .triangle-right {
+    position: relative;
+    top: 500px;
+    left: 309px;
+    margin: -200px;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid $color-accent-light;
+  }
+
+  .triangle-left {
+    position: relative;
+    top: 500px;
+    right: 1231px;
+    margin: -200px;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-right: 100px solid $color-accent-light
+  }
 }
-
-
-.triangle-left {
-  position: relative;
-  top: 500px;
-  right: 1231px;
-  margin: -200px;
-  border-top: 100px solid transparent;
-  border-bottom: 100px solid transparent;
-  border-right: 100px solid $color-accent-light
-}
-
