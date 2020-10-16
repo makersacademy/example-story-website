@@ -32,9 +32,10 @@
 
 
 .triangle-right {
-  position: absolute;
-  left: 1290px;
-  top:415px;
+  position: relative;
+  top: 500px;
+  left: 309px;
+  margin: -200px;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-left: 100px solid $color-accent-light
@@ -42,11 +43,10 @@
 
 
 .triangle-left {
-  position: absolute;
-  margin-top:-200px;
-  top: 500px;
-  right: 1081px;
   position: relative;
+  top: 500px;
+  right: 1231px;
+  margin: -200px;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-right: 100px solid $color-accent-light
