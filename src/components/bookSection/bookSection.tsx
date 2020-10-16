@@ -27,15 +27,6 @@ export const BookSection = (props: Props) => {
     boxWidth,
   } = pageItem
 
-  function addBackgroundImage() {
-    if (backgroundImage) {
-      const src = backgroundImage.childImageSharp.fluid.src
-      return {
-        backgroundImage: `url(${src})`,
-      }
-    }
-  }
-
   interface GridConversion {
     quarter: number
     half: number
@@ -57,16 +48,34 @@ export const BookSection = (props: Props) => {
 
   //? This could be moved to the render
 
+  function addBackgroundImage() {
+    if (image && content) {
+      const src = image.childImageSharp.fluid.src
+      return {
+        backgroundImage: `url(${src})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }
+    }
+  }
+
+  let singleImage
+  if (image && !content) {
+    {
+      singleImage = <Img fluid={image.childImageSharp.fluid} />
+    }
+  }
+
   return (
     <div className={`px-3 pb-5 col-${width}`}>
       <div className="section-box" style={addBackgroundImage()}>
-        {image && <Img fluid={image.childImageSharp.fluid} />}
-        <div className={`${backgroundImage && "text-box col-lg-6 col-md-6"} `}>
-          <h3
-            className={`title px-2 my-0 py-2 ${
-              !(image || backgroundImage) && "title-box"
-            } `}
-          >
+        {singleImage}
+        <div
+          className={`${
+            image && !singleImage && "text-box col-lg-6 col-md-6"
+          } `}
+        >
+          <h3 className={`title px-2 my-0 py-2 ${!image && "title-box"} `}>
             {title}
           </h3>
           <h4 className="subtitle-box px-2">{subTitle}</h4>
@@ -76,5 +85,7 @@ export const BookSection = (props: Props) => {
     </div>
   )
 }
+
+// image with content --> backgroundImage
 
 //  background image - with no text

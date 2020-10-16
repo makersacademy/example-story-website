@@ -32,7 +32,7 @@ export const query = graphql`
           subTitle
           content
           boxWidth
-          backgroundImage {
+          image {
             childImageSharp {
               fluid(maxWidth: 300, quality: 100) {
                 ...GatsbyImageSharpFluid
@@ -45,7 +45,7 @@ export const query = graphql`
           subTitle
           content
           boxWidth
-          backgroundImage {
+          image {
             childImageSharp {
               fluid(maxWidth: 300, quality: 100) {
                 ...GatsbyImageSharpFluid
