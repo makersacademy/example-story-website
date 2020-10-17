@@ -4,6 +4,7 @@ chapter: "6"
 leftPage:
   - title: Mission Ctrl
     image: "../images/project-mission-ctrl.jpg"
+    boxWidth: full
   - title: About
     content: An arcade-style game that helps developers become more efficient coders by teaching VS code short cuts.
   - title: Technologies
@@ -11,6 +12,7 @@ leftPage:
 rightPage:
   - title: My Secret garden
     image: "../images/project-garden.jpg"
+    boxWidth: full
   - title: "About"
     content: A website built to help people locate gardens in and around London.
   - title: Technologies
