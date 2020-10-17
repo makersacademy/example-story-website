@@ -2,17 +2,17 @@
 
 .section-box {
   background-color: $color-primary-light;
-  border: 5px solid $color-primary-dark;
+  border: $border-width-thick solid $color-primary-dark;
   display: block;
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: $border-radius-small;
+  padding: $padding-medium;
   position: relative;
   z-index: 0;
 }
 
 .picture {
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: $border-radius-small;
+  padding: $padding-medium;
 }
 
 .picture-box {
@@ -21,16 +21,16 @@
   z-index: 0;
 }
 .bordered-image {
-  border: 5px solid $color-primary-dark;
-  border-radius: 8px;
+  border: $border-width-thick solid $color-primary-dark;
+  border-radius: $border-radius-small;
 }
 
 .title-box {
   background-color: $color-primary-light;
-  border: 5px solid $color-primary-dark;
+  border: $border-width-thick solid $color-primary-dark;
   display: block;
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: $border-radius-small;
+  padding: $padding-medium;
   font-family: $font-heading;
   position: absolute;
   z-index: 1;
@@ -60,7 +60,7 @@
 
 .text-box {
   background-color: $color-primary-light;
-  border: 5px solid $color-primary-dark;
-  border-radius: 8px;
-  padding: 20px;
+  border: $border-width-thick solid $color-primary-dark;
+  border-radius: $border-radius-small;
+  padding: $padding-medium;
 }
