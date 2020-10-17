@@ -7,7 +7,6 @@ interface PageItem {
   subTitle?: string
   content?: string
   image?: any
-  backgroundImage?: any
   boxWidth?: string
 }
 
@@ -17,14 +16,7 @@ interface Props {
 
 export const BookSection = (props: Props) => {
   const { pageItem } = props
-  const {
-    title,
-    subTitle,
-    content,
-    image,
-    backgroundImage,
-    boxWidth,
-  } = pageItem
+  const { title, subTitle, content, image, boxWidth } = pageItem
 
   interface GridConversion {
     quarter: number
@@ -54,35 +46,6 @@ export const BookSection = (props: Props) => {
     }
   }
 
-  // if (image && !content) {
-  //   return (
-  //     <div className="picture">
-  //       <img src={image.childImageSharp.fluid.src} />
-  //     </div>
-  //   )
-  // } else {
-  //   return (
-  //     <div className={`px-3 pb-5 col-${width}`}>
-  //       <div className="section-box" style={addBackgroundImage()}>
-  //         <div className={`${image && "text-box col-lg-6 col-md-6"} `}>
-  //           <h3 className={`title px-2 my-0 py-2 ${!image && "title-box"} `}>
-  //             {title}
-  //           </h3>
-  //           <h4 className="subtitle-box px-2">{subTitle}</h4>
-  //           <p className={`px-2 content-box ${textAlignment}`}>{content}</p>
-  //         </div>
-  //       </div>
-  //     </div>
-  //   )
-  // }
-
-  // if (image && !content) {
-  //   return (
-  //     <div className="picture">
-  //       <img src={image.childImageSharp.fluid.src} />
-  //     </div>
-  //   )
-  // }
   if (content) {
     return (
       <div className={`px-3 pb-5 col-${width}`}>
