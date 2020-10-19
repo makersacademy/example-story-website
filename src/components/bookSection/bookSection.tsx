@@ -60,10 +60,13 @@ export const BookSection = (props: Props) => {
         </div>
       </div>
     )
-  } else if (image && title) {
+  } else if (image && (title || subTitle)) {
     return (
       <div className={`px-3 pb-5 col-${width}`}>
-        <h3 className={"title  ml-3 px-2  py-2 $ title-box"}>{title}</h3>
+        <div className="title-box offset-lg-1 offset-md-1 offset-sm-1">
+          <h3 className={"title  ml-3 px-2  py-2 $ "}>{title}</h3>
+          <h4 className=" ">{subTitle}</h4>
+        </div>
         <img
           className={"bordered-picture"}
           src={image.childImageSharp.fluid.src}
