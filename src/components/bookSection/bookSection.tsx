@@ -63,9 +63,9 @@ export const BookSection = (props: Props) => {
   } else if (image && (title || subTitle)) {
     return (
       <div className={`px-3 pb-5 col-${width}`}>
-        <div className="title-box offset-lg-1 offset-md-1 offset-sm-1">
-          <h3 className={"title  ml-3 px-2  py-2 $ "}>{title}</h3>
-          <h4 className=" ">{subTitle}</h4>
+        <div className="title-box  offset-lg-1 offset-md-1 offset-sm-1">
+          <h3 className={"title px-2  py-2 "}>{title}</h3>
+          <h4 className="px-2 ">{subTitle}</h4>
         </div>
         <img
           className={"bordered-picture"}
