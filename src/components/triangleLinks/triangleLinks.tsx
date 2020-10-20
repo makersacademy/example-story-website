@@ -29,7 +29,7 @@ export const TriangleLinks= () => {
   typeof window !== "undefined" ? linkArray[linkArray.indexOf(location.pathname) + 1] : ""
 
   var leftLink: string =
-  typeof window !== "undefined" ? linkArray[linkArray.indexOf(location.pathname) + 1] : ""
+  typeof window !== "undefined" ? linkArray[linkArray.indexOf(location.pathname) - 1] : ""
 
   if (location.pathname == "/") {
     return (
@@ -51,7 +51,7 @@ export const TriangleLinks= () => {
         </Link>
         <Link to={rightLink}>
           <div className="triangle-right"/>
-        </Link>    ~
+        </Link>
       </>
     )
   }
