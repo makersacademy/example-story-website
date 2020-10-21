@@ -7,6 +7,7 @@ import { NavBarItem, TopHeader, TriangleLinks } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
+  console.log(location)
   const listLinks = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
@@ -58,7 +59,7 @@ export const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
-        <TriangleLinks/>
+        <TriangleLinks />
       </div>
     </div>
   )
