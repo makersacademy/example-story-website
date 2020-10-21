@@ -33,13 +33,13 @@ export const TriangleLinks = () => {
   var leftLink: string =
   typeof window !== "undefined" ? linkArray[linkArray.indexOf(currentLink) - 1] : ""
 
-  if (location.pathname == "/") {
+  if (currentLink == "/") {
     return (
       <Link to={rightLink}>
         <div className="triangle-right" style={{ left: "25px" }}/>
       </Link>    
     )
-  } else if (location.pathname == "/contact/") {
+  } else if (currentLink == "/contact/") {
     return (
       <Link to={leftLink}>
        <div className="triangle-left"/>
