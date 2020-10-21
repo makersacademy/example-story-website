@@ -8,6 +8,7 @@ interface Props {
 
 export const TriangleLinks = (props: Props) => {
   let { location } = props
+  let { pathname } = location
   console.log({ location })
   const listLinks = useStaticQuery(graphql`
     {
@@ -29,7 +30,7 @@ export const TriangleLinks = (props: Props) => {
     linkArray.push(node.fields.slug)
   )
 
-  const currentLink: string = location.pathname
+  const currentLink: string = pathname
 
   var rightLink: string = linkArray[linkArray.indexOf(currentLink) + 1]
 
