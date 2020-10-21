@@ -6,7 +6,12 @@ import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 import { NavBarItem, TopHeader, TriangleLinks } from "../index"
 import "./navBar.scss"
 
-export const NavBar = () => {
+interface Props {
+  location: any
+}
+
+export const NavBar = (props: Props) => {
+  let { location } = props
   console.log(location)
   const listLinks = useStaticQuery(graphql`
     {
@@ -59,7 +64,7 @@ export const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
-        <TriangleLinks />
+        <TriangleLinks location={location} />
       </div>
     </div>
   )

@@ -6,16 +6,17 @@ import { DoublePage } from "../components/index"
 interface dataItem {
   title: string
   body: object
+  location: object
 }
 interface Data {
   data: dataItem
 }
 
-export default function NewChapter(data: Data) {
-  const { frontmatter } = data.data.markdownRemark
+const NewChapter = ({ location, data }) => {
+  const { frontmatter } = data.markdownRemark
   const { title, leftPage, rightPage } = frontmatter
   return (
-    <Layout>
+    <Layout location={location}>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
     </Layout>
   )
@@ -62,3 +63,4 @@ export const query = graphql`
     }
   }
 `
+export default NewChapter

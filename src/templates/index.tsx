@@ -4,10 +4,7 @@ import { graphql } from "gatsby"
 import { BookFrontCover } from "../components/index"
 import { Layout, SEO } from "../components"
 
-interface Props {
-  data: any
-}
-const IndexPage = ({ data }) => {
+const IndexPage = ({ location, data }) => {
   const {
     jobTitle,
     greeting,
@@ -15,7 +12,7 @@ const IndexPage = ({ data }) => {
     image,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title="Home" />
       <BookFrontCover
         jobTitle={jobTitle}

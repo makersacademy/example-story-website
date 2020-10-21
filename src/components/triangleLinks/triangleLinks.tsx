@@ -2,7 +2,13 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "../navBar/navBar.scss"
 
-export const TriangleLinks = () => {
+interface Props {
+  location: any
+}
+
+export const TriangleLinks = (props: Props) => {
+  let { location } = props
+  console.log({ location })
   const listLinks = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
@@ -24,7 +30,7 @@ export const TriangleLinks = () => {
   )
 
   const currentLink: string =
-    typeof window !== "undefined" ? location.pathname : "/"
+    typeof window !== "undefined" ? location.pathname : ""
 
   var rightLink: string =
     typeof window !== "undefined"

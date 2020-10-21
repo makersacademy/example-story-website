@@ -5,10 +5,10 @@ import "./index.scss"
 
 const Layout = (props: any) => {
   const { children }: { children: ReactNode } = props
-
+  const { location }: { location: any } = props
   return (
     <div>
-      <NavBar />
+      <NavBar location={location} />
       <main>{children}</main>
     </div>
   )
