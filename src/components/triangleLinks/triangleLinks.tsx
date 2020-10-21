@@ -8,7 +8,7 @@ interface Props {
 
 export const TriangleLinks = (props: Props) => {
   let { location } = props
-  let { pathname } = location
+
   console.log({ location })
   const listLinks = useStaticQuery(graphql`
     {
