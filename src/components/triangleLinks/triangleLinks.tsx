@@ -24,7 +24,7 @@ export const TriangleLinks = () => {
   )
 
   const currentLink: string =
-    typeof window !== "undefined" ? location.pathname : "/"
+    typeof window !== "undefined" ? window.location.pathname : ""
 
   var rightLink: string =
     typeof window !== "undefined"
@@ -37,18 +37,21 @@ export const TriangleLinks = () => {
       : ""
 
   if (currentLink == "/") {
+    console.log(currentLink)
     return (
       <Link to={rightLink}>
         <div className="triangle-right" style={{ left: "25px" }} />
       </Link>
     )
   } else if (currentLink == "/contact/") {
+    console.log(currentLink)
     return (
       <Link to={leftLink}>
         <div className="triangle-left" />
       </Link>
     )
   } else {
+    console.log(currentLink)
     return (
       <>
         <Link to={leftLink}>
