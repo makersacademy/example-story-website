@@ -2,7 +2,7 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import "../navBar/navBar.scss"
 
-export const TriangleLinks= () => {
+export const TriangleLinks = () => {
   const listLinks = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
@@ -25,11 +25,13 @@ export const TriangleLinks= () => {
     )
   )
 
+  const currentLink: string = typeof window !== "undefined" ? location.pathname : ""
+
   var rightLink: string =
-  typeof window !== "undefined" ? linkArray[linkArray.indexOf(location.pathname) + 1] : ""
+  typeof window !== "undefined" ? linkArray[linkArray.indexOf(currentLink) + 1] : ""
 
   var leftLink: string =
-  typeof window !== "undefined" ? linkArray[linkArray.indexOf(location.pathname) - 1] : ""
+  typeof window !== "undefined" ? linkArray[linkArray.indexOf(currentLink) - 1] : ""
 
   if (location.pathname == "/") {
     return (
