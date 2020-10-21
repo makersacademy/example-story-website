@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
-import { NavBarItem, TopHeader } from "../index"
+import { NavBarItem, TopHeader, TriangleLinks } from "../index"
 import "./navBar.scss"
 
 export const NavBar = () => {
@@ -34,7 +34,6 @@ export const NavBar = () => {
       ></NavBarItem>
     )
   )
-
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
 
@@ -42,7 +41,7 @@ export const NavBar = () => {
   const { jobTitle, greeting } = topHeaderItems
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row justify-content-center">
         <TopHeader
           greeting={greeting}
@@ -59,6 +58,7 @@ export const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
+        <TriangleLinks/>
       </div>
     </div>
   )
