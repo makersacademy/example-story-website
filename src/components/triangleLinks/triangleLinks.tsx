@@ -29,18 +29,11 @@ export const TriangleLinks = (props: Props) => {
     linkArray.push(node.fields.slug)
   )
 
-  const currentLink: string =
-    typeof window !== "undefined" ? location.pathname : ""
+  const currentLink: string = location.pathname
 
-  var rightLink: string =
-    typeof window !== "undefined"
-      ? linkArray[linkArray.indexOf(currentLink) + 1]
-      : ""
+  var rightLink: string = linkArray[linkArray.indexOf(currentLink) + 1]
 
-  var leftLink: string =
-    typeof window !== "undefined"
-      ? linkArray[linkArray.indexOf(currentLink) - 1]
-      : ""
+  var leftLink: string = linkArray[linkArray.indexOf(currentLink) - 1]
 
   if (currentLink == "/") {
     console.log(currentLink)
