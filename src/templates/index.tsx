@@ -12,7 +12,7 @@ const IndexPage = ({ location, data }) => {
     image,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
   return (
-    <Layout location={location}>
+    <Layout location={location.pathname}>
       <SEO title="Home" />
       <BookFrontCover
         jobTitle={jobTitle}

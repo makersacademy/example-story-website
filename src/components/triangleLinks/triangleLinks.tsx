@@ -30,7 +30,7 @@ export const TriangleLinks = (props: Props) => {
     linkArray.push(node.fields.slug)
   )
 
-  const currentLink: string = pathname
+  const currentLink: string = location
 
   var rightLink: string = linkArray[linkArray.indexOf(currentLink) + 1]
 

@@ -16,7 +16,7 @@ const NewChapter = ({ location, data }) => {
   const { frontmatter } = data.markdownRemark
   const { title, leftPage, rightPage } = frontmatter
   return (
-    <Layout location={location}>
+    <Layout location={location.pathname}>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
     </Layout>
   )
