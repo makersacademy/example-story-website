@@ -7,15 +7,21 @@ interface dataItem {
   title: string
   body: object
 }
-interface Data {
+interface Link {
+  pathname: string
+}
+interface Props {
   data: dataItem
+  location: Link
 }
 
-export default function NewChapter(data: Data) {
-  const { frontmatter } = data.data.markdownRemark
+const NewChapter = (props: Props) => {
+  const { location, data } = props
+  const { pathname } = location
+  const { frontmatter } = data.markdownRemark
   const { title, leftPage, rightPage } = frontmatter
   return (
-    <Layout>
+    <Layout pathName={pathname}>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
     </Layout>
   )
@@ -64,3 +70,4 @@ export const query = graphql`
     }
   }
 `
+export default NewChapter
