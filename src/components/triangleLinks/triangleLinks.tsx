@@ -24,7 +24,7 @@ export const TriangleLinks = () => {
   )
 
   const currentLink: string =
-    typeof window !== "undefined" ? location.pathname : "/"
+    typeof window !== "undefined" ? location.pathname : ""
 
   var rightLink: string =
     typeof window !== "undefined"
