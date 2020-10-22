@@ -1,4 +1,4 @@
-export function BoxWidthConversion(boxWidth: string) {
+export function boxWidthConvert(boxWidth: string) {
   interface BoxWidthLookup {
     full: number
     threeQuarter: number

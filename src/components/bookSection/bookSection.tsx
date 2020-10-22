@@ -2,7 +2,7 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
 import Img from "gatsby-image"
-import { BoxWidthConversion } from "../index"
+import { boxWidthConvert } from "../index"
 
 interface PageItem {
   title?: string
@@ -67,7 +67,7 @@ export const BookSection = (props: Props) => {
     picture = <Img fluid={image.childImageSharp.fluid} />
   }
 
-  const columnWidth = BoxWidthConversion(boxWidth!)
+  const columnWidth = boxWidthConvert(boxWidth!)
 
   const alignText = columnWidth ? "text-center" : ""
 
