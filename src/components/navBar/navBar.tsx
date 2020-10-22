@@ -1,12 +1,17 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
-import { NavBarItem, TopHeader } from "../index"
+import { NavBarItem, TopHeader, TriangleLinks } from "../index"
 import "./navBar.scss"
 
-export const NavBar = () => {
+interface Props {
+  pathName: string
+}
+
+export const NavBar = (props: Props) => {
+  const { pathName } = props
   const listLinks = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
@@ -34,7 +39,6 @@ export const NavBar = () => {
       ></NavBarItem>
     )
   )
-
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
 
@@ -42,7 +46,7 @@ export const NavBar = () => {
   const { jobTitle, greeting } = topHeaderItems
 
   return (
-    <div className="container">
+    <div className="container ">
       <div className="row justify-content-center">
         <TopHeader
           greeting={greeting}
@@ -59,6 +63,7 @@ export const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
+        <TriangleLinks pathName={pathName} />
       </div>
     </div>
   )

@@ -6,16 +6,25 @@ import { Layout, SEO } from "../components"
 
 interface Props {
   data: any
+  location: Link
 }
-const IndexPage = ({ data }) => {
+
+interface Link {
+  pathname: string
+}
+
+const IndexPage = (props: Props) => {
+  const { location, data } = props
+  const { pathname } = location
   const {
     jobTitle,
     greeting,
     careerAim,
     image,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
+
   return (
-    <Layout>
+    <Layout pathName={pathname}>
       <SEO title="Home" />
       <BookFrontCover
         jobTitle={jobTitle}
