@@ -48,6 +48,7 @@ export const TriangleLinks = (props: Props) => {
     return (
       <Link to={leftLink}>
         <div className="triangle-left" />
+        
       </Link>
     )
   } else {
