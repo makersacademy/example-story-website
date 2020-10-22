@@ -6,7 +6,12 @@ import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 import { NavBarItem, TopHeader, TriangleLinks } from "../index"
 import "./navBar.scss"
 
-export const NavBar = () => {
+interface Props {
+  pathName: string
+}
+
+export const NavBar = (props: Props) => {
+  const { pathName } = props
   const listLinks = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
@@ -58,7 +63,7 @@ export const NavBar = () => {
             </Nav>
           </Collapse>
         </Navbar>
-        <TriangleLinks/>
+        <TriangleLinks pathName={pathName} />
       </div>
     </div>
   )
