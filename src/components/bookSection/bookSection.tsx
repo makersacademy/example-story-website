@@ -2,7 +2,7 @@ import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import "./bookSection.scss"
 import Img from "gatsby-image"
-import { boxWidthConvert } from "../index"
+import { boxWidthConvert } from "./helper/colWidthHelper"
 
 interface PageItem {
   title?: string
