@@ -12,7 +12,7 @@ describe("Layout", () => {
 
   it("renders the NavBar correctly", () => {
     let wrapper = shallow(<Layout pathName="" children=""></Layout>)
-    let navBar = <NavBar pathName=""></NavBar>
+    let navBar = <NavBar pathName="" layoutData=""></NavBar>
     expect(wrapper.containsMatchingElement(navBar)).toEqual(true)
   })
 })

@@ -7,7 +7,7 @@ describe("NavBar", () => {
   it(
     "renders the NavBar correctly",
     withQuerySnapshot(() => {
-      let wrapper = shallow(<NavBar pathName=""></NavBar>)
+      let wrapper = shallow(<NavBar pathName="" layoutData={{allMarkdownRemark: { edges: ["",""]}}}></NavBar>)
       expect(wrapper).toHaveLength(1)
       expect(wrapper.find(NavBarItem)).toBeTruthy
     })

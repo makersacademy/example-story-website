@@ -8,29 +8,14 @@ import "./navBar.scss"
 
 interface Props {
   pathName: string
+  layoutData: any
 }
 
 export const NavBar = (props: Props) => {
-  const { pathName } = props
-  const listLinks = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              jobTitle
-              greeting
-            }
-          }
-        }
-      }
-    }
-  `)
-  var listItems = listLinks.allMarkdownRemark.edges.map(
+  const { pathName, layoutData } = props
+  console.log(layoutData)
+
+  var listItems = layoutData.allMarkdownRemark.edges.map(
     ({ node }: { node: any }, index: number) => (
       <NavBarItem
         key={index}
@@ -42,7 +27,7 @@ export const NavBar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
 
-  const topHeaderItems = listLinks.allMarkdownRemark.edges[0].node.frontmatter
+  const topHeaderItems = layoutData.allMarkdownRemark.edges[0].node.frontmatter
   const { jobTitle, greeting } = topHeaderItems
 
   return (
@@ -63,7 +48,7 @@ export const NavBar = (props: Props) => {
             </Nav>
           </Collapse>
         </Navbar>
-        <TriangleLinks pathName={pathName} />
+        <TriangleLinks pathName={pathName} layoutData={layoutData} />
       </div>
     </div>
   )

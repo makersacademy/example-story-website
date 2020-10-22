@@ -4,27 +4,15 @@ import "../navBar/navBar.scss"
 
 interface Props {
   pathName: string
+  layoutData: any
 }
 
 export const TriangleLinks = (props: Props) => {
-  const { pathName } = props
-  const listLinks = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
-        edges {
-          node {
-            fields {
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
+  const { pathName, layoutData } = props
 
   var linkArray: string[] = []
 
-  listLinks.allMarkdownRemark.edges.map(({ node }: { node: any }) =>
+  layoutData.allMarkdownRemark.edges.map(({ node }: { node: any }) =>
     linkArray.push(node.fields.slug)
   )
 
