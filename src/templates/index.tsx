@@ -10,7 +10,7 @@ interface Props {
 }
 
 interface Link {
-  pathname: string
+  pathname?: string
 }
 
 const IndexPage = (props: Props) => {

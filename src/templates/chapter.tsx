@@ -8,7 +8,7 @@ interface dataItem {
   body: object
 }
 interface Link {
-  pathname: string
+  pathname?: string
 }
 interface Props {
   data: dataItem
