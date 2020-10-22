@@ -7,13 +7,15 @@ import { Layout, SEO } from "../components"
 interface Props {
   data: any
 }
-const IndexPage = ({ data }) => {
+const IndexPage = (props: Props) => {
+  let { data } = props
   const {
     jobTitle,
     greeting,
     careerAim,
     image,
   } = data.allMarkdownRemark.edges[0].node.frontmatter
+
   return (
     <Layout>
       <SEO title="Home" />
