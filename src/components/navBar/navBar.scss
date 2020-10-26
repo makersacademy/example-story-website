@@ -48,8 +48,8 @@
     border-bottom: 100px solid transparent;
     border-right: 100px solid $color-accent-light;
     @media screen and (min-width: 1200px) {
-      margin-top: -400px;
       position: relative;
+      margin-top: -400px;
       top: 750px;
       right: 566px;
     }
