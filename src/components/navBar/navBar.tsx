@@ -40,7 +40,7 @@ export const NavBar = (props: Props) => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
 
-  const topHeaderItems = layoutData.allMarkdownRemark.edges[0].node.frontmatter
+  const topHeaderItems = frontmatterData[0]
   const { jobTitle, greeting } = topHeaderItems
 
   return (
