@@ -54,3 +54,16 @@
       right: 566px;
     }
   }
+
+  .triangle-right-home {
+    margin-top: 20px;
+    border-top: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    border-left: 100px solid $color-accent-light;
+    @media screen and (min-width: 1200px) {
+      position: relative;
+      margin-top: -400px;
+      left: 335px;
+      top: 750px;
+    }
+  }
