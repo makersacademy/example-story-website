@@ -23,7 +23,7 @@ export const TriangleLinks = (props: Props) => {
 
   if (pathName == "/") {
     return (
-      <NextPageLink nextLink={nextLink}/>
+        <NextPageLink nextLink={nextLink} homePage={true}/>
     )
   } else if (pathName == "/contact/") {
     return (
