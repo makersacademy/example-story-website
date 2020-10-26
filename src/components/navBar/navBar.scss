@@ -29,24 +29,20 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+// @media screen and (min-width: 1200px) {
   .triangle-right {
-    position: relative;
-    top: 500px;
-    left: 309px;
-    margin: -200px;
+    // top: 500px;
+    // left: 309px;
+    margin-top: 20px;
     border-top: 100px solid transparent;
     border-bottom: 100px solid transparent;
     border-left: 100px solid $color-accent-light;
   }
 
   .triangle-left {
-    position: relative;
-    top: 500px;
-    right: 1231px;
-    margin: -200px;
+    margin-top: 20px;
     border-top: 100px solid transparent;
     border-bottom: 100px solid transparent;
     border-right: 100px solid $color-accent-light
   }
-}
+// }
