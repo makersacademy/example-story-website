@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
-import { useStaticQuery, graphql, Link } from "gatsby"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
 import { NavBarItem, TopHeader, TriangleLinks } from "../index"
@@ -13,13 +12,12 @@ interface FrontmatterData {
 }
 interface Props {
   pathName: string
-  layoutData: any
   listLinks: Array<string>
   frontmatterData: Array<FrontmatterData>
 }
 
 export const NavBar = (props: Props) => {
-  const { pathName, layoutData, listLinks, frontmatterData } = props
+  const { pathName, listLinks, frontmatterData } = props
 
   var listItems = listLinks.map((link: any, index: number) => (
     <NavBarItem
@@ -28,13 +26,6 @@ export const NavBar = (props: Props) => {
       chapterLink={link}
     ></NavBarItem>
   ))
-
-  // problem:
-  // - 2 different arrays and we need to map both of them
-  // map one array then map the second one
-
-  // if we have the slugs we can make the title
-  // id
 
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => setIsOpen(!isOpen)
