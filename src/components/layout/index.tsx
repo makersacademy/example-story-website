@@ -38,13 +38,11 @@ const Layout = (props: Props) => {
   const frontmatterData = layoutData.allMarkdownRemark.edges.map(
     ({ node }: { node: any }, index: number) => node.frontmatter
   )
-  //navBarData
 
   return (
     <div>
       <NavBar
         pathName={pathName}
-        layoutData={layoutData}
         listLinks={listLinks}
         frontmatterData={frontmatterData}
       />
