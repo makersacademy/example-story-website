@@ -20,7 +20,6 @@ interface Props {
 
 export const NavBar = (props: Props) => {
   const { pathName, layoutData, listLinks, frontmatterData } = props
-  console.log(frontmatterData)
 
   var listItems = listLinks.map((link: any, index: number) => (
     <NavBarItem
@@ -61,7 +60,7 @@ export const NavBar = (props: Props) => {
             </Nav>
           </Collapse>
         </Navbar>
-        <TriangleLinks pathName={pathName} layoutData={layoutData} />
+        <TriangleLinks pathName={pathName} listLinks={listLinks} />
       </div>
     </div>
   )
