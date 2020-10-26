@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.css"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
-import { NavBarItem, TopHeader, TriangleLinks } from "../index"
+import { NavBarItem, TopHeader } from "../index"
 import "./navBar.scss"
 
 interface FrontmatterData {
@@ -51,7 +51,6 @@ export const NavBar = (props: Props) => {
             </Nav>
           </Collapse>
         </Navbar>
-        <TriangleLinks pathName={pathName} listLinks={listLinks} />
       </div>
     </div>
   )

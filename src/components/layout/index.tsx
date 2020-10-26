@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { NavBar } from "../index"
+import { NavBar, TriangleLinks } from "../index"
 import "./index.scss"
 
 interface Props {
@@ -40,14 +40,18 @@ const Layout = (props: Props) => {
   )
 
   return (
+
     <div>
-      <NavBar
-        pathName={pathName}
-        listLinks={listLinks}
-        frontmatterData={frontmatterData}
-      />
-      <main>{children}</main>
-    </div>
+        <NavBar
+          pathName={pathName}
+          listLinks={listLinks}
+          frontmatterData={frontmatterData}
+        />
+      <div className="d-flex justify-content-center">
+        <TriangleLinks pathName={pathName} listLinks={listLinks}/>
+      </div>
+        <main>{children}</main>
+      </div>
   )
 }
 
