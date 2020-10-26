@@ -1,29 +1,23 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import "../navBar/navBar.scss"
 
 interface Props {
   pathName: string
-  layoutData: any
+  listLinks: Array<string>
 }
 
 export const TriangleLinks = (props: Props) => {
-  const { pathName, layoutData } = props
-
-  var linkArray: string[] = []
-
-  layoutData.allMarkdownRemark.edges.map(({ node }: { node: any }) =>
-    linkArray.push(node.fields.slug)
-  )
+  const { pathName, listLinks } = props
 
   var rightLink: string =
     typeof window !== "undefined"
-      ? linkArray[linkArray.indexOf(pathName) + 1]
+      ? listLinks[listLinks.indexOf(pathName) + 1]
       : ""
 
   var leftLink: string =
     typeof window !== "undefined"
-      ? linkArray[linkArray.indexOf(pathName) - 1]
+      ? listLinks[listLinks.indexOf(pathName) - 1]
       : ""
 
   if (pathName == "/") {
