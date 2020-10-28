@@ -7,7 +7,21 @@ describe("NavBar", () => {
   it(
     "renders the NavBar correctly",
     withQuerySnapshot(() => {
-      let wrapper = shallow(<NavBar pathName="" layoutData={{allMarkdownRemark: { edges: ["",""]}}}></NavBar>)
+      const listLinks = ["\\"]
+      const frontMatterData = [
+        {
+          title: "Home",
+          jobTitle: "Junior Developer",
+          greeting: "Hi I'm Joseph Jones",
+        },
+      ]
+      let wrapper = shallow(
+        <NavBar
+          pathName=""
+          listLinks={listLinks}
+          frontmatterData={frontMatterData}
+        ></NavBar>
+      )
       expect(wrapper).toHaveLength(1)
       expect(wrapper.find(NavBarItem)).toBeTruthy
     })
