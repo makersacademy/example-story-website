@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { TriangleLinks, NavBar } from "../index"
+import { Pagers, NavBar } from "../index"
 
 interface Props {
   pathName: string
@@ -44,7 +44,7 @@ const NavigationContainer = (props: Props) => {
         frontmatterData={frontmatterData}
       />
       <div className="d-flex justify-content-center">
-        <TriangleLinks pathName={pathName} listLinks={listLinks} />
+        <Pagers pathName={pathName} listLinks={listLinks} />
       </div>
     </div>
   )
