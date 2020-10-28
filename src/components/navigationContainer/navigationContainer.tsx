@@ -1,5 +1,5 @@
-import React from "./node_modules/react"
-import { graphql, useStaticQuery } from "./node_modules/gatsby"
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import { TriangleLinks, NavBar } from "../index"
 
 interface Props {
