@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react"
 
-import { DataLayer } from "../index"
+import { NavigationContainer } from "../index"
 import "./index.scss"
 
 interface FrontmatterData {
@@ -21,7 +21,7 @@ const Layout = (props: Props) => {
 
   return (
     <div>
-      <DataLayer pathName={pathName}/>
+      <NavigationContainer pathName={pathName} />
       <main>{children}</main>
     </div>
   )

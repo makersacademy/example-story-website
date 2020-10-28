@@ -1,13 +1,12 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import React from "./node_modules/react"
+import { graphql, useStaticQuery } from "./node_modules/gatsby"
 import { TriangleLinks, NavBar } from "../index"
-
 
 interface Props {
   pathName: string
 }
 
-const DataLayer = (props: Props) => {
+const NavigationContainer = (props: Props) => {
   const { pathName } = props
 
   const layoutData = useStaticQuery(graphql`
@@ -45,10 +44,10 @@ const DataLayer = (props: Props) => {
         frontmatterData={frontmatterData}
       />
       <div className="d-flex justify-content-center">
-        <TriangleLinks pathName={pathName} listLinks={listLinks}/>
+        <TriangleLinks pathName={pathName} listLinks={listLinks} />
       </div>
     </div>
   )
 }
 
-export { DataLayer }
+export { NavigationContainer }
