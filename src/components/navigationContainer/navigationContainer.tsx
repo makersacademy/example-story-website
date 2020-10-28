@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import { Pagers, NavBar } from "../index"
-
+import "./navigationContainer.scss"
 interface Props {
   pathName: string
 }
