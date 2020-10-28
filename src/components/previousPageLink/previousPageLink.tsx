@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import "../navBar/navBar.scss"
 
 interface Props {
   previousLink: string

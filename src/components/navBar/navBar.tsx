@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.css"
 import { Collapse, Navbar, NavbarToggler, Nav } from "reactstrap"
 
 import { NavBarItem, TopHeader } from "../index"
-import "./navBar.scss"
 
 interface FrontmatterData {
   title: string
