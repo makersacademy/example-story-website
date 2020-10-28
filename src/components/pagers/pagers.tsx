@@ -8,7 +8,7 @@ interface Props {
   listLinks: Array<string>
 }
 
-export const TriangleLinks = (props: Props) => {
+export const Pagers = (props: Props) => {
   const { pathName, listLinks } = props
 
   var nextLink: string =
@@ -22,19 +22,15 @@ export const TriangleLinks = (props: Props) => {
       : ""
 
   if (pathName == "/") {
-    return (
-        <NextPageLink nextLink={nextLink} homePage={true}/>
-    )
+    return <NextPageLink nextLink={nextLink} homePage={true} />
   } else if (pathName == "/contact/") {
-    return (
-      <PreviousPageLink previousLink={previousLink}/>
-    )
+    return <PreviousPageLink previousLink={previousLink} />
   } else {
     return (
       <>
         <PreviousPageLink previousLink={previousLink} />
-          <div>&nbsp;&nbsp;</div>
-        <NextPageLink nextLink={nextLink}/>
+        <div>&nbsp;&nbsp;</div>
+        <NextPageLink nextLink={nextLink} />
       </>
     )
   }
