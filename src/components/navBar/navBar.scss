@@ -6,17 +6,17 @@
     a {
       border-bottom: 5px solid black;
       padding: 15px 22px;
-    };
+    }
     a:hover {
       border-bottom: 10px solid $color-accent-light;
       text-decoration: none;
       padding-bottom: 10px;
-    };
+    }
     .active {
       border-bottom: 10px solid $color-accent-light;
       padding-bottom: 10px;
-    };
-  };
+    }
+  }
 
   @media screen and (max-width: $break-medium) {
     a:hover {
@@ -29,41 +29,54 @@
   }
 }
 
-  .triangle-right {
-    margin-top: 20px;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    border-left: 100px solid $color-accent-light;
-    @media screen and (min-width: 1200px) {
-      position: relative;
-      margin-top: -400px;
-      left: 566px;
-      top: 750px;
-    }
+.triangle-right {
+  margin-top: 20px;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid $color-accent-light;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    margin-top: -400px;
+    left: 566px;
+    top: 750px;
   }
+}
 
-  .triangle-left {
-    margin-top: 20px;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    border-right: 100px solid $color-accent-light;
-    @media screen and (min-width: 1200px) {
-      position: relative;
-      margin-top: -400px;
-      top: 750px;
-      right: 566px;
-    }
+.triangle-left {
+  margin-top: 20px;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid $color-accent-light;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    margin-top: -400px;
+    top: 750px;
+    right: 566px;
   }
+}
 
-  .triangle-right-home {
-    margin-top: 20px;
-    border-top: 100px solid transparent;
-    border-bottom: 100px solid transparent;
-    border-left: 100px solid $color-accent-light;
-    @media screen and (min-width: 1200px) {
-      position: relative;
-      margin-top: -400px;
-      left: 335px;
-      top: 750px;
-    }
+.triangle-left-lastPage {
+  margin-top: 20px;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid $color-accent-light;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    margin-top: -400px;
+    top: 750px;
+    right: 620px;
   }
+}
+
+.triangle-right-home {
+  margin-top: 20px;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid $color-accent-light;
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    margin-top: -400px;
+    left: 335px;
+    top: 750px;
+  }
+}
