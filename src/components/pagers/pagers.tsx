@@ -24,7 +24,7 @@ export const Pagers = (props: Props) => {
   if (pathName == "/") {
     return <NextPageLink nextLink={nextLink} homePage={true} />
   } else if (pathName == "/contact/") {
-    return <PreviousPageLink previousLink={previousLink} />
+    return <PreviousPageLink lastPage={true} previousLink={previousLink} />
   } else {
     return (
       <>
