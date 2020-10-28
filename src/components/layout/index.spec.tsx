@@ -17,7 +17,7 @@ describe("Layout", () => {
 
     const wrapper = shallow(
       <Layout
-        pathName=".\"
+        pathName="\"
         children=""
         listLinks={listLinks}
         frontmatterData={frontMatterData}
