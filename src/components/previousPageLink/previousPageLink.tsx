@@ -4,14 +4,22 @@ import "../navBar/navBar.scss"
 
 interface Props {
   previousLink: string
+  lastPage?: boolean
 }
 
 export const PreviousPageLink = (props: Props) => {
-  const { previousLink } = props
-  return (
-    <Link to={previousLink}>
-      <div className="triangle-left" />
-    </Link>
-  )
+  const { previousLink, lastPage } = props
+  if (lastPage == true) {
+    return (
+      <Link to={previousLink}>
+        <div className="triangle-left-lastPage" />
+      </Link>
+    )
+  } else {
+    return (
+      <Link to={previousLink}>
+        <div className="triangle-left" />
+      </Link>
+    )
+  }
 }
-
