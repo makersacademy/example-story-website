@@ -21,13 +21,14 @@ describe("Layout", () => {
         children=""
         listLinks={listLinks}
         frontmatterData={frontMatterData}
+        chapter="0"
       ></Layout>
     )
     expect(wrapper).toHaveLength(1)
   })
 
   it("renders the NavigationContainer correctly", () => {
-    const listLinks = ["\\"]
+    const listLinks = ["x"]
     const frontMatterData = [
       {
         title: "Home",
@@ -37,15 +38,17 @@ describe("Layout", () => {
     ]
     const wrapper = shallow(
       <Layout
-        slug="\"
+        slug="x"
         children=""
         listLinks={listLinks}
         frontmatterData={frontMatterData}
+        chapter="0"
       ></Layout>
     )
     const navigationContainer = (
-      <NavigationContainer slug="\"></NavigationContainer>
+      <NavigationContainer chapter="0" slug="x"></NavigationContainer>
     )
+    console.log(wrapper.debug())
 
     expect(wrapper.containsMatchingElement(navigationContainer)).toEqual(true)
   })
