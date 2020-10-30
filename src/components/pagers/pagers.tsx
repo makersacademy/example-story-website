@@ -15,9 +15,9 @@ export const Pagers = (props: Props) => {
 
   var previousLink: string = listLinks[listLinks.indexOf(slug) - 1]
 
-  if (slug == "/") {
+  if (slug === listLinks[0]) {
     return <NextPageLink nextLink={nextLink} homePage={true} />
-  } else if (slug == "/contact/") {
+  } else if (slug === listLinks[-1]) {
     return <PreviousPageLink lastPage={true} previousLink={previousLink} />
   } else {
     return (
