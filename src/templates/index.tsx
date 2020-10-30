@@ -17,6 +17,7 @@ const IndexPage = (props: Props) => {
   const { data } = props
   const { slug } = data.allMarkdownRemark.edges[0].node.fields
   const {
+    chapter,
     jobTitle,
     greeting,
     careerAim,
@@ -24,7 +25,7 @@ const IndexPage = (props: Props) => {
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   return (
-    <Layout slug={slug}>
+    <Layout slug={slug} chapter={chapter}>
       <SEO title="Home" />
       <BookFrontCover
         jobTitle={jobTitle}
@@ -44,6 +45,7 @@ export const query = graphql`
             slug
           }
           frontmatter {
+            chapter
             jobTitle
             greeting
             careerAim

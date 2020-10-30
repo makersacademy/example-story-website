@@ -7,21 +7,20 @@ interface dataItem {
   title: string
   body: object
 }
-interface Link {
-  slug: string
-}
+
 interface Props {
   data: dataItem
-  location: Link
+  slug: string
 }
 
 const NewChapter = (props: Props) => {
   const { data } = props
   const { frontmatter } = data.markdownRemark
   const { slug } = data.markdownRemark.fields
-  const { title, leftPage, rightPage } = frontmatter
+  const { title, leftPage, rightPage, chapter } = frontmatter
+
   return (
-    <Layout slug={slug}>
+    <Layout slug={slug} chapter={chapter}>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
     </Layout>
   )
@@ -35,6 +34,7 @@ export const query = graphql`
         slug
       }
       frontmatter {
+        chapter
         title
         leftPage {
           title
