@@ -10,13 +10,13 @@ interface FrontmatterData {
   greeting: string
 }
 interface Props {
-  pathName: string
+  slug: string
   listLinks: Array<string>
   frontmatterData: Array<FrontmatterData>
 }
 
 export const NavBar = (props: Props) => {
-  const { pathName, listLinks, frontmatterData } = props
+  const { slug, listLinks, frontmatterData } = props
 
   var listItems = listLinks.map((link: any, index: number) => (
     <NavBarItem

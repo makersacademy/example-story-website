@@ -10,12 +10,12 @@ interface Props {
 }
 
 interface Link {
-  pathname: string
+  slug: string
 }
 
 const IndexPage = (props: Props) => {
-  const { location, data } = props
-  const { pathname } = location
+  const { data } = props
+  const { slug } = data.allMarkdownRemark.edges[0].node.fields
   const {
     jobTitle,
     greeting,
@@ -24,7 +24,7 @@ const IndexPage = (props: Props) => {
   } = data.allMarkdownRemark.edges[0].node.frontmatter
 
   return (
-    <Layout pathName={pathname}>
+    <Layout slug={slug}>
       <SEO title="Home" />
       <BookFrontCover
         jobTitle={jobTitle}
@@ -40,6 +40,9 @@ export const query = graphql`
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/index/" } }) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             jobTitle
             greeting

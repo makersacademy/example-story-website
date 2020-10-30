@@ -17,7 +17,7 @@ describe("NavBar", () => {
       ]
       let wrapper = shallow(
         <NavBar
-          pathName=""
+          slug=""
           listLinks={listLinks}
           frontmatterData={frontMatterData}
         ></NavBar>
