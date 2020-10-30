@@ -11,17 +11,17 @@ interface FrontmatterData {
 
 interface Props {
   children: ReactNode
-  pathName: string
+  slug: string
   listLinks: Array<string>
   frontmatterData: Array<FrontmatterData>
 }
 
 const Layout = (props: Props) => {
-  const { children, pathName } = props
+  const { children, slug } = props
 
   return (
     <div>
-      <NavigationContainer pathName={pathName} />
+      <NavigationContainer slug={slug} />
       <main>{children}</main>
     </div>
   )

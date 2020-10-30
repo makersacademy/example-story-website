@@ -8,7 +8,7 @@ interface dataItem {
   body: object
 }
 interface Link {
-  pathname: string
+  slug: string
 }
 interface Props {
   data: dataItem
@@ -16,12 +16,12 @@ interface Props {
 }
 
 const NewChapter = (props: Props) => {
-  const { location, data } = props
-  const { pathname } = location
+  const { data } = props
   const { frontmatter } = data.markdownRemark
+  const { slug } = data.markdownRemark.fields
   const { title, leftPage, rightPage } = frontmatter
   return (
-    <Layout pathName={pathname}>
+    <Layout slug={slug}>
       <DoublePage title={title} leftPage={leftPage} rightPage={rightPage} />
     </Layout>
   )
@@ -31,6 +31,9 @@ export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         leftPage {

@@ -17,7 +17,7 @@ describe("Layout", () => {
 
     const wrapper = shallow(
       <Layout
-        pathName="\"
+        slug="\"
         children=""
         listLinks={listLinks}
         frontmatterData={frontMatterData}
@@ -37,14 +37,14 @@ describe("Layout", () => {
     ]
     const wrapper = shallow(
       <Layout
-        pathName="\"
+        slug="\"
         children=""
         listLinks={listLinks}
         frontmatterData={frontMatterData}
       ></Layout>
     )
     const navigationContainer = (
-      <NavigationContainer pathName="\"></NavigationContainer>
+      <NavigationContainer slug="\"></NavigationContainer>
     )
 
     expect(wrapper.containsMatchingElement(navigationContainer)).toEqual(true)

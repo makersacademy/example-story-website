@@ -4,26 +4,20 @@ import { Link } from "gatsby"
 import { PreviousPageLink, NextPageLink } from "../index"
 
 interface Props {
-  pathName: string
+  slug: string
   listLinks: Array<string>
 }
 
 export const Pagers = (props: Props) => {
-  const { pathName, listLinks } = props
+  const { slug, listLinks } = props
 
-  var nextLink: string =
-    typeof window !== "undefined"
-      ? listLinks[listLinks.indexOf(pathName) + 1]
-      : ""
+  var nextLink: string = listLinks[listLinks.indexOf(slug) + 1]
 
-  var previousLink: string =
-    typeof window !== "undefined"
-      ? listLinks[listLinks.indexOf(pathName) - 1]
-      : ""
+  var previousLink: string = listLinks[listLinks.indexOf(slug) - 1]
 
-  if (pathName == "/") {
+  if (slug == "/") {
     return <NextPageLink nextLink={nextLink} homePage={true} />
-  } else if (pathName == "/contact/") {
+  } else if (slug == "/contact/") {
     return <PreviousPageLink lastPage={true} previousLink={previousLink} />
   } else {
     return (

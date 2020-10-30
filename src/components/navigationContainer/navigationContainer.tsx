@@ -3,11 +3,11 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Pagers, NavBar } from "../index"
 import "./navigationContainer.scss"
 interface Props {
-  pathName: string
+  slug: string
 }
 
 const NavigationContainer = (props: Props) => {
-  const { pathName } = props
+  const { slug } = props
 
   const layoutData = useStaticQuery(graphql`
     {
@@ -39,12 +39,12 @@ const NavigationContainer = (props: Props) => {
   return (
     <div>
       <NavBar
-        pathName={pathName}
+        slug={slug}
         listLinks={listLinks}
         frontmatterData={frontmatterData}
       />
       <div className="d-flex justify-content-center">
-        <Pagers pathName={pathName} listLinks={listLinks} />
+        <Pagers slug={slug} listLinks={listLinks} />
       </div>
     </div>
   )
