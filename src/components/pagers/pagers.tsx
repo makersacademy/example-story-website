@@ -3,21 +3,16 @@ import React from "react"
 import { PreviousPageLink, NextPageLink } from "../index"
 
 interface Props {
-  slug: string
-  listLinks: Array<string>
+  nextLink: string
+  previousLink: string
 }
 
 export const Pagers = (props: Props) => {
-  const { slug, listLinks, nextLink, previousLink } = props
-  console.log(nextLink, previousLink)
+  const { nextLink, previousLink } = props
 
-  // var nextLink: string = listLinks[listLinks.indexOf(slug) + 1]
-
-  // var previousLink: string = listLinks[listLinks.indexOf(slug) - 1]
-
-  if (slug === listLinks[0]) {
+  if (!previousLink) {
     return <NextPageLink nextLink={nextLink} homePage={true} />
-  } else if (slug === listLinks[-1]) {
+  } else if (!nextLink) {
     return <PreviousPageLink lastPage={true} previousLink={previousLink} />
   } else {
     return (

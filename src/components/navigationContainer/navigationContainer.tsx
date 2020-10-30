@@ -40,8 +40,6 @@ const NavigationContainer = (props: Props) => {
     }
   `)
 
-  //console.log(layoutData.allMarkdownRemark.edges[chapter])
-
   const listLinks = layoutData.allMarkdownRemark.edges.map(
     ({ node }: { node: any }) => node.fields.slug
   )
@@ -50,10 +48,13 @@ const NavigationContainer = (props: Props) => {
     ({ node }: { node: any }) => node.frontmatter
   )
 
-  const nextLink = layoutData.allMarkdownRemark.edges[chapter].next.fields.slug
+  const next = chapter ? layoutData.allMarkdownRemark.edges[chapter].next : ""
+  const previous = chapter
+    ? layoutData.allMarkdownRemark.edges[chapter].previous
+    : ""
 
-  const previousLink =
-    layoutData.allMarkdownRemark.edges[chapter].previous.fields.slug
+  const nextLink = next ? next.fields.slug : null
+  const previousLink = previous ? previous.fields.slug : null
 
   return (
     <div>
@@ -63,13 +64,7 @@ const NavigationContainer = (props: Props) => {
         frontmatterData={frontmatterData}
       />
       <div className="d-flex justify-content-center">
-        <Pagers
-          slug={slug}
-          listLinks={listLinks}
-          nextLink={nextLink}
-          previousLink={previousLink}
-        />
-        {/* [{next: /2 slug: /1 previous/0}, .... ]  */}
+        <Pagers nextLink={nextLink} previousLink={previousLink} />
       </div>
     </div>
   )
