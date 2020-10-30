@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { PreviousPageLink, NextPageLink } from "../index"
 
@@ -9,11 +8,12 @@ interface Props {
 }
 
 export const Pagers = (props: Props) => {
-  const { slug, listLinks } = props
+  const { slug, listLinks, nextLink, previousLink } = props
+  console.log(nextLink, previousLink)
 
-  var nextLink: string = listLinks[listLinks.indexOf(slug) + 1]
+  // var nextLink: string = listLinks[listLinks.indexOf(slug) + 1]
 
-  var previousLink: string = listLinks[listLinks.indexOf(slug) - 1]
+  // var previousLink: string = listLinks[listLinks.indexOf(slug) - 1]
 
   if (slug === listLinks[0]) {
     return <NextPageLink nextLink={nextLink} homePage={true} />
