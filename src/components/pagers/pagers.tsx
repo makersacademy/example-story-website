@@ -2,25 +2,23 @@ import React from "react"
 
 import { PreviousPageLink, NextPageLink } from "../index"
 
+interface Direction {
+  fields: { slug: string }
+}
+
 interface Props {
-  nextLink: string
-  previousLink: string
+  next: Direction | null
+  previous: Direction | null
 }
 
 export const Pagers = (props: Props) => {
-  const { nextLink, previousLink } = props
+  const { next, previous } = props
 
-  if (!previousLink) {
-    return <NextPageLink nextLink={nextLink} homePage={true} />
-  } else if (!nextLink) {
-    return <PreviousPageLink lastPage={true} previousLink={previousLink} />
-  } else {
-    return (
-      <>
-        <PreviousPageLink previousLink={previousLink} />
-        <div>&nbsp;&nbsp;</div>
-        <NextPageLink nextLink={nextLink} />
-      </>
-    )
-  }
+  return (
+    <>
+      {previous && <PreviousPageLink previousLink={previous.fields.slug} />}
+      <div>&nbsp;&nbsp;</div>
+      {next && <NextPageLink nextLink={next.fields.slug} />}
+    </>
+  )
 }
