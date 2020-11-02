@@ -15,8 +15,6 @@ describe("Layout", () => {
     const navigationContainer = (
       <NavigationContainer chapter="0" slug="x"></NavigationContainer>
     )
-    console.log(wrapper.debug())
-
     expect(wrapper.containsMatchingElement(navigationContainer)).toEqual(true)
   })
 })
