@@ -34,12 +34,6 @@
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-left: 100px solid $color-accent-light;
-  @media screen and (min-width: 1200px) {
-    position: relative;
-    margin-top: -400px;
-    left: 566px;
-    top: 750px;
-  }
 }
 
 .triangle-left {
@@ -47,12 +41,6 @@
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-right: 100px solid $color-accent-light;
-  @media screen and (min-width: 1200px) {
-    position: relative;
-    margin-top: -400px;
-    top: 750px;
-    right: 566px;
-  }
 }
 
 .triangle-left-lastPage {
@@ -60,12 +48,6 @@
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-right: 100px solid $color-accent-light;
-  @media screen and (min-width: 1200px) {
-    position: relative;
-    margin-top: -400px;
-    top: 750px;
-    right: 620px;
-  }
 }
 
 .triangle-right-home {
@@ -73,10 +55,4 @@
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
   border-left: 100px solid $color-accent-light;
-  @media screen and (min-width: 1200px) {
-    position: relative;
-    margin-top: -400px;
-    left: 335px;
-    top: 750px;
-  }
 }
