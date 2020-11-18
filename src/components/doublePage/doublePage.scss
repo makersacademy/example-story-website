@@ -5,30 +5,17 @@
   font-size: 40px;
 }
 
-#double-page::before {
-  content: "";
-  margin-left: -1px;
-  float: left;
-}
-
 #double-page {
   background-color: $color-primary-light;
   border-radius: $border-radius-book;
   margin-top: $margin-nav-bar;
 }
 
-#double-page::after {
-  /* to clear float */
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .mid-line {
   border-right: 1px solid $color-secondary-light;
 }
 
-.triangle {
+.pager-desktop-previous {
   margin-top: 20px;
   border-top: 100px solid transparent;
   border-bottom: 100px solid transparent;
