@@ -22,10 +22,17 @@ export const DoublePage = (props: Props) => {
   const { title, leftPage, rightPage } = props
 
   return (
-    <div className="container justify-content-around" id="double-page">
-      <div className="row">
-        <LeftPage leftPage={leftPage} title={title}></LeftPage>
-        <RightPage rightPage={rightPage} />
+    <div className=" container justify-content-around">
+      <div className="row align-items-center">
+        <div className="col-lg-1 ">
+          <div className="triangle"></div>
+        </div>
+        <div id="double-page" className="col-lg-10">
+          <div className="row">
+            <LeftPage leftPage={leftPage} title={title}></LeftPage>
+            <RightPage rightPage={rightPage} />
+          </div>
+        </div>
       </div>
     </div>
   )

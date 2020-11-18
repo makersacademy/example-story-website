@@ -27,3 +27,10 @@
 .mid-line {
   border-right: 1px solid $color-secondary-light;
 }
+
+.triangle {
+  margin-top: 20px;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 100px solid $color-accent-light;
+}
