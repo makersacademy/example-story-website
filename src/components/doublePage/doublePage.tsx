@@ -33,6 +33,9 @@ export const DoublePage = (props: Props) => {
             <RightPage rightPage={rightPage} />
           </div>
         </div>
+        <div className="col-lg-1">
+          <div className="pager-desktop-next" />
+        </div>
       </div>
     </div>
   )
