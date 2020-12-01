@@ -24,7 +24,7 @@ export const DoublePage = (props: Props) => {
   return (
     <div className="container ">
       <div className="row align-items-center">
-        <div className="col-lg-1 col-md-1">
+        <div className="pager-div col-lg-1 col-md-1">
           <div className="pager-desktop-previous "></div>
         </div>
         <div id="double-page" className="col-lg-10 col-md-10">
@@ -33,7 +33,7 @@ export const DoublePage = (props: Props) => {
             <RightPage rightPage={rightPage} />
           </div>
         </div>
-        <div className="col-lg-1 col-md-1">
+        <div className="pager-div col-lg-1 col-md-1">
           <div className="pager-desktop-next" />
         </div>
       </div>
