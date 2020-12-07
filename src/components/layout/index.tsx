@@ -66,6 +66,7 @@ const Layout = (props: Props) => {
         frontmatterData={frontmatterData}
         next={next}
         previous={previous}
+        chapter={chapter}
       />
       <main>{childrenWithProps}</main>
     </div>
