@@ -3,52 +3,27 @@ import { graphql, useStaticQuery } from "gatsby"
 import { Pagers, NavBar } from "../index"
 import "./navigationContainer.scss"
 
+interface Direction {
+  fields: { slug: string }
+}
+
+interface FrontmatterData {
+  title: string
+  jobTitle: string
+  greeting: string
+}
+
 interface Props {
   slug: string
   chapter: string
+  listLinks: Array<string>
+  frontmatterData: Array<FrontmatterData>
+  next: Direction
+  previous: Direction
 }
 
 const NavigationContainer = (props: Props) => {
-  const { slug, chapter } = props
-
-  const layoutData = useStaticQuery(graphql`
-    {
-      allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
-        edges {
-          previous {
-            fields {
-              slug
-            }
-          }
-          next {
-            fields {
-              slug
-            }
-          }
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              jobTitle
-              greeting
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const listLinks = layoutData.allMarkdownRemark.edges.map(
-    ({ node }: { node: any }) => node.fields.slug
-  )
-
-  const frontmatterData = layoutData.allMarkdownRemark.edges.map(
-    ({ node }: { node: any }) => node.frontmatter
-  )
-
-  const { next, previous } = layoutData.allMarkdownRemark.edges[chapter]
+  const { slug, next, previous, frontmatterData, listLinks } = props
 
   return (
     <div>

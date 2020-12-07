@@ -12,7 +12,7 @@ interface Props {
 const Layout = (props: Props) => {
   const { children, slug, chapter } = props
 
-  const nextPreviousData = useStaticQuery(graphql`
+  const layoutData = useStaticQuery(graphql`
     {
       allMarkdownRemark(sort: { fields: frontmatter___chapter }) {
         edges {
@@ -41,7 +41,15 @@ const Layout = (props: Props) => {
     }
   `)
 
-  const { next, previous } = nextPreviousData.allMarkdownRemark.edges[chapter]
+  const { next, previous } = layoutData.allMarkdownRemark.edges[chapter]
+
+  const listLinks = layoutData.allMarkdownRemark.edges.map(
+    ({ node }: { node: any }) => node.fields.slug
+  )
+
+  const frontmatterData = layoutData.allMarkdownRemark.edges.map(
+    ({ node }: { node: any }) => node.frontmatter
+  )
 
   const childrenWithProps = React.Children.map(children, child =>
     React.cloneElement(child, {
@@ -52,7 +60,13 @@ const Layout = (props: Props) => {
 
   return (
     <div>
-      <NavigationContainer slug={slug} chapter={chapter} />
+      <NavigationContainer
+        slug={slug}
+        listLinks={listLinks}
+        frontmatterData={frontmatterData}
+        next={next}
+        previous={previous}
+      />
       <main>{childrenWithProps}</main>
     </div>
   )
