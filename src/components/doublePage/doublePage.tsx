@@ -1,6 +1,6 @@
 import React from "react"
 import "bootstrap/dist/css/bootstrap.css"
-
+import { Link } from "gatsby"
 import { LeftPage, RightPage } from "../index"
 import "./doublePage.scss"
 
@@ -12,20 +12,28 @@ interface PageItem {
   imageWithoutText?: any
 }
 
+interface Direction {
+  fields: { slug: string }
+}
+
 interface Props {
   title: string
+  chapter: string
   leftPage: Array<PageItem>
   rightPage: Array<PageItem>
+  next: Direction
+  previous: Direction
 }
 
 export const DoublePage = (props: Props) => {
-  const { title, leftPage, rightPage } = props
-
+  const { title, leftPage, rightPage, previous, next } = props
   return (
     <div className="container ">
       <div className="row align-items-center">
         <div className="pager-div col-lg-1 col-md-1 ">
-          <div className="pager-desktop-previous d-none d-md-block"></div>
+          <Link to={previous.fields.slug}>
+            <div className="pager-desktop-previous d-none d-md-block"></div>
+          </Link>
         </div>
         <div id="double-page" className="col-lg-10 col-md-10">
           <div className="row">
@@ -34,7 +42,9 @@ export const DoublePage = (props: Props) => {
           </div>
         </div>
         <div className="pager-div col-lg-1 col-md-1 ">
-          <div className="pager-desktop-next d-none d-md-block " />
+          <Link to={next.fields.slug}>
+            <div className="pager-desktop-next d-none d-md-block " />
+          </Link>
         </div>
       </div>
     </div>
