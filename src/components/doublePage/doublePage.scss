@@ -5,25 +5,31 @@
   font-size: 40px;
 }
 
-#double-page::before {
-  content: "";
-  margin-left: -1px;
-  float: left;
-}
-
 #double-page {
   background-color: $color-primary-light;
   border-radius: $border-radius-book;
   margin-top: $margin-nav-bar;
 }
 
-#double-page::after {
-  /* to clear float */
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .mid-line {
   border-right: 1px solid $color-secondary-light;
+}
+
+.pager-desktop-previous {
+  margin-top: 20px;
+  border-top: 65px solid transparent;
+  border-bottom: 65px solid transparent;
+  border-right: 65px solid $color-accent-light;
+}
+
+.pager-div {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.pager-desktop-next {
+  margin-top: 20px;
+  border-top: 65px solid transparent;
+  border-bottom: 65px solid transparent;
+  border-left: 65px solid $color-accent-light;
 }

@@ -5,6 +5,8 @@ import { DoublePage, LeftPage, SubHeading } from "../index"
 
 describe("DoublePage", () => {
   it("is rendered with a title", () => {
+    const next = { fields: { slug: "/next/" } }
+    const previous = null
     let wrapper = shallow(
       <DoublePage
         title={"Learning"}
@@ -22,12 +24,17 @@ describe("DoublePage", () => {
             content: "string",
           },
         ]}
+        next={next}
+        previous={previous}
+        chapter="0"
       />
     )
     expect(wrapper).toHaveLength(1)
   })
 
   it("renders the LeftPage Component", () => {
+    const next = { fields: { slug: "/next/" } }
+    const previous = null
     let leftPage = (
       <LeftPage
         leftPage={[
@@ -53,6 +60,9 @@ describe("DoublePage", () => {
             content: "string",
           },
         ]}
+        next={next}
+        previous={previous}
+        chapter="0"
       />
     )
     expect(wrapper.containsMatchingElement(leftPage)).toEqual(true)

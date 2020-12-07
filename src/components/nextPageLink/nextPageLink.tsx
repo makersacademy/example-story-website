@@ -14,13 +14,13 @@ export const NextPageLink = (props: Props) => {
 
     return (
       <Link to={nextLink}>
-        <div className="triangle-right-home" />
+        <div className="triangle-right-home d-md-none" />
       </Link>
     )
   } else {
     return (
       <Link to={nextLink}>
-        <div className="triangle-right" />
+        <div className="triangle-right d-md-none" />
       </Link>
     )
   }

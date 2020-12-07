@@ -11,13 +11,13 @@ export const PreviousPageLink = (props: Props) => {
   if (lastPage == true) {
     return (
       <Link to={previousLink}>
-        <div className="triangle-left-lastPage" />
+        <div className="triangle-left-lastPage  d-md-none" />
       </Link>
     )
   } else {
     return (
       <Link to={previousLink}>
-        <div className="triangle-left" />
+        <div className="triangle-left d-md-none" />
       </Link>
     )
   }
