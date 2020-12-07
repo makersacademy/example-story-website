@@ -13,7 +13,7 @@ interface Props {
   jobTitle: string
   careerAim: string
   image: any
-  next: Direction
+  next: Direction | null
 }
 
 export const BookFrontCover = (props: Props) => {
@@ -30,9 +30,11 @@ export const BookFrontCover = (props: Props) => {
             </div>
           </div>
         </div>
-        <Link to={next.fields.slug}>
-          <div className="pager-desktop-next d-none d-md-block " />
-        </Link>
+        {next && (
+          <Link to={next.fields.slug}>
+            <div className="pager-desktop-next d-none d-md-block " />
+          </Link>
+        )}
       </div>
     </div>
   )
