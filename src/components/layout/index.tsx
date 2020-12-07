@@ -52,7 +52,7 @@ const Layout = (props: Props) => {
   )
 
   const childrenWithProps = React.Children.map(children, child =>
-    React.cloneElement(child, {
+    React.cloneElement(child as React.ReactElement<any>, {
       next,
       previous,
     })
