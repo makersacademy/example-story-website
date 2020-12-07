@@ -21,8 +21,8 @@ interface Props {
   chapter: string
   leftPage: Array<PageItem>
   rightPage: Array<PageItem>
-  next: Direction
-  previous: Direction
+  next: Direction | null
+  previous: Direction | null
 }
 
 export const DoublePage = (props: Props) => {
@@ -31,9 +31,11 @@ export const DoublePage = (props: Props) => {
     <div className="container ">
       <div className="row align-items-center">
         <div className="pager-div col-lg-1 col-md-1 ">
-          <Link to={previous.fields.slug}>
-            <div className="pager-desktop-previous d-none d-md-block"></div>
-          </Link>
+          {previous && (
+            <Link to={previous.fields.slug}>
+              <div className="pager-desktop-previous d-none d-md-block"></div>
+            </Link>
+          )}
         </div>
         <div id="double-page" className="col-lg-10 col-md-10">
           <div className="row">
@@ -42,9 +44,11 @@ export const DoublePage = (props: Props) => {
           </div>
         </div>
         <div className="pager-div col-lg-1 col-md-1 ">
-          <Link to={next.fields.slug}>
-            <div className="pager-desktop-next d-none d-md-block " />
-          </Link>
+          {next && (
+            <Link to={next.fields.slug}>
+              <div className="pager-desktop-next d-none d-md-block " />
+            </Link>
+          )}
         </div>
       </div>
     </div>
