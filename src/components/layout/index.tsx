@@ -41,10 +41,19 @@ const Layout = (props: Props) => {
     }
   `)
 
+  const { next, previous } = nextPreviousData.allMarkdownRemark.edges[chapter]
+
+  const childrenWithProps = React.Children.map(children, child =>
+    React.cloneElement(child, {
+      next,
+      previous,
+    })
+  )
+
   return (
     <div>
       <NavigationContainer slug={slug} chapter={chapter} />
-      <main>{children}</main>
+      <main>{childrenWithProps}</main>
     </div>
   )
 }
